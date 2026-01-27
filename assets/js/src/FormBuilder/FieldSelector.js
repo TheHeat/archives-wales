@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import { Field } from 'formik';
-import CheckboxGroup from './field-types/CheckboxGroup';
-import RadioGroup from './field-types/RadioGroup';
-import Textarea from './field-types/Textarea';
+import CheckboxGroup from './field-types/CheckboxGroup.jsx';
+import RadioGroup from './field-types/RadioGroup.jsx';
+import Textarea from './field-types/Textarea.jsx';
 
 const FieldSelector = ( { fieldConfig, formConfig } ) => {
 	const {

@@ -1,4 +1,3 @@
-import React from "react";
 import CookieConsent from "react-cookie-consent";
 
 const CookiesNotice = ({ location, disableStyles, buttonText, guts }) => {

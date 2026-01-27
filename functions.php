@@ -22,19 +22,19 @@ add_action( 'after_setup_theme', 'properbear_setup' );
  * Scripts & Styles
  */
 function properbear_scripts_styles() {
-	$version = filemtime( get_template_directory() . '/style.css' );
+	$version = filemtime( get_template_directory() . '/assets/css/build/style.css' );
 
-	wp_enqueue_script(
-		'properbear-theme',
-		get_stylesheet_directory_uri() . '/assets/js/build/index.js',
-		array( 'wp-element', 'wp-util' ),
-		$version,
-		true
-	);
+	// wp_enqueue_script(
+	// 	'properbear-theme',
+	// 	get_stylesheet_directory_uri() . '/assets/js/build/index.js',
+	// 	array( 'wp-element', 'wp-util' ),
+	// 	$version,
+	// 	true
+	// );
 
 	wp_enqueue_style(
 		'proper-bear-styles',
-		get_stylesheet_uri(),
+		get_template_directory_uri() . '/assets/css/build/style.css' ,
 		array(),
 		$version
 	);

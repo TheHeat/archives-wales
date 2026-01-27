@@ -7,11 +7,10 @@
 	"license": "MIT",
 	"homepage": "",
 	"scripts": {
-		"start": "npm run wpscripts & npm run styles & npm run svg & npm run styles -- -w ",
-		"wpscripts": "wp-scripts start",
-		"styles": "sass assets/scss:./",
-		"svg": "svg-sprite -C node-svg-sprite-config.json assets/svg/src/**/*.svg && echo \"Wrote SVG to SVG Dest\" || echo \"SVG build failed (have you npm installed or are there no files in src folder\"",
-		"build": "wp-scripts build & npm run styles & npm run svg"
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"wpscripts": "wp-scripts start"
 	},
 	"babel": {
 		"presets": [
@@ -22,6 +21,7 @@
 		]
 	},
 	"dependencies": {
+		"@vitejs/plugin-react": "^5.1.2",
 		"browser-sync": "^2.26.12",
 		"fitvids": "latest",
 		"formik": "^2.2.9",
@@ -31,17 +31,14 @@
 		"react-modal": "^3.14.4",
 		"react-share": "^4.4.0",
 		"squishMenu": "latest",
-		"svg4everybody": "^2.1.9"
+		"vite": "^7.3.1",
+		"vite-plugin-full-reload": "^1.2.0"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.17.8",
 		"@babel/plugin-proposal-class-properties": "^7.16.7",
 		"@wordpress/babel-preset-default": "^6.6.1",
-		"@wordpress/eslint-plugin": "^11.0.1",
-		"@wordpress/scripts": "^22.2.1",
-		"browser-sync-webpack-plugin": "^2.3.0",
-		"sass": "^1.62.0",
-		"svg-sprite": "^2.0.0",
-		"webpack-cli": "^4.9.2"
+		"@wordpress/eslint-plugin": "24.0.0",
+		"@wordpress/scripts": "31.3.0"
 	}
 }
