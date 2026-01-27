@@ -21,6 +21,7 @@
 		]
 	},
 	"dependencies": {
+		"vite": "^7.3.1",
 		"@vitejs/plugin-react": "^5.1.2",
 		"browser-sync": "^2.26.12",
 		"fitvids": "latest",
@@ -30,9 +31,7 @@
 		"react-google-recaptcha-v3": "^1.9.7",
 		"react-modal": "^3.14.4",
 		"react-share": "^4.4.0",
-		"squishMenu": "latest",
-		"vite": "^7.3.1",
-		"vite-plugin-full-reload": "^1.2.0"
+		"squishMenu": "latest"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.17.8",

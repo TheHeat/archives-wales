@@ -1,5 +1,5 @@
-// import '../../css/style.css';
-const { render } = wp.element;
+import '../css/style.css';
+// const { render } = wp.element;
 import squishMenu from 'squishMenu';
 
 // Squish

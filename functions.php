@@ -22,29 +22,28 @@ add_action( 'after_setup_theme', 'properbear_setup' );
  * Scripts & Styles
  */
 function properbear_scripts_styles() {
-	$version = filemtime( get_template_directory() . '/build/style.css' );
 
-	// wp_enqueue_script(
-	// 	'properbear-theme',
-	// 	get_stylesheet_directory_uri() . '/assets/js/build/index.js',
-	// 	array( 'wp-element', 'wp-util' ),
-	// 	$version,
-	// 	true
-	// );
+    $manifestPath = get_theme_file_path('dist/.vite/manifest.json');
+    
+    // Check if the manifest file exists and is readable before using it
+    if (file_exists($manifestPath)) {
+        $manifest = json_decode(file_get_contents($manifestPath), true);
+        
+        // Check if the file is in the manifest before enqueuing
+        if (isset($manifest['src/js/index.jsx'])) {
+            wp_enqueue_script('archives-wales', get_theme_file_uri('dist/' . $manifest['src/js/index.jsx']['file']));
+            // Enqueue the CSS file
+            wp_enqueue_style('archives-wales', get_theme_file_uri('dist/' . $manifest['src/js/index.jsx']['css'][0]));
+        }
+    }
 
-	wp_enqueue_style(
-		'proper-bear-styles',
-		get_template_directory_uri() . '/build/style.css' ,
-		array(),
-		$version
-	);
 
-	/**
-	* Load Comments
-	*/
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+	// /**
+	// * Load Comments
+	// */
+	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+	// 	wp_enqueue_script( 'comment-reply' );
+	// }
 }
 add_action( 'wp_enqueue_scripts', 'properbear_scripts_styles' );
 
