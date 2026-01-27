@@ -22,7 +22,7 @@ add_action( 'after_setup_theme', 'properbear_setup' );
  * Scripts & Styles
  */
 function properbear_scripts_styles() {
-	$version = filemtime( get_template_directory() . '/assets/css/build/style.css' );
+	$version = filemtime( get_template_directory() . '/build/style.css' );
 
 	// wp_enqueue_script(
 	// 	'properbear-theme',
@@ -34,7 +34,7 @@ function properbear_scripts_styles() {
 
 	wp_enqueue_style(
 		'proper-bear-styles',
-		get_template_directory_uri() . '/assets/css/build/style.css' ,
+		get_template_directory_uri() . '/build/style.css' ,
 		array(),
 		$version
 	);

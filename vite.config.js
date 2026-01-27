@@ -9,6 +9,8 @@ export default defineConfig({
 	plugins: [
 		react(),
 		FullReload([
+			'./build/*.css',
+			'./build/*.js',
 			'/*.php',
 			'./**/*.php',
 			'./template-parts/**/*.php',
@@ -16,16 +18,17 @@ export default defineConfig({
 		]),
 	],
 	build: {
-		outDir: '.', // Output to project root
+		root: '.',
+		outDir: 'build', // Output to project root
 		emptyOutDir: false, // Don't delete everything in root!
 		rollupOptions: {
 			input: {
-				main: path.resolve(__dirname, 'assets/js/src/index.jsx'),
-				styles: path.resolve(__dirname, 'assets/css/style.css'),
+				main: path.resolve(__dirname, 'src/js/index.jsx'),
+				styles: path.resolve(__dirname, 'src/css/index.css'),
 			},
 			output: {
-				entryFileNames: 'assets/js/[name].js',
-				assetFileNames: 'assets/css/build/style.css', // style.css in root
+				entryFileNames: 'scripts.js',
+				assetFileNames: 'style.css',
 			},
 		},
 	},
