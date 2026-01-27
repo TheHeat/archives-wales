@@ -1,6 +1,4 @@
-# Proper Bear
-
-ProperDesign.rs (almost) completely bare starter theme.
+# Archives Wales WordPress Theme
 
 ## First things first - writing this readme.md
 
@@ -8,13 +6,13 @@ This readme.md file should exist as a living manual and todo list for the develo
 
 1. introduction
 2. types & taxes
-	* custom-post-type defs
-	* custom-taxonomy defs
+   - custom-post-type defs
+   - custom-taxonomy defs
 3. site map
 4. templates
-	* specific template file defs
-	* specific template file defs
-	* ...
+   - specific template file defs
+   - specific template file defs
+   - ...
 5. additional requirements & functionality
 
 Each item should have a brief description of its purpose and functionality, followed by a list of its composite parts.
@@ -35,11 +33,11 @@ Blog posts
 
 ## Site Map
 
-* Home (front-page.php)
-	* About (page.php)
-	* Contact (page.php)
-	* Blog (home.php)
-		* Post (single.php)
+- Home (front-page.php)
+  - About (page.php)
+  - Contact (page.php)
+  - Blog (home.php)
+    - Post (single.php)
 
 ## Templates
 
@@ -51,31 +49,30 @@ Front page of the site
 
 Standard WP page
 
-* title
-* content
-* media (images/video)
+- title
+- content
+- media (images/video)
 
 ### template-contact.php
 
 Standard page template with contact form
 
-* title
-* content
-* contact form
+- title
+- content
+- contact form
 
 ### home.php
 
 List of posts
 
-* title
-* posts
-* pagination
+- title
+- posts
+- pagination
 
 ### single.php
 
 Standard WP post
 
-* title
-* content
-* media (images/video)
-
+- title
+- content
+- media (images/video)
