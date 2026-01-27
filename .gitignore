@@ -1,48 +1,31 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
-# https://github.com/github/gitignore/blob/main/WordPress.gitignore
+.DS_Store
 
-# Core
-#
-# Note: if you want to stage/commit WP core files
-# you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/index.php
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
+# SASS
 
-# Configuration
-wp-config.php
+*.sass-cache/
 
-# Example themes
-/wp-content/themes/twenty*/
+sftp-config.json
 
-# Example plugin
-/wp-content/plugins/hello.php
+bower_components/
+node_modules/
+npm-debug.log
+sublime-gulp.log
+.sublime-gulp.cache
 
-# Uploads
-/wp-content/uploads/
-
-# Log files
-*.log
-
-# htaccess
-/.htaccess
-
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
-
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+style.css
+sprite.symbol.svg
+themefunctions.min*
+symbols.svg
+cached_uglify
+hotupdate.js
+hotupdate.json
+bundle.js
+bundle.js.map
+hotupdate.js.map
+package-lock.json
+assets/js/build
+assets/scss/1-thirdparty/_icon-sprite.scss
+assets/svg/sprite.css.svg
+assets/svg/sprite.symbol.html
+vendor
+style.css.map
