@@ -76,3 +76,5 @@ Standard WP post
 - title
 - content
 - media (images/video)
+
+_Fin_
