@@ -43,5 +43,6 @@
 		</h1>
 		</header>
 		<?php get_template_part( 'template-parts/header-nav' ); ?>
+		<?php get_template_part( 'template-parts/header-switcher' ); ?>
 </div>
 <div>
