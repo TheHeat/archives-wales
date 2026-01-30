@@ -28,6 +28,10 @@
 	if ( is_search() ) {
 		echo '<meta name="robots" content="noindex, nofollow" />';}
 	?>
+
+
+	<?php get_template_part( 'template-parts/fonts' ); ?>
+
 	<?php wp_head(); ?>
 </head>
 

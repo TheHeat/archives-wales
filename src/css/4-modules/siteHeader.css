@@ -1,12 +1,16 @@
 .siteHeader-wrapper {
-  background-color: var(--proper-color-blue);
-  color: white;
-  padding: 1rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
   a {
     color: currentColor;
     text-decoration: none;
   }
 }
+
+.siteHeader {
+  padding: var(--length-spacer);
+}
+
 .siteHeader-title {
   margin: 0;
 }

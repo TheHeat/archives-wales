@@ -4,11 +4,16 @@
  *    user zoom.
  */
 html {
-  font-family: sans-serif;
+  --surface: var(--color-ivory);
+  --text: var(--color-black);
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+
+  font-family: var(--font-body);
+  font-optical-sizing: auto;
+  font-style: normal;
+
   box-sizing: border-box;
-  font-weight: 300;
 }
 
 *,
@@ -18,9 +23,12 @@ html {
 }
 
 body {
+  color: var(--text);
+  background-color: var(--surface);
   margin: 0;
   padding: 0;
   line-height: 1.4;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=body.css.map */

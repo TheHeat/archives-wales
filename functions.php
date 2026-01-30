@@ -23,19 +23,7 @@ add_action( 'after_setup_theme', 'properbear_setup' );
  */
 function properbear_scripts_styles() {
 
-    $manifestPath = get_theme_file_path('dist/.vite/manifest.json');
-    
-    // Check if the manifest file exists and is readable before using it
-    if (file_exists($manifestPath)) {
-        $manifest = json_decode(file_get_contents($manifestPath), true);
-        
-        // Check if the file is in the manifest before enqueuing
-        if (isset($manifest['src/js/index.jsx'])) {
-            wp_enqueue_script('archives-wales', get_theme_file_uri('dist/' . $manifest['src/js/index.jsx']['file']));
-            // Enqueue the CSS file
-            wp_enqueue_style('archives-wales', get_theme_file_uri('dist/' . $manifest['src/js/index.jsx']['css'][0]));
-        }
-    }
+   wp_enqueue_style('acaw-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
 
 	// /**

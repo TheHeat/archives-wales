@@ -1,14 +1,17 @@
-import '../css/style.css';
-// const { render } = wp.element;
-import squishMenu from 'squishMenu';
+import '../css/index.css';
 
-// Squish
-document.addEventListener('DOMContentLoaded', () => {
-	squishMenu({
-		containerId: 'siteNav-wrapper',
-		toggleClass: 'siteNav-toggle',
-	});
-});
+console.log('Hello from Archives Wales theme!');
+
+// const { render } = wp.element;
+// import squishMenu from 'squishMenu';
+
+// // Squish
+// document.addEventListener('DOMContentLoaded', () => {
+// 	squishMenu({
+// 		containerId: 'siteNav-wrapper',
+// 		toggleClass: 'siteNav-toggle',
+// 	});
+// });
 
 // import CookiesNotice from "./CookiesNotice";
 
