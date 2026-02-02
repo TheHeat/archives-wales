@@ -40,11 +40,13 @@
 	<div class="siteWrapper">
 	<div class="siteHeader-wrapper">
 		<header class="siteHeader" role="banner">
-		<h1 class="siteHeader-title">
+		<div class="siteHeader-logo">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"
 			title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-			<?php bloginfo( 'name' ); ?></a>
-		</h1>
+
+			<?php get_template_part( 'template-parts/header-logo' ); ?>
+			</a>
+		</div>
 		</header>
 		<?php get_template_part( 'template-parts/header-nav' ); ?>
 		<?php get_template_part( 'template-parts/header-switcher' ); ?>

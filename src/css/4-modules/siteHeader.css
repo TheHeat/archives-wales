@@ -1,6 +1,10 @@
 .siteHeader-wrapper {
   background-color: var(--color-black);
   color: var(--color-white);
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: fit-content fit-content;
+  align-items: center;
   a {
     color: currentColor;
     text-decoration: none;
@@ -13,10 +17,35 @@
 
 .siteHeader-title {
   margin: 0;
+  grid-column: 1;
+  grid-row: 1;
 }
 .siteHeader-logo {
   display: block;
-  width: 6em;
-  height: 2em;
+  height: auto;
+  width: 12rem;
   fill: currentColor;
+}
+
+.siteNav-wrapper {
+  grid-column: 2;
+  grid-row: 1/3;
+}
+
+.languageSwitcher {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  grid-row: 2;
+}
+
+.lang-item a {
+  display: inline-block;
+  padding: calc(var(--length-spacer) / 2) var(--length-spacer);
+}
+
+.current-lang a {
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
