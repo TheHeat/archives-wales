@@ -5,7 +5,7 @@ if ( function_exists('pll_current_language') ) {
 }
 ?>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1389.09 396" fill="currentColor" title="<?php bloginfo( 'name' ); ?>">
+<svg class="acaw-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1389.09 396" fill="currentColor" title="<?php bloginfo( 'name' ); ?>">
 
   <path id="mark" d="M342,396h-95.89c-12.13,0-22.44-8.88-24.24-20.87l-23.79-158.62c16.53-9,25.92-26.45,25.92-46.51,0-29.27-19-53-53-53s-53,23.73-53,53c0,20.06,9.39,37.51,25.92,46.51l-23.79,158.62c-1.8,12-12.11,20.87-24.24,20.87H0L99,0h144l99,396Z"/>
   
@@ -31,7 +31,6 @@ if ( function_exists('pll_current_language') ) {
   </g>
 
 	<?php endif; ?>
-
 
 	<?php if ( $lang == 'en' ): ?>
 

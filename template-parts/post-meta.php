@@ -5,8 +5,8 @@
  * @package WordPress
  */
 
-$tags_label = __( 'Tagged: ', 'properbear' );
-$cats_label = __( 'Posted in: ', 'properbear' );
+$tags_label = __( 'Tagged: ', 'acaw' );
+$cats_label = __( 'Posted in: ', 'acaw' );
 
 ?>
 <footer class="postMeta">

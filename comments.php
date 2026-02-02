@@ -10,14 +10,14 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && 'comments.php' == basename( wp_un
 }
 
 if ( post_password_required() ) { ?>
-		<?php esc_html_e( 'This post is password protected. Enter the password to view comments.', 'properbear' ); ?>
+		<?php esc_html_e( 'This post is password protected. Enter the password to view comments.', 'acaw' ); ?>
 	<?php
 	return;
 }
 ?>
 
 <?php if ( have_comments() ) : ?>
-	<h2 id="comments"><?php comments_number( __( 'No Responses', 'properbear' ), __( 'One Response', 'properbear' ), __( '% Responses', 'properbear' ) ); ?></h2>
+	<h2 id="comments"><?php comments_number( __( 'No Responses', 'acaw' ), __( 'One Response', 'acaw' ), __( '% Responses', 'acaw' ) ); ?></h2>
 	<div class="navigation">
 		<div class="next-posts"><?php previous_comments_link(); ?></div>
 		<div class="prev-posts"><?php next_comments_link(); ?></div>
@@ -40,7 +40,7 @@ if ( post_password_required() ) { ?>
 			?>
 
 		<?php else : // comments are closed. ?>
-		<p><?php esc_html_e( 'Comments are closed.', 'properbear' ); ?></p>
+		<p><?php esc_html_e( 'Comments are closed.', 'acaw' ); ?></p>
 
 	<?php endif; ?>
 
@@ -53,7 +53,7 @@ if ( post_password_required() ) { ?>
 	<h2>
 	<?php
 	/* Translators: Variable refers to the previous commentor */
-	comment_form_title( __( 'Leave a Reply', 'properbear' ), __( 'Leave a Reply to %s', 'properbear' ) );
+	comment_form_title( __( 'Leave a Reply', 'acaw' ), __( 'Leave a Reply to %s', 'acaw' ) );
 	?>
 	</h2>
 
@@ -62,14 +62,14 @@ if ( post_password_required() ) { ?>
 	</div>
 
 	<?php if ( get_option( 'comment_registration' ) && ! is_user_logged_in() ) : ?>
-		<p><?php esc_html_e( 'You must be', 'properbear' ); ?> <a href="<?php echo esc_attr( wp_login_url( get_permalink() ) ); ?>"><?php esc_html_e( 'logged in', 'properbear' ); ?></a> <?php esc_html_e( 'to post a comment.', 'properbear' ); ?></p>
+		<p><?php esc_html_e( 'You must be', 'acaw' ); ?> <a href="<?php echo esc_attr( wp_login_url( get_permalink() ) ); ?>"><?php esc_html_e( 'logged in', 'acaw' ); ?></a> <?php esc_html_e( 'to post a comment.', 'acaw' ); ?></p>
 	<?php else : ?>
 
 	<form action="<?php echo esc_attr( get_option( 'siteurl' ) ); ?>/wp-comments-post.php" method="post" id="commentform">
 
 		<?php if ( is_user_logged_in() ) : ?>
 
-			<p><?php esc_html_e( 'Logged in as', 'properbear' ); ?> <a href="<?php echo esc_attr( get_option( 'siteurl' ) ); ?>/wp-admin/profile.php"><?php echo esc_attr( $user_identity ); ?></a>. <a href="<?php echo esc_attr( wp_logout_url( get_permalink() ) ); ?>" title="Log out of this account"><?php esc_html_e( 'Log out', 'properbear' ); ?> &raquo;</a></p>
+			<p><?php esc_html_e( 'Logged in as', 'acaw' ); ?> <a href="<?php echo esc_attr( get_option( 'siteurl' ) ); ?>/wp-admin/profile.php"><?php echo esc_attr( $user_identity ); ?></a>. <a href="<?php echo esc_attr( wp_logout_url( get_permalink() ) ); ?>" title="Log out of this account"><?php esc_html_e( 'Log out', 'acaw' ); ?> &raquo;</a></p>
 
 		<?php else : ?>
 
@@ -84,7 +84,7 @@ if ( post_password_required() ) { ?>
 																					echo "aria-required='true'";}
 																				?>
 				/>
-				<label for="author"><?php esc_html_e( 'Name', 'properbear' ); ?> <?php
+				<label for="author"><?php esc_html_e( 'Name', 'acaw' ); ?> <?php
 				if ( $req ) {
 					echo '(required)';}
 				?>
@@ -98,7 +98,7 @@ if ( post_password_required() ) { ?>
 																				echo "aria-required='true'";}
 																			?>
 				/>
-				<label for="email"><?php esc_html_e( 'Mail (will not be published)', 'properbear' ); ?> <?php
+				<label for="email"><?php esc_html_e( 'Mail (will not be published)', 'acaw' ); ?> <?php
 				if ( $req ) {
 					echo '(required)';}
 				?>
@@ -107,7 +107,7 @@ if ( post_password_required() ) { ?>
 
 			<div>
 				<input type="text" name="url" id="url" value="<?php echo esc_attr( $comment_author_url ); ?>" size="22" tabindex="3" />
-				<label for="url"><?php esc_html_e( 'Website', 'properbear' ); ?></label>
+				<label for="url"><?php esc_html_e( 'Website', 'acaw' ); ?></label>
 			</div>
 
 		<?php endif; ?>
@@ -119,7 +119,7 @@ if ( post_password_required() ) { ?>
 		</div>
 
 		<div>
-			<input name="submit" type="submit" id="submit" tabindex="5" value="<?php esc_html_e( 'Submit Comment', 'properbear' ); ?>" />
+			<input name="submit" type="submit" id="submit" tabindex="5" value="<?php esc_html_e( 'Submit Comment', 'acaw' ); ?>" />
 			<?php comment_id_fields(); ?>
 		</div>
 		

@@ -12,7 +12,7 @@ get_header();
 
 <div class="page-wrapper">
 
-<h1><?php _e('Blog', 'properbear' ); ?></h1>	
+<h1><?php _e('Blog', 'acaw' ); ?></h1>	
 
 	<?php if ( have_posts() ) : ?>
 		<ol class="archiveGrid">

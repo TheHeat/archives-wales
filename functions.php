@@ -8,20 +8,22 @@
 /**
  * Theme setup function
  */
-function properbear_setup() {
-	load_theme_textdomain( 'properbear', get_template_directory() . '/languages' );
+function acaw_setup() {
+	load_theme_textdomain( 'acaw', get_template_directory() . '/languages' );
 
 	add_theme_support( 'html5', array( 'comment-list', 'search-form', 'comment-form', 'gallery' ) );
 	add_post_type_support( 'page', 'excerpt' );
 
-	register_nav_menu( 'primary', __( 'Navigation Menu', 'properbear' ) );
-}
-add_action( 'after_setup_theme', 'properbear_setup' );
+	register_nav_menu( 'primary', __( 'Header Menu', 'acaw' ) );
+		register_nav_menu( 'secondary', __( 'Footer Menu', 'acaw' ) );
+
+	}
+add_action( 'after_setup_theme', 'acaw_setup' );
 
 /**
  * Scripts & Styles
  */
-function properbear_scripts_styles() {
+function acaw_scripts_styles() {
 
    wp_enqueue_style('acaw-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
@@ -33,7 +35,7 @@ function properbear_scripts_styles() {
 	// 	wp_enqueue_script( 'comment-reply' );
 	// }
 }
-add_action( 'wp_enqueue_scripts', 'properbear_scripts_styles' );
+add_action( 'wp_enqueue_scripts', 'acaw_scripts_styles' );
 
 	/**
 	* Include all PHP files in the inc folder

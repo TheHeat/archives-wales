@@ -10,12 +10,12 @@
 get_header();
 
 $contact_form_config = array(
-	'subject'    => __( 'Website Contact', 'properbear' ),
-	'submit'     => __( 'Send', 'properbear' ),
-	'formError'  => __( 'There a problem with your form', 'properbear' ),
-	'fieldError' => __( 'You will need to complete this field', 'properbear' ),
-	'sending'    => __( 'Sending...', 'properbear' ),
-	'success'    => __( 'Your message has been sent.', 'properbear' ),
+	'subject'    => __( 'Website Contact', 'acaw' ),
+	'submit'     => __( 'Send', 'acaw' ),
+	'formError'  => __( 'There a problem with your form', 'acaw' ),
+	'fieldError' => __( 'You will need to complete this field', 'acaw' ),
+	'sending'    => __( 'Sending...', 'acaw' ),
+	'success'    => __( 'Your message has been sent.', 'acaw' ),
 
 	'fieldsets'  => array(
 		array(
@@ -24,19 +24,19 @@ $contact_form_config = array(
 
 					'name'     => 'name',
 					'type'     => 'text',
-					'label'    => __( 'Your Name', 'properbear' ),
+					'label'    => __( 'Your Name', 'acaw' ),
 					'required' => true,
 				),
 				array(
 					'type'     => 'email',
 					'name'     => 'email',
-					'label'    => __( 'Your Email Address', 'properbear' ),
+					'label'    => __( 'Your Email Address', 'acaw' ),
 					'required' => true,
 				),
 				array(
 					'type'     => 'textarea',
 					'name'     => 'message',
-					'label'    => __( 'Your Message', 'properbear' ),
+					'label'    => __( 'Your Message', 'acaw' ),
 					'required' => true,
 				),
 			),
@@ -45,7 +45,7 @@ $contact_form_config = array(
 	),
 );
 
-wp_localize_script( 'properbear-theme', 'contactFormConfig', $contact_form_config );
+wp_localize_script( 'acaw-theme', 'contactFormConfig', $contact_form_config );
 
 
 
@@ -66,12 +66,12 @@ wp_localize_script( 'properbear-theme', 'contactFormConfig', $contact_form_confi
 			<?php
 			wp_link_pages(
 				array(
-					'before'         => __( 'Pages: ', 'properbear' ),
+					'before'         => __( 'Pages: ', 'acaw' ),
 					'next_or_number' => 'number',
 				)
 			);
 			?>
-					<?php edit_post_link( __( 'Edit this entry', 'properbear' ), '<p>', '</p>' ); ?>
+					<?php edit_post_link( __( 'Edit this entry', 'acaw' ), '<p>', '</p>' ); ?>
 	</main>
 
 			<?php

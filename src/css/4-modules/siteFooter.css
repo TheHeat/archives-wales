@@ -1,5 +1,51 @@
 .siteFooter-wrapper {
-  background-color: black;
-  color: white;
-  padding: 1rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: var(--length-spacer);
+  display: grid;
+  gap: var(--length-spacer);
+  grid-template-columns: auto 1fr auto;
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+}
+
+.siteFooter {
+  grid-column: 3;
+  text-align: right;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--length-spacer);
+  justify-content: flex-end;
+}
+
+.copyright {
+  font-size: smaller;
+}
+
+.siteFooter-menus {
+  display: flex;
+  gap: var(--length-spacer);
+  grid-column: 1;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.siteFooter-logos {
+  display: flex;
+  gap: var(--length-spacer);
+  height: 3rem;
+  justify-content: flex-end;
+
+  .wg-logo,
+  .acaw-logo {
+    height: 3rem;
+    width: auto;
+  }
 }

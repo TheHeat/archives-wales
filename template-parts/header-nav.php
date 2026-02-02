@@ -8,7 +8,7 @@
 ?>
 <div id="siteNav-wrapper" class="siteNav-wrapper">
 	<nav class="siteNav" role="navigation">
-		<button id="siteNav-toggle" class="siteNav-toggle"><?php esc_attr_e( 'Menu', 'properbear' ); ?></button>
+		<button id="siteNav-toggle" class="siteNav-toggle"><?php esc_attr_e( 'Menu', 'acaw' ); ?></button>
 		<?php
 		// Limits the menu to one level by default.
 		$args = array(

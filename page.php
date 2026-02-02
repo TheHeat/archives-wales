@@ -20,12 +20,12 @@ get_header(); ?>
 			<?php
 			wp_link_pages(
 				array(
-					'before'         => __( 'Pages: ', 'properbear' ),
+					'before'         => __( 'Pages: ', 'acaw' ),
 					'next_or_number' => 'number',
 				)
 			);
 			?>
-					<?php edit_post_link( __( 'Edit this entry', 'properbear' ), '<p>', '</p>' ); ?>
+					<?php edit_post_link( __( 'Edit this entry', 'acaw' ), '<p>', '</p>' ); ?>
 		</main>
 
 				<?php

@@ -40,7 +40,7 @@ if (is_tax() || is_category() || is_tag()) {
 				<?php the_posts_pagination(); ?>
 				<?php else : ?>
 					
-					<h2><?php esc_html_e( 'Nothing Found', 'properbear' ); ?></h2>
+					<h2><?php esc_html_e( 'Nothing Found', 'acaw' ); ?></h2>
 					
 	<?php endif; ?>
 
