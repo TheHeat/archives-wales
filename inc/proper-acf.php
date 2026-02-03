@@ -8,7 +8,7 @@ add_filter( 'acf/settings/save_json', 'acaw_acf_save_point' );
 function acaw_acf_save_point( $path ) {
 
 	// update path
-	$path = get_stylesheet_directory() . '/assets/acf-json';
+	$path = get_stylesheet_directory() . '/src/acf-json';
 
 	// return
 	return $path;
@@ -23,7 +23,7 @@ function acaw_json_load_point( $paths ) {
 	unset( $paths[0] );
 
 	// append path
-	$paths[] = get_stylesheet_directory() . '/assets/acf-json';
+	$paths[] = get_stylesheet_directory() . '/src/acf-json';
 
 	// return
 	return $paths;

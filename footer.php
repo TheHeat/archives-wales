@@ -35,7 +35,7 @@
 				<?php
 			echo sprintf(
 				/* translators: %s: current year */
-				__( 'Archives Wales is a brand of the Archives and Records Council Wales (ARCW) <br/>© %s. All Rights Reserved ARCW unless otherwise stated.', 'acaw' ),
+				__( 'Archives Wales is a brand of the Archives and Records Council Wales (ARCW) © %s. All Rights Reserved ARCW unless otherwise stated.', 'acaw' ),
 				esc_attr( gmdate( 'Y' ) )
 				);
 				?>
