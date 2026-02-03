@@ -1,31 +1,3 @@
 .DS_Store
-
-# SASS
-
-*.sass-cache/
-
-sftp-config.json
-
-bower_components/
 node_modules/
-npm-debug.log
-sublime-gulp.log
-.sublime-gulp.cache
 
-style.css
-sprite.symbol.svg
-themefunctions.min*
-symbols.svg
-cached_uglify
-hotupdate.js
-hotupdate.json
-bundle.js
-bundle.js.map
-hotupdate.js.map
-package-lock.json
-assets/js/build
-assets/scss/1-thirdparty/_icon-sprite.scss
-assets/svg/sprite.css.svg
-assets/svg/sprite.symbol.html
-vendor
-style.css.map

@@ -1,0 +1,16 @@
+/*
+Theme Name: Archives Wales
+Theme URI: https://marcheatleydesign.com
+Description: Archives Wales Theme
+Author: Marc Heatley	
+Author URI: https://marcheatleydesign.com
+Version: 1
+Tags:
+
+*/
+
+@import url("src/css/1-thirdparty/index.css");
+@import url("src/css/2-global/index.css");
+@import url("src/css/3-base/index.css");
+@import url("src/css/4-modules/index.css");
+@import url("src/css/5-templates/index.css");
