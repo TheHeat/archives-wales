@@ -10,7 +10,7 @@ get_header();
 ?>
 
 <div class="archiveHeader">
-	<div class="archive-header-inner">
+	<div class="archiveHeader-inner">
 		<h1><?php _e( 'News', 'acaw' ); ?></h1>
 		<?php _e('Stay up to date with the latest news from across the network', 'acaw'); ?>
 </div>
@@ -18,10 +18,11 @@ get_header();
 <div class="archiveSearchbar">
 	<?php get_template_part( 'template-parts/search-form' ); ?>
 </div>
+<div class="archive-content">
 
-
-<?php if ( have_posts() ) : ?>
-			<ol class="archiveGrid">
+	
+	<?php if ( have_posts() ) : ?>
+		<ol class="archiveGrid">
 			<?php while ( have_posts() ) : ?>
 				<?php the_post(); ?>
 				<li>
@@ -29,12 +30,13 @@ get_header();
 				</li>
 				<?php endwhile; ?>
 			</ol>
-				<?php the_posts_pagination(); ?>
-				<?php else : ?>
-					
-					<h2><?php esc_html_e( 'Nothing Found', 'acaw' ); ?></h2>
-					
-	<?php endif; ?>
-
+			<?php the_posts_pagination(); ?>
+			<?php else : ?>
+				
+				<h2><?php esc_html_e( 'Nothing Found', 'acaw' ); ?></h2>
+				
+				<?php endif; ?>
+				
+			</div>
 
 <?php get_footer(); ?>

@@ -1,0 +1,37 @@
+.postTeaser {
+	padding: var(--length-spacer);
+	background-color: var(--color-white);
+	border-left: solid 0.25em var(--color-red);
+	container-type: inline-size;
+}
+
+.postTeaser-inner {
+	display: grid;
+	gap: var(--length-spacer);
+
+	@container (width > 30rem) {
+		grid-template-columns: 2fr 1fr;
+	}
+}
+
+.postTeaser-date {
+	font-family: var(--font-mono);
+}
+
+.postTeaser-image-link {
+	grid-row: 1;
+}
+
+.postTeaser-content {
+	@container (width > 30rem) {
+		grid-column: 1;
+		grid-row: 1;
+	}
+}
+
+.postTeaser-image {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
