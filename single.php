@@ -29,7 +29,6 @@ get_header(); ?>
 					<?php get_template_part( 'post', 'meta' ); ?>
 		</main>
 
-					<?php comments_template(); ?>
 
 			<?php
 	endwhile;
