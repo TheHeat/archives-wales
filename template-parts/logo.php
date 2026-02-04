@@ -1,9 +1,4 @@
-<? 
-
-if ( function_exists('pll_current_language') ) {
-    $lang = pll_current_language();
-}
-?>
+<?php $lang = pll_current_language(); ?>
 
 <svg class="acaw-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1389.09 396" fill="currentColor" title="<?php bloginfo( 'name' ); ?>">
 
