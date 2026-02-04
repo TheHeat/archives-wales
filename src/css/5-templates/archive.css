@@ -1,27 +1,13 @@
-.archiveHero-wrapper {
-  display: grid;
-  padding: var(--proper-length-spacer);
-  gap: var(--proper-length-spacer);
-  background-color: silver;
-}
-@media (min-width: 40rem) {
-  .archiveHero-wrapper {
-    grid-template-columns: 2fr 1fr;
-  }
-}
-.archiveHero-wrapper {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+.archiveHeader {
+  background-color: var(--color-white);
+  padding: var(--length-spacer);
 }
 
-.archiveHero {
-  background: rgba(white, 0.8);
-  grid-column: 1/2;
-  padding: var(--proper-length-spacer);
-  h1 {
-    margin: 0;
-  }
+.archiveSearchbar {
+  background-color: var(--color-black);
+  padding: calc(var(--length-spacer) / 2) var(--length-spacer);
+  display: flex;
+  justify-content: flex-end;
 }
 
 .archiveGrid {

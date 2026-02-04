@@ -1,0 +1,18 @@
+.search-form {
+	max-width: 600px;
+	margin: 0 auto;
+	background-color: var(--color-white);
+	padding: calc(var(--length-border-radius) / 2);
+	width: fit-content;
+	display: flex;
+	border-radius: var(--length-border-radius);
+	input {
+		border: none;
+	}
+
+	[type="submit"] {
+		background-color: var(--color-red);
+		color: var(--color-white);
+		text-transform: uppercase;
+	}
+}

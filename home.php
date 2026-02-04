@@ -7,18 +7,19 @@
 
 get_header();
 
-$archive_type = get_queried_object();
-$labels = $archive_type->labels;
-
 ?>
 
-<div class="arhive-header">
+<div class="archiveHeader">
 	<div class="archive-header-inner">
-		<h1><?php echo $archive_type->labels->archives; ?></h1>	
+		<h1><?php _e( 'News', 'acaw' ); ?></h1>
+		<?php _e('Stay up to date with the latest news from across the network', 'acaw'); ?>
+</div>
+</div>
+<div class="archiveSearchbar">
+	<?php get_template_part( 'template-parts/search-form' ); ?>
 </div>
 
 
-</div>
 <?php if ( have_posts() ) : ?>
 			<ol class="archiveGrid">
 			<?php while ( have_posts() ) : ?>
