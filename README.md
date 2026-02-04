@@ -77,4 +77,3 @@ Standard WP post
 - content
 - media (images/video)
 
-_Fin_
