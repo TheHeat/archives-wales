@@ -26,7 +26,8 @@
 }
 
 .siteFooter-menus {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--length-spacer);
   grid-column: 1;
 
@@ -48,4 +49,11 @@
     height: 3rem;
     width: auto;
   }
+}
+
+.footerSocials-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
 }
