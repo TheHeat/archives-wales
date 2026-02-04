@@ -19,4 +19,4 @@ jobs:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.STAGING_REMOTE_USER }}
           TARGET: ${{ secrets.REMOTE_TARGET }}
-          ARGS: -rltDzvO --exclude ".git" --exclude ".github" --exclude "node_modules"
+          ARGS: -rltDzvO --exclude={.git,.github,node_modules}
