@@ -22,7 +22,3 @@ jobs:
           TARGET: ${{ secrets.REMOTE_TARGET }}
           EXCLUDE: ".git,.github,node_modules"
           ARGS: -rltDzvO
-          SCRIPT_AFTER: |
-			whoami
-			ls -al
-			echo $RSYNC_STDOUT
