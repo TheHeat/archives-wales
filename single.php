@@ -5,12 +5,8 @@
 get_header(); ?>
 
 <div class="page-wrapper">
-
-	<?php
-	if ( have_posts() ) :
-		while ( have_posts() ) :
-			the_post();
-			?>
+	<?php if ( have_posts() ) : ?>
+		<?php while ( have_posts() ) : the_post();?>
 
 		<main <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 			<?php the_post_thumbnail( 'large' ); ?>
@@ -30,13 +26,13 @@ get_header(); ?>
 		</main>
 
 
-			<?php
-	endwhile;
-endif;
-	?>
 
-	<?php proper_post_navigation(); ?>
 
+		<?php endwhile;?>
+	<?php endif;	?>
+
+	<div class="sidebar">
+		STUFF GOES HERE
+	</div>
 </div>
-
 <?php get_footer(); ?>

@@ -1,6 +1,20 @@
+.page-wrapper {
+  display: grid;
+
+  @media (width > 50rem) {
+    grid-template-columns: 1fr 20rem;
+  }
+}
+
 .page-wrapper main {
   background-color: var(--color-white);
   padding: var(--length-spacer);
   max-width: 80rem;
   overflow: auto; /* Clearfix */
+}
+
+.sidebar {
+  padding: var(--length-spacer);
+  container-name: sidebar;
+  container-type: inline-size;
 }

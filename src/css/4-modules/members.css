@@ -6,5 +6,25 @@
 		display: block;
 		text-decoration: none;
 		padding: calc(var(--length-spacer) / 2);
+		color: currentColor;
+	}
+}
+
+.memberTeaser.small {
+	h3 {
+		line-height: 1.2;
+		font-size: 1rem;
+	}
+}
+
+.memberTeaser.current {
+	border-left-color: var(--color-green);
+}
+
+.member-nav {
+	display: grid;
+	gap: calc(var(--length-spacer) / 2);
+	@container (width > 30rem) {
+		grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 	}
 }
