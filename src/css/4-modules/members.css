@@ -1,0 +1,10 @@
+.memberTeaser {
+	background-color: var(--color-white);
+	border-left: solid 0.25em var(--color-red);
+
+	a {
+		display: block;
+		text-decoration: none;
+		padding: calc(var(--length-spacer) / 2);
+	}
+}
