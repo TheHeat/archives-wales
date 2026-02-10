@@ -3,6 +3,27 @@
     "title": "Post Fields",
     "fields": [
         {
+            "key": "field_698b12e4161ec",
+            "label": "Author byline",
+            "name": "byline",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Who wrote this and where are they from?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_698148a39af71",
             "label": "Related Projects",
             "name": "related_projects",
@@ -86,5 +107,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1770080538
+    "modified": 1770732816
 }
