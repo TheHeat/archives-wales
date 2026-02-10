@@ -1,3 +1,17 @@
 .pagination {
-  padding: var(--proper-length-spacer);
+  padding: var(--length-spacer) 0;
+}
+
+.page-numbers {
+  display: inline-block;
+  padding: calc(var(--length-spacer) / 2) calc(var(--length-spacer) * 0.75);
+  line-height: 1;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: var(--length-border-radius);
+}
+
+.page-numbers.current {
+  background-color: var(--color-green);
 }
