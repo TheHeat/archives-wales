@@ -9,16 +9,21 @@ $results = $wp_query->found_posts;
 $search_term = htmlspecialchars($_GET["s"]);
 
 
-  $title_format = __('We found %1$s search results for  &ldquo;%2$s&rdquo;', 'proper');
-
-
+$title_format = __('We found %1$s search results for  &ldquo;%2$s&rdquo;', 'proper');
 $title = sprintf($title_format, $results, $search_term);
 
 ?>
 
-<div class="page-wrapper" >
+<div class="archiveHeader">
+	<div class="archiveHeader-inner">
+		<h1><?php echo $title; ?></h1>
+</div>
+</div>
+<div class="archiveSearchbar">
+	<?php get_template_part( 'template-parts/search-form' ); ?>
+</div>
+<div class="archive-content">
 
-	<h1><?php echo $title; ?></h1>
 	<?php if ( have_posts() ) : ?>
 
 		<?php the_posts_pagination(); ?>

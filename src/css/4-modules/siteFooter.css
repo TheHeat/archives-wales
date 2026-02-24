@@ -3,13 +3,14 @@
   color: var(--color-white);
   padding: var(--length-spacer);
   display: grid;
-  gap: var(--length-spacer);
+  gap: calc(var(--length-spacer) * 2);
   a {
     color: currentColor;
     text-decoration: none;
   }
 
   @media (width > 40rem) {
+    gap: var(--length-spacer);
     align-items: flex-start;
     grid-template-columns: 1fr 1fr;
   }
