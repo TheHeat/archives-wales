@@ -30,3 +30,11 @@ function acaw_json_load_point( $paths ) {
 }
 
 
+// register Google Maps API Key
+
+function acaw_acf_init() {
+    
+    acf_update_setting('google_api_key', 'AIzaSyAptx7O3rvOdWuS2PVv3rSil3hwRj4SK8E');
+}
+
+add_action('acf/init', 'acaw_acf_init');
