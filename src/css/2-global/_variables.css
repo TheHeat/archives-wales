@@ -15,7 +15,6 @@
 
   --font-body: "IBM Plex Sans", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
-;
 
 
 
@@ -23,4 +22,16 @@
   --color-surface: var(--color-white);
   --color-text: var(--color-black);
 
+}
+
+
+
+.meta{
+	padding: .25em .75em;
+	background-color:var(--color-ground);
+	width: fit-content;
+	border-radius: var(--length-border-radius);
+	font-family: var(--font-mono);
+	font-weight:400;
+  margin: 0;
 }

@@ -18,3 +18,8 @@ img[class*=wp-image-],
 
 
 
+.wp-post-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}

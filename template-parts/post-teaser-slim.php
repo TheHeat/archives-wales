@@ -10,13 +10,10 @@
 <div class="postTeaser-inner">
 
 	<div class="postTeaser-content">
-			<?php proper_post_date(); ?>
 		<h3><a href="<?php the_permalink();?>">
 			<?php the_title(); ?>
 		</a></h3>
-		<div>
-			<a class="button" href="<?php the_permalink();?>"><?php _e('Read more', 'acaw');?></a>
-		</div>
 	</div>
+
 </div>
 </article>

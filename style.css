@@ -26,6 +26,12 @@ img[class*=wp-image-],
   margin: 0 0 1em 1em;
 }
 
+.wp-post-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /*
  * Hide only visually, but have it available for screen readers: h5bp.com/v
  */
@@ -57,6 +63,16 @@ img[class*=wp-image-],
   --color-ground: var(--color-ivory);
   --color-surface: var(--color-white);
   --color-text: var(--color-black);
+}
+
+.meta {
+  padding: 0.25em 0.75em;
+  background-color: var(--color-ground);
+  width: fit-content;
+  border-radius: var(--length-border-radius);
+  font-family: var(--font-mono);
+  font-weight: 400;
+  margin: 0;
 }
 
 h1,
@@ -142,7 +158,7 @@ body {
   color: var(--color-text);
   margin: 0;
   padding: 0;
-  line-height: 1.4;
+  line-height: 1.8;
   font-size: 1.2rem;
 }
 
@@ -689,6 +705,13 @@ iframe[src*=vimeo] {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+/* Single */
+.post-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .formModal-wrapper {

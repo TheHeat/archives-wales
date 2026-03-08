@@ -47,7 +47,7 @@
             "filters": [
                 "search"
             ],
-            "return_format": "object",
+            "return_format": "id",
             "min": "",
             "max": "",
             "allow_in_bindings": 0,
@@ -57,11 +57,11 @@
         },
         {
             "key": "field_698148ab9af72",
-            "label": "Related Orgs",
+            "label": "Related Members",
             "name": "related_orgs",
             "aria-label": "",
             "type": "relationship",
-            "instructions": "",
+            "instructions": "Link to members orgs that feature heavily in this post",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -79,7 +79,7 @@
             "filters": [
                 "search"
             ],
-            "return_format": "object",
+            "return_format": "id",
             "min": "",
             "max": "",
             "allow_in_bindings": 0,
@@ -107,5 +107,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1770732816
+    "modified": 1773001233
 }

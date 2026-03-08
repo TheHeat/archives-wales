@@ -9,7 +9,7 @@
 
 function proper_post_date() {
 	?>
-	<time class="dt-published" datetime="<?php echo get_the_date( 'c' ); ?>">
+	<time class="meta dt-published" datetime="<?php echo get_the_date( 'c' ); ?>">
 		<?php the_date(); ?>
 	</time>
 	<?php
