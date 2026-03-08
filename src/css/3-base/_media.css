@@ -61,6 +61,7 @@ iframe[src*=vimeo] {
 }
 
 .featuredImage-caption{
+  font-family: var(--font-mono);
   display:inline-block;
   font-size:smaller;
   letter-spacing: .05em;
