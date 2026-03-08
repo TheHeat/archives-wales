@@ -3,7 +3,9 @@
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
-img {
+img,
+[class^="wp-image"]
+ {
   border: 0;
   margin: 0;
   max-width: 100%;
@@ -46,7 +48,8 @@ iframe[src*=vimeo] {
 }
 
 
-.featuredImage-wrapper{
+.featuredImage-wrapper,
+.wp-block-image{
   display: flex;
   padding: 0;
   flex-direction: column;
@@ -60,7 +63,8 @@ iframe[src*=vimeo] {
   margin:0;
 }
 
-.featuredImage-caption{
+figcaption,
+.wp-block-image :where(figcaption){
   font-family: var(--font-mono);
   display:inline-block;
   font-size:smaller;
@@ -68,4 +72,5 @@ iframe[src*=vimeo] {
   background-color: var(--color-black);
   color:var(--color-white);
   padding: 0.25em 1em;
+  margin: 0;
 }

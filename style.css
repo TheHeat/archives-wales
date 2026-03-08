@@ -58,6 +58,7 @@ img[class*=wp-image-],
   --color-blue-contrast: var(--color-white);
   --length-spacer: clamp(1rem, 0.5rem + 1vw, 2rem);
   --length-border-radius: 0.25rem;
+  --length-site-max:120rem;
   --font-body: "IBM Plex Sans", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
   --color-ground: var(--color-ivory);
@@ -66,13 +67,16 @@ img[class*=wp-image-],
 }
 
 .meta {
-  padding: 0.25em 0.75em;
+  padding: 0.5em 0.75em;
   background-color: var(--color-ground);
   width: fit-content;
   border-radius: var(--length-border-radius);
   font-family: var(--font-mono);
   font-weight: 400;
   margin: 0;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-size: smaller;
 }
 
 h1,
@@ -82,12 +86,13 @@ h4,
 h5,
 h6 {
   margin: 0;
+  line-height: 1.5;
   font-weight: 400;
 }
 
 h1 {
-  font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
-  font-weight: 200;
+  font-size: clamp(2rem, 1.5rem + 3vw, 3.5rem);
+  font-weight: 300;
   line-height: 1.2;
 }
 
@@ -159,7 +164,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.8;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1rem + 1vw, 1.3rem);
 }
 
 /**
@@ -380,7 +385,8 @@ optgroup {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
-img {
+img,
+[class^=wp-image] {
   border: 0;
   margin: 0;
   max-width: 100%;
@@ -422,7 +428,8 @@ iframe[src*=vimeo] {
   height: auto;
 }
 
-.featuredImage-wrapper {
+.featuredImage-wrapper,
+.wp-block-image {
   display: flex;
   padding: 0;
   flex-direction: column;
@@ -436,7 +443,8 @@ iframe[src*=vimeo] {
   margin: 0;
 }
 
-.featuredImage-caption {
+figcaption,
+.wp-block-image :where(figcaption) {
   font-family: var(--font-mono);
   display: inline-block;
   font-size: smaller;
@@ -444,19 +452,25 @@ iframe[src*=vimeo] {
   background-color: var(--color-black);
   color: var(--color-white);
   padding: 0.25em 1em;
+  margin: 0;
 }
 
 .siteHeader-wrapper {
   background-color: var(--color-black);
   color: var(--color-white);
-  display: grid;
-  grid-template-columns: 1fr max-content;
-  grid-template-rows: fit-content fit-content;
-  align-items: center;
   a {
     color: currentColor;
     text-decoration: none;
   }
+}
+
+.siteHeader-inner {
+  max-width: var(--length-site-max);
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: fit-content fit-content;
+  align-items: center;
+  margin: auto;
 }
 
 .siteHeader {
@@ -490,16 +504,20 @@ iframe[src*=vimeo] {
 }
 
 .lang-item a {
+  line-height: 1;
   display: inline-block;
-  padding: calc(var(--length-spacer) / 2) var(--length-spacer);
+  padding: 0.75em 1em;
 }
 
 .current-lang a {
   background-color: var(--color-surface);
   color: var(--color-text);
+  border-top-left-radius: var(--length-border-radius);
+  border-top-right-radius: var(--length-border-radius);
 }
 
 .siteNav-wrapper {
+  padding: calc(var(--length-spacer) - 0.5em);
   .menu {
     list-style: none;
     padding: 0;
@@ -561,6 +579,11 @@ iframe[src*=vimeo] {
   background-color: var(--color-black);
   color: var(--color-white);
   padding: var(--length-spacer);
+}
+
+.siteFooter-inner {
+  max-width: var(--length-site-max);
+  margin: auto;
   display: grid;
   gap: calc(var(--length-spacer) * 2);
   a {
@@ -569,7 +592,7 @@ iframe[src*=vimeo] {
   }
 }
 @media (width > 40rem) {
-  .siteFooter-wrapper {
+  .siteFooter-inner {
     gap: var(--length-spacer);
     align-items: flex-start;
     grid-template-columns: 1fr 1fr;
@@ -707,6 +730,15 @@ iframe[src*=vimeo] {
   object-fit: cover;
 }
 
+/* Related Posts */
+.relatedPosts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1em;
+}
+
 /* Single */
 .post-header {
   display: flex;
@@ -830,7 +862,8 @@ iframe[src*=vimeo] {
 .memberTeaser.small {
   h3 {
     line-height: 1.2;
-    font-size: 1rem;
+    font-size: large;
+    font-weight: 500;
   }
 }
 
@@ -899,6 +932,8 @@ iframe[src*=vimeo] {
 
 .page-wrapper {
   display: grid;
+  max-width: var(--length-site-max);
+  margin: auto;
 }
 @media (width > 50rem) {
   .page-wrapper {
@@ -914,6 +949,7 @@ iframe[src*=vimeo] {
 }
 
 .sidebar {
+  align-content: start;
   padding: var(--length-spacer);
   container-name: sidebar;
   container-type: inline-size;

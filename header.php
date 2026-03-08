@@ -39,16 +39,18 @@
 	<?php get_template_part( 'template-parts/cookies-notice' ); ?>
 	<div class="siteWrapper">
 	<div class="siteHeader-wrapper">
-		<header class="siteHeader" role="banner">
-		<div class="siteHeader-logo">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"
-			title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-
-			<?php get_template_part( 'template-parts/logo' ); ?>
-			</a>
-		</div>
+		<div class="siteHeader-inner">
+			<header class="siteHeader" role="banner">
+				<div class="siteHeader-logo">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"
+					title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					
+					<?php get_template_part( 'template-parts/logo' ); ?>
+				</a>
+			</div>
 		</header>
 		<?php get_template_part( 'template-parts/header-nav' ); ?>
 		<?php get_template_part( 'template-parts/header-switcher' ); ?>
+	</div>
 </div>
 <div>

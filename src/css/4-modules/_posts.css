@@ -34,6 +34,15 @@
 	object-fit: cover;
 }
 
+/* Related Posts */
+
+.relatedPosts{
+	list-style:none;
+	margin:0;
+	padding:0;
+	display:grid;
+	gap:1em;
+}
 
 /* Single */
 .post-header{

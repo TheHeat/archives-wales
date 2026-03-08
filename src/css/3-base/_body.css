@@ -25,6 +25,6 @@ body {
   margin: 0; 
   padding: 0;
   line-height: 1.8;
-  font-size: 1.2rem;
+  font-size:clamp(1rem, calc(1rem + 1vw), 1.3rem);
 }
 

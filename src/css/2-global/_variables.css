@@ -13,6 +13,8 @@
   --length-spacer: clamp(1rem, 0.5rem + 1vw, 2rem);
   --length-border-radius: 0.25rem;
 
+--length-site-max:120rem;
+
   --font-body: "IBM Plex Sans", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
 
@@ -27,11 +29,14 @@
 
 
 .meta{
-	padding: .25em .75em;
+	padding: .5em .75em;
 	background-color:var(--color-ground);
 	width: fit-content;
 	border-radius: var(--length-border-radius);
 	font-family: var(--font-mono);
 	font-weight:400;
   margin: 0;
+  line-height: 1;
+  letter-spacing:0.05em;
+  font-size: smaller;
 }

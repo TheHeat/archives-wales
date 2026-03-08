@@ -2,13 +2,18 @@
   background-color: var(--color-black);
   color: var(--color-white);
   padding: var(--length-spacer);
+}
+
+.siteFooter-inner {
+  max-width:var(--length-site-max);
+  margin:auto;
   display: grid;
   gap: calc(var(--length-spacer) * 2);
   a {
     color: currentColor;
     text-decoration: none;
   }
-
+  
   @media (width > 40rem) {
     gap: var(--length-spacer);
     align-items: flex-start;

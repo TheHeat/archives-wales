@@ -1,4 +1,6 @@
 .siteNav-wrapper {
+  padding: calc(var(--length-spacer) - 0.5em);
+  
   .menu {
     list-style: none;
     padding: 0;

@@ -1,5 +1,7 @@
 .page-wrapper {
   display: grid;
+  max-width: var(--length-site-max);
+  margin: auto;
 
   @media (width > 50rem) {
     grid-template-columns: auto clamp(20rem, 33vw, 50rem);
@@ -14,6 +16,7 @@
 }
 
 .sidebar {
+  align-content: start;
   padding: var(--length-spacer);
   container-name: sidebar;
   container-type: inline-size;

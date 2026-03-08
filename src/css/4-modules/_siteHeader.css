@@ -1,14 +1,21 @@
 .siteHeader-wrapper {
 background-color: var(--color-black);
 color: var(--color-white);
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+}
+
+.siteHeader-inner{
+  max-width: var(--length-site-max);
   display: grid;
   grid-template-columns: 1fr max-content;
   grid-template-rows: fit-content fit-content;
   align-items: center;
-  a {
-    color: currentColor;
-    text-decoration: none;
-  }
+margin: auto;
+
+
 }
 
 .siteHeader {
@@ -41,11 +48,15 @@ color: var(--color-white);
 }
 
 .lang-item a {
+  line-height: 1;
   display: inline-block;
-  padding: calc(var(--length-spacer) / 2) var(--length-spacer);
+  padding:0.75em 1em;
 }
 
 .current-lang a {
   background-color: var(--color-surface);
   color: var(--color-text);
+  border-top-left-radius: var(--length-border-radius);
+    border-top-right-radius: var(--length-border-radius);
+
 }
