@@ -11,7 +11,7 @@
 
 	<div class="postTeaser-content">
 		<div class="postTeaser-date">
-			<?php the_date('d/m/Y'); ?>
+			<?php proper_post_date(); ?>
 		</div>
 		<h3><a href="<?php the_permalink();?>">
 			<?php the_title(); ?>

@@ -1,7 +1,5 @@
-@use 'typography/index.css' as *;
-@use 'body.css' as *;
-@use 'blocks.css' as *;
-@use 'forms.css' as *;
-@use 'media.css' as *;
-
-/*# sourceMappingURL=index.css.map */
+@use 'typography' as *;
+@use 'body' as *;
+@use 'blocks' as *;
+@use 'forms' as *;
+@use 'media' as *;

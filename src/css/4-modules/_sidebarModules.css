@@ -1,0 +1,30 @@
+.catalogueLink-wrapper{
+	background-color: var(--color-red);
+	color: var(--color-red-contrast);
+	border-radius: var(--length-border-radius);
+		overflow: clip;
+
+}
+
+.catalogueLink{
+	display: grid;
+	grid-template-columns: auto auto;
+		padding: 1em;
+		color: inherit;
+		text-decoration: none;
+	
+}
+
+.membersLink-wrapper{
+	background-color: var(--color-green);
+	color: var(--color-green-contrast);
+	border-radius: var(--length-border-radius);
+	overflow: clip;
+}
+
+.membersLink{
+	display: block;
+		padding: 1em;
+		color: inherit;
+		text-decoration: none;
+}

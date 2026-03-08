@@ -8,11 +8,6 @@ Version: 1
 Tags:
 
 */
-@import "headings.css";
-@import "inline-tags.css";
-@import "links.css";
-@import "lists.css";
-@import "tables.css";
 /* WordPress default image and caption styles */
 img[class*=wp-image-],
 .wp-caption {
@@ -47,18 +42,151 @@ img[class*=wp-image-],
 }
 
 :root {
-  --color-red: #ba5a32;
-  --color-red-contrast: #fff;
-  --color-green: #457d56;
-  --color-blue: #297d9f;
   --color-black: #232529;
-  --color-white: #faf9f4;
   --color-ivory: #f3f0e9;
+  --color-white: #faf9f4;
+  --color-red: #ba5a32;
+  --color-red-contrast: var(--color-white);
+  --color-green: #457d56;
+  --color-green-contrast: var(--color-white);
+  --color-blue: #297d9f;
+  --color-blue-contrast: var(--color-white);
   --length-spacer: clamp(1rem, 0.5rem + 1vw, 2rem);
   --length-border-radius: 0.25rem;
   --font-body: "IBM Plex Sans", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
+  --color-ground: var(--color-ivory);
+  --color-surface: var(--color-white);
+  --color-text: var(--color-black);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 300;
+}
+
+h1 {
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #f811e1;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent;
+  color: var(--color-blue);
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+
+ul {
+  /** unordered list styles **/
+}
+
+ol {
+  /** ordered list styles **/
+}
+
+dl {
+  /** definition list styles **/
+}
+
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+}
+
+tr {
+  border-bottom: solid thin;
+}
+
+td, th {
+  vertical-align: top;
+  padding: 0.5em;
+}
+
 
 
 /**
@@ -67,8 +195,6 @@ img[class*=wp-image-],
  *    user zoom.
  */
 html {
-  --surface: var(--color-ivory);
-  --text: var(--color-black);
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: var(--font-body);
@@ -84,55 +210,14 @@ html {
 }
 
 body {
-  color: var(--text);
-  background-color: var(--surface);
+  background-color: var(--color-ground);
+  color: var(--color-text);
   margin: 0;
   padding: 0;
   line-height: 1.4;
   font-size: 1.2rem;
 }
 
-
-/* HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
- */
-article,
-aside,
-blockquote,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-
-/**
- * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
- */
-[hidden],
-template {
-  display: none;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * Address margin not present in IE 8/9 and Safari.
- */
-figure {
-  margin: 1em 0;
-}
 
 /**
  * Address differences between Firefox and other browsers.
@@ -158,16 +243,22 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: var(--font-mono);
 }
 
 pre {
+  font-family: var(--font-mono);
   background-color: #0a1b3a;
   color: #00FF00;
   padding: 1em;
   line-height: 1.5;
 }
 
+time {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* Forms
    ========================================================================== */
@@ -389,7 +480,6 @@ iframe[src*=vimeo] {
 }
 
 
-
 .siteHeader-wrapper {
   background-color: var(--color-black);
   color: var(--color-white);
@@ -439,8 +529,8 @@ iframe[src*=vimeo] {
 }
 
 .current-lang a {
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background-color: var(--color-surface);
+  color: var(--color-text);
 }
 
 .siteNav-wrapper {
@@ -628,10 +718,6 @@ iframe[src*=vimeo] {
   }
 }
 
-.postTeaser-date {
-  font-family: var(--font-mono);
-}
-
 .postTeaser-image-link {
   grid-row: 1;
 }
@@ -784,6 +870,35 @@ iframe[src*=vimeo] {
   }
 }
 
+.catalogueLink-wrapper {
+  background-color: var(--color-red);
+  color: var(--color-red-contrast);
+  border-radius: var(--length-border-radius);
+  overflow: clip;
+}
+
+.catalogueLink {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 1em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.membersLink-wrapper {
+  background-color: var(--color-green);
+  color: var(--color-green-contrast);
+  border-radius: var(--length-border-radius);
+  overflow: clip;
+}
+
+.membersLink {
+  display: block;
+  padding: 1em;
+  color: inherit;
+  text-decoration: none;
+}
+
 .siteWrapper {
   min-height: 100vh;
   /* // fix for WordPress' admin bar */
@@ -809,12 +924,12 @@ iframe[src*=vimeo] {
 }
 @media (width > 50rem) {
   .page-wrapper {
-    grid-template-columns: 1fr 20rem;
+    grid-template-columns: auto clamp(20rem, 33vw, 50rem);
   }
 }
 
 .page-wrapper main {
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   padding: var(--length-spacer);
   max-width: 80rem;
   overflow: auto; /* Clearfix */
@@ -824,6 +939,8 @@ iframe[src*=vimeo] {
   padding: var(--length-spacer);
   container-name: sidebar;
   container-type: inline-size;
+  display: grid;
+  gap: var(--length-spacer);
 }
 
 .archiveHeader {

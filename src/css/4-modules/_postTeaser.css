@@ -14,9 +14,7 @@
 	}
 }
 
-.postTeaser-date {
-	font-family: var(--font-mono);
-}
+
 
 .postTeaser-image-link {
 	grid-row: 1;

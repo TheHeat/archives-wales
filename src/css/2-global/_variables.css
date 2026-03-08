@@ -1,15 +1,26 @@
 :root {
-  --color-red: #ba5a32;
-  --color-red-contrast: #fff;
-  --color-green: #457d56;
-  --color-blue: #297d9f;
   --color-black: #232529;
-  --color-white: #faf9f4;
   --color-ivory: #f3f0e9;
+  --color-white: #faf9f4;
+
+  --color-red: #ba5a32;
+  --color-red-contrast: var(--color-white);
+  --color-green: #457d56;
+  --color-green-contrast: var(--color-white);
+  --color-blue: #297d9f;
+  --color-blue-contrast: var(--color-white);
 
   --length-spacer: clamp(1rem, 0.5rem + 1vw, 2rem);
   --length-border-radius: 0.25rem;
 
   --font-body: "IBM Plex Sans", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
+;
+
+
+
+  --color-ground: var(--color-ivory);
+  --color-surface: var(--color-white);
+  --color-text: var(--color-black);
+
 }

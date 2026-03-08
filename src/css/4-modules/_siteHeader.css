@@ -1,6 +1,6 @@
 .siteHeader-wrapper {
-  background-color: var(--color-black);
-  color: var(--color-white);
+background-color: var(--color-black);
+color: var(--color-white);
   display: grid;
   grid-template-columns: 1fr max-content;
   grid-template-rows: fit-content fit-content;
@@ -46,6 +46,6 @@
 }
 
 .current-lang a {
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background-color: var(--color-surface);
+  color: var(--color-text);
 }
