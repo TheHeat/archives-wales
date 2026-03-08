@@ -30,7 +30,7 @@
 	?>
 
 
-	<?php get_template_part( 'template-parts/fonts' ); ?>
+	<?php get_template_part( 'template-parts/google-fonts' ); ?>
 
 	<?php wp_head(); ?>
 </head>
