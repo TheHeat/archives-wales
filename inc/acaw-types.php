@@ -8,7 +8,7 @@ function create_organisation_cpt() {
 		'singular_name' => _x( 'Organisation', 'Post Type Singular Name', 'acaw' ),
 		'menu_name' => _x( 'Organisations', 'Admin Menu text', 'acaw' ),
 		'name_admin_bar' => _x( 'Organisation', 'Add New on Toolbar', 'acaw' ),
-		'archives' => __( 'Organisation Archives', 'acaw' ),
+		'archives' => __( 'Member repositories', 'acaw' ),
 		'attributes' => __( 'Organisation Attributes', 'acaw' ),
 		'parent_item_colon' => __( 'Parent Organisation:', 'acaw' ),
 		'all_items' => __( 'All Organisations', 'acaw' ),

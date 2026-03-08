@@ -9,8 +9,8 @@ get_header(); ?>
 
 <main>
 
-<div class="archiveHeader">
-	<div class="archiveHeader-inner">
+<div class="archive-header">
+	<div class="archive-header-inner">
 		<h1><?php _e( 'Error 404 - Page Not Found', 'acaw' ); ?></h1>
 </div>
 </div>

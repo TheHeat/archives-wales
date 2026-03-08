@@ -14,8 +14,8 @@ $title = sprintf($title_format, $results, $search_term);
 
 ?>
 
-<div class="archiveHeader">
-	<div class="archiveHeader-inner">
+<div class="archive-header">
+	<div class="archive-header-inner">
 		<h1><?php echo $title; ?></h1>
 </div>
 </div>

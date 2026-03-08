@@ -12,28 +12,30 @@ $labels = $archive_type->labels;
 
 ?>
 
-<div class="arhive-header">
-	<div class="archive-header-inner">
+<div class="archive-header">
+
 		<h1><?php echo $archive_type->labels->archives; ?></h1>	
 </div>
 
+<div class="archive-content">	
 
-</div>
-<?php if ( have_posts() ) : ?>
-			<ol class="archiveGrid">
+	
+	<?php if ( have_posts() ) : ?>
+		<ol class="archiveList">
 			<?php while ( have_posts() ) : ?>
 				<?php the_post(); ?>
 				<li>
-					<?php get_template_part( 'template-parts/post-teaser' ); ?>
+					<?php get_template_part( 'template-parts/project-teaser' ); ?>
 				</li>
 				<?php endwhile; ?>
 			</ol>
-				<?php the_posts_pagination(); ?>
-				<?php else : ?>
-					
-					<h2><?php esc_html_e( 'Nothing Found', 'acaw' ); ?></h2>
-					
-	<?php endif; ?>
-
+			<?php the_posts_pagination(); ?>
+			<?php else : ?>
+				
+				<h2><?php esc_html_e( 'Nothing Found', 'acaw' ); ?></h2>
+				
+				<?php endif; ?>
+				
+			</div>
 
 <?php get_footer(); ?>

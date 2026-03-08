@@ -13,7 +13,7 @@ $labels = $archive_type->labels;
 
 ?>
 
-<div class="arhive-header">
+<div class="archive-header">
 	<div class="archive-header-inner">
 		<h1><?php echo $archive_type->labels->archives; ?></h1>	
 </div>
