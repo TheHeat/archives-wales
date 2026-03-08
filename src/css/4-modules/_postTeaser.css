@@ -7,8 +7,7 @@
 
 .postTeaser-inner {
 	display: grid;
-	gap: var(--length-spacer);
-
+		gap: .5em;
 	@container (width > 30rem) {
 		grid-template-columns: 2fr 1fr;
 	}
@@ -21,6 +20,9 @@
 }
 
 .postTeaser-content {
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
 	@container (width > 30rem) {
 		grid-column: 1;
 		grid-row: 1;

@@ -10,7 +10,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 					<main <?php post_class(); ?> id="organisation-<?php the_ID(); ?>">
-						<?php the_post_thumbnail( 'large' ); ?>
+					<?php get_template_part('template-parts/featured-image');?>
 						<?php the_title( '<h1>', '</h1>' ); ?>
 						
 						<?php the_content(); ?>

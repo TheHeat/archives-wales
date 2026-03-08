@@ -45,4 +45,26 @@ iframe[src*=vimeo] {
   height: auto;
 }
 
-/*# sourceMappingURL=media.css.map */
+
+.featuredImage-wrapper{
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  border-radius: var(--length-border-radius);
+  overflow:clip;
+  margin: 0 0 var(--length-spacer);
+
+}
+.featuredImage{
+  display:block;
+  margin:0;
+}
+
+.featuredImage-caption{
+  display:inline-block;
+  font-size:smaller;
+  letter-spacing: .05em;
+  background-color: var(--color-black);
+  color:var(--color-white);
+  padding: 0.25em 1em;
+}

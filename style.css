@@ -12,8 +12,8 @@ Tags:
 img[class*=wp-image-],
 .wp-caption {
   display: block;
+  width: 100%;
   max-width: 100%;
-  height: auto;
 }
 
 .alignleft {
@@ -25,7 +25,6 @@ img[class*=wp-image-],
   float: right;
   margin: 0 0 1em 1em;
 }
-
 
 /*
  * Hide only visually, but have it available for screen readers: h5bp.com/v
@@ -67,10 +66,11 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h1 {
+  font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
   font-weight: 200;
   line-height: 1.2;
 }
@@ -479,6 +479,28 @@ iframe[src*=vimeo] {
   height: auto;
 }
 
+.featuredImage-wrapper {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  border-radius: var(--length-border-radius);
+  overflow: clip;
+  margin: 0 0 var(--length-spacer);
+}
+
+.featuredImage {
+  display: block;
+  margin: 0;
+}
+
+.featuredImage-caption {
+  display: inline-block;
+  font-size: smaller;
+  letter-spacing: 0.05em;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 0.25em 1em;
+}
 
 .siteHeader-wrapper {
   background-color: var(--color-black);
@@ -710,7 +732,7 @@ iframe[src*=vimeo] {
 
 .postTeaser-inner {
   display: grid;
-  gap: var(--length-spacer);
+  gap: 0.5em;
 }
 @container (width > 30rem) {
   .postTeaser-inner {
@@ -722,6 +744,11 @@ iframe[src*=vimeo] {
   grid-row: 1;
 }
 
+.postTeaser-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
 @container (width > 30rem) {
   .postTeaser-content {
     grid-column: 1;

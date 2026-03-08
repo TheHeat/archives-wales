@@ -2,8 +2,8 @@
 img[class*=wp-image-],
 .wp-caption {
   display: block;
+  width: 100%;
   max-width: 100%;
-  height: auto;
 }
 
 .alignleft {
@@ -16,4 +16,5 @@ img[class*=wp-image-],
   margin: 0 0 1em 1em;
 }
 
-/*# sourceMappingURL=wordpress.css.map */
+
+
