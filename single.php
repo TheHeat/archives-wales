@@ -40,8 +40,7 @@ get_header(); ?>
 	<?php endif;	?>
 
 	<div class="sidebar">
-		<?php get_template_part('template-parts/related-projects');?>
-		<?php get_template_part('template-parts/related-posts');?>
+		<?php get_template_part('template-parts/post-sidebar');?>
 	</div>
 </div>
 <?php get_footer(); ?>

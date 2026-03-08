@@ -1,4 +1,4 @@
-<?
+<?php
 
 $this_guy = get_the_id();
 $type = get_post_type();
