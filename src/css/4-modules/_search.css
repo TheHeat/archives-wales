@@ -12,7 +12,7 @@
 
 	[type="submit"] {
 		background-color: var(--color-red);
-		color: var(--color-white);
+		color: var(--color-red-contrast);
 		text-transform: uppercase;
 	}
 }

@@ -16,12 +16,11 @@
 		<h3><a href="<?php the_permalink();?>">
 			<?php the_title(); ?>
 		</a></h3>
-		<?php the_excerpt(); ?>
 	</div>
 	
 	<a class="postTeaser-image-link" href="<?php the_permalink();?>">
 		<?php echo get_the_post_thumbnail(null, 'thumbnail', array('class' => 'postTeaser-image')); ?>
 	</a>
 </div>
-	<a href="<?php the_permalink();?>"><?php _e('Read more', 'acaw');?></a>
+	<a class="button" href="<?php the_permalink();?>"><?php _e('Read more', 'acaw');?></a>
 </article>

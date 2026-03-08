@@ -7,10 +7,8 @@
 	"license": "MIT",
 	"homepage": "",
 	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"preview": "vite preview",
-		"wpscripts": "wp-scripts start"
+		"dev": "npm run styles",
+		"styles": "sass src/css/index.scss:style.css --no-source-map --watch"
 	},
 	"babel": {
 		"presets": [
@@ -21,7 +19,6 @@
 		]
 	},
 	"dependencies": {
-		"vite": "^7.3.1",
 		"@vitejs/plugin-react": "^5.1.2",
 		"browser-sync": "^2.26.12",
 		"fitvids": "latest",
@@ -31,13 +28,15 @@
 		"react-google-recaptcha-v3": "^1.9.7",
 		"react-modal": "^3.14.4",
 		"react-share": "^4.4.0",
-		"squishMenu": "latest"
+		"squishMenu": "latest",
+		"vite": "^7.3.1"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.17.8",
 		"@babel/plugin-proposal-class-properties": "^7.16.7",
 		"@wordpress/babel-preset-default": "^6.6.1",
 		"@wordpress/eslint-plugin": "24.0.0",
-		"@wordpress/scripts": "31.3.0"
+		"@wordpress/scripts": "31.3.0",
+		"sass": "^1.97.3"
 	}
 }

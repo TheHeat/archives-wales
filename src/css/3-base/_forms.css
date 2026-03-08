@@ -23,8 +23,17 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-button {
+button,
+.button {
   overflow: visible;
+    background-color: var(--color-red);
+    color: var(--color-red-contrast);
+    text-decoration: none;
+		text-transform: uppercase;
+    padding: 0.3em 0.5em;
+    font-size: .8em;
+    border-radius:var(--length-border-radius);
+
 }
 
 /**

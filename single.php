@@ -10,7 +10,9 @@ get_header(); ?>
 
 		<main <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 		<?php the_post_thumbnail( 'large' ); ?>
-		<?php the_date('d/m/Y'); ?>
+
+	
+		<?php proper_post_date(); ?>
 			<?php the_title( '<h1>', '</h1>' ); ?>
 
 			<?php the_content(); ?>
