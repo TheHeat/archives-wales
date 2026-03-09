@@ -31,28 +31,27 @@ $website_url = get_field('website_url');
 <?php the_sub_field('map'); ?>
 <?php the_sub_field('address'); ?>
 
-<?php if(get_sub_field('email')): ?>
-	<div>
-		<a href="mailto:<?php the_sub_field('email'); ?>"><?php the_sub_field('email'); ?></a>
-	</div>
-<?php endif; ?>
-
-<?php if(get_sub_field('telephone')): ?>
-	<div>
-		<a href="tel:<?php the_sub_field('telephone'); ?>"><?php the_sub_field('telephone'); ?></a>
-	</div>
-<?php endif; ?>
 
 
-<?php if(count($links) > 0): ?>
-<ul class="memberMeta-links">
+
+	<ul class="memberMeta-links">
+	<?php if(get_sub_field('email')): ?>
+		<li>
+			<a href="mailto:<?php the_sub_field('email'); ?>"><?php the_sub_field('email'); ?></a>
+		</li>
+	<?php endif; ?>
+	
+	<?php if(get_sub_field('telephone')): ?>
+		<li>
+			<a href="tel:<?php the_sub_field('telephone'); ?>"><?php the_sub_field('telephone'); ?></a>
+		</li>
+	<?php endif; ?>
 <?php foreach ($links as $key => $link):  ?>
 	<li>
 		<a href="<?php echo esc_url($link); ?>" target="_blank" rel="noopener"><?php echo  proper_strip_protocol($link); ?></a>
 	</li>
 	<?php endforeach; ?>
 </ul>
-<?php endif; ?>
 
 <?php the_sub_field('opening_hours'); ?>
 
