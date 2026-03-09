@@ -6,7 +6,7 @@ $link = get_post_type_archive_link('organisation');
 
 <div class="membersLink-wrapper">
 <a href="<?php echo $link?>">
-	<img src="https://placehold.co/600x400" alt="PLACEHOLDER"/>
+	<img src="https://placehold.co/800x600" alt="PLACEHOLDER"/>
 	</a>
 	<a class="membersLink" href="<?php echo $link?>">
 		<h2>

@@ -499,7 +499,7 @@ figcaption,
 .languageSwitcher {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 var(--length-spacer);
   display: flex;
   grid-row: 2;
 }
@@ -933,12 +933,14 @@ figcaption,
 
 .page-wrapper {
   display: grid;
+  gap: var(--length-spacer);
   max-width: var(--length-site-max);
   margin: auto;
+  padding-inline: var(--length-spacer);
 }
 @media (width > 50rem) {
   .page-wrapper {
-    grid-template-columns: auto clamp(20rem, 33vw, 50rem);
+    grid-template-columns: auto clamp(20rem, 33vw, 40rem);
   }
 }
 
@@ -951,7 +953,7 @@ figcaption,
 
 .sidebar {
   align-content: start;
-  padding: var(--length-spacer);
+  padding-block: var(--length-spacer);
   container-name: sidebar;
   container-type: inline-size;
   display: grid;

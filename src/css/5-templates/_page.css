@@ -1,10 +1,12 @@
 .page-wrapper {
   display: grid;
+  gap:var(--length-spacer);
   max-width: var(--length-site-max);
   margin: auto;
+  padding-inline: var(--length-spacer);
 
   @media (width > 50rem) {
-    grid-template-columns: auto clamp(20rem, 33vw, 50rem);
+    grid-template-columns: auto clamp(20rem, 33vw, 40rem);
   }
 }
 
@@ -17,7 +19,7 @@
 
 .sidebar {
   align-content: start;
-  padding: var(--length-spacer);
+  padding-block: var(--length-spacer);
   container-name: sidebar;
   container-type: inline-size;
   display: grid;
