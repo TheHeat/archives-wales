@@ -1,0 +1,56 @@
+.relatedprojects{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	gap: var(--length-spacer);
+}
+
+
+/* Partners & Funders */
+
+
+.projectFunders-wrapper{
+	background-color: var(--color-green);
+	color: var(--color-green-contrast);
+	border-radius: var(--length-border-radius);
+	overflow: clip;
+}
+
+.projectSidebar-title{
+	font-size: smaller;
+	text-transform: uppercase;
+	font-family: var(--font-mono);
+	letter-spacing: 0.05em;
+	padding:.5em 1em;
+}
+
+.projectPartners-wrapper{
+	background-color: var(--color-red);
+	color: var(--color-red-contrast);
+	border-radius: var(--length-border-radius);
+	overflow: clip;
+}
+
+.projectSidebar-list{
+	margin: 0;
+	padding: .5em .5em 1em;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+		background-color: white;
+		gap:.5em;
+		justify-content: center;
+
+
+}
+
+.projectSidebar-logo{
+	display: block;
+	height: 4rem;
+	width: auto;
+	width: 10rem;
+	background-color: white;
+	object-fit: contain;
+	max-width: 100%;
+}

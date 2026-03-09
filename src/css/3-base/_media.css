@@ -49,7 +49,8 @@ iframe[src*=vimeo] {
 
 
 .featuredImage-wrapper,
-.wp-block-image{
+.wp-block-image,
+.aligncenter{
   display: flex;
   padding: 0;
   flex-direction: column;
@@ -64,7 +65,8 @@ iframe[src*=vimeo] {
 }
 
 figcaption,
-.wp-block-image :where(figcaption){
+.wp-block-image :where(figcaption),
+[class^="wp-image"] :where(figcaption) {
   font-family: var(--font-mono);
   display:inline-block;
   font-size:smaller;
@@ -73,4 +75,9 @@ figcaption,
   color:var(--color-white);
   padding: 0.25em 1em;
   margin: 0;
+
+
+  a{
+    display: contents;
+  }
 }

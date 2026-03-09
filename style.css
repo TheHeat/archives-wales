@@ -8,30 +8,6 @@ Version: 1
 Tags:
 
 */
-/* WordPress default image and caption styles */
-img[class*=wp-image-],
-.wp-caption {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-}
-
-.alignleft {
-  float: left;
-  margin: 0 1em 1em 0;
-}
-
-.alignright {
-  float: right;
-  margin: 0 0 1em 1em;
-}
-
-.wp-post-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 /*
  * Hide only visually, but have it available for screen readers: h5bp.com/v
  */
@@ -431,7 +407,8 @@ iframe[src*=vimeo] {
 }
 
 .featuredImage-wrapper,
-.wp-block-image {
+.wp-block-image,
+.aligncenter {
   display: flex;
   padding: 0;
   flex-direction: column;
@@ -446,7 +423,8 @@ iframe[src*=vimeo] {
 }
 
 figcaption,
-.wp-block-image :where(figcaption) {
+.wp-block-image :where(figcaption),
+[class^=wp-image] :where(figcaption) {
   font-family: var(--font-mono);
   display: inline-block;
   font-size: smaller;
@@ -455,6 +433,9 @@ figcaption,
   color: var(--color-white);
   padding: 0.25em 1em;
   margin: 0;
+  a {
+    display: contents;
+  }
 }
 
 .siteHeader-wrapper {
@@ -848,6 +829,58 @@ figcaption,
 
 .page-numbers.current {
   background-color: var(--color-green);
+}
+
+.relatedprojects {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--length-spacer);
+}
+
+/* Partners & Funders */
+.projectFunders-wrapper {
+  background-color: var(--color-green);
+  color: var(--color-green-contrast);
+  border-radius: var(--length-border-radius);
+  overflow: clip;
+}
+
+.projectSidebar-title {
+  font-size: smaller;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+  padding: 0.5em 1em;
+}
+
+.projectPartners-wrapper {
+  background-color: var(--color-red);
+  color: var(--color-red-contrast);
+  border-radius: var(--length-border-radius);
+  overflow: clip;
+}
+
+.projectSidebar-list {
+  margin: 0;
+  padding: 0.5em 0.5em 1em;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  gap: 0.5em;
+  justify-content: center;
+}
+
+.projectSidebar-logo {
+  display: block;
+  height: 4rem;
+  width: auto;
+  width: 10rem;
+  background-color: white;
+  object-fit: contain;
+  max-width: 100%;
 }
 
 .memberTeaser {
