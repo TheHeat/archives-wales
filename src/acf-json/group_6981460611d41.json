@@ -70,7 +70,7 @@
         {
             "key": "field_6981472c18dbf",
             "label": "Member Fields",
-            "name": "",
+            "name": "member_fields",
             "aria-label": "",
             "type": "group",
             "instructions": "",
@@ -92,11 +92,21 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_698146fc18dbe",
-                    "label": "Address",
-                    "name": "address",
+                    "center_lat": 53.550640000000001,
+                    "center_lng": 10.00065,
+                    "zoom": 12,
+                    "height": 400,
+                    "return_format": "leaflet",
+                    "allow_map_layers": 1,
+                    "max_markers": "",
+                    "layers": [
+                        "OpenStreetMap.Mapnik"
+                    ],
+                    "key": "field_69af1dfdeb96c",
+                    "label": "map",
+                    "name": "map",
                     "aria-label": "",
-                    "type": "google_map",
+                    "type": "open_street_map",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -105,18 +115,15 @@
                         "class": "",
                         "id": ""
                     },
-                    "center_lat": "",
-                    "center_lng": "",
-                    "zoom": "",
-                    "height": "",
-                    "allow_in_bindings": 0
+                    "allow_in_bindings": 0,
+                    "leaflet_map": "{\"lat\":53.550640000000001,\"lng\":10.00065,\"zoom\":12,\"layers\":[\"OpenStreetMap.Mapnik\"],\"markers\":[]}"
                 },
                 {
-                    "key": "field_6989eae300ef4",
-                    "label": "Email",
-                    "name": "email",
+                    "key": "field_698146fc18dbe",
+                    "label": "Address",
+                    "name": "address",
                     "aria-label": "",
-                    "type": "email",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -126,10 +133,32 @@
                         "id": ""
                     },
                     "default_value": "",
+                    "maxlength": "",
                     "allow_in_bindings": 0,
                     "placeholder": "",
                     "prepend": "",
                     "append": ""
+                },
+                {
+                    "key": "field_698b158005e64",
+                    "label": "Opening hours",
+                    "name": "opening_hours",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": ""
                 },
                 {
                     "key": "field_698146d718dbd",
@@ -147,6 +176,26 @@
                     },
                     "default_value": "",
                     "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_6989eae300ef4",
+                    "label": "Email",
+                    "name": "email",
+                    "aria-label": "",
+                    "type": "email",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
                     "allow_in_bindings": 0,
                     "placeholder": "",
                     "prepend": "",
@@ -259,27 +308,6 @@
                     "default_value": "",
                     "allow_in_bindings": 0,
                     "placeholder": ""
-                },
-                {
-                    "key": "field_698b158005e64",
-                    "label": "Opening hours",
-                    "name": "opening_hours",
-                    "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "allow_in_bindings": 0,
-                    "rows": "",
-                    "placeholder": "",
-                    "new_lines": ""
                 }
             ]
         }
@@ -303,5 +331,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1770732816
+    "modified": 1773093377
 }

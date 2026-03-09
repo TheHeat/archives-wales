@@ -1,5 +1,14 @@
 <?php if(is_post_type_archive('organisation')): ?> 
+
+
+<?php
+	
+	$logo_id = get_field('logo');
+	$logo = $logo_id ? wp_get_attachment_image($logo_id, 'medium', null, array('class' => 'memberTeaser-logo')) : get_proper_svg('fallback-organisation', 'memberTeaser-logo fallback', '');
+	
+	?>	
 <div <?php post_class( 'memberTeaser big'); ?>>
+	<?php echo $logo; ?>
 	<h2>
 		<a href="<?php the_permalink();?>">
 			<?php the_title(); ?>

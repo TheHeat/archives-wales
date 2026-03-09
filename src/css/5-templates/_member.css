@@ -1,0 +1,24 @@
+.memberMeta-wrapper{
+	padding: .5em;
+	background-color: var(--color-ground);
+	border-radius: var(--length-border-radius);
+	font-family: var(--font-mono);
+	display: grid;
+	gap: 1em;
+}
+
+.memberMeta-socials{
+	list-style: none;
+	margin: 0;
+	padding:0;
+	display: flex;
+	gap: .5em;
+	flex-wrap: wrap;
+}
+
+.memberMeta-social-icon{
+	display:block;
+	aspect-ratio: 1;
+	width:2.5em;
+	height: auto;
+}

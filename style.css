@@ -918,6 +918,10 @@ figcaption,
 .memberTeaser {
   background-color: var(--color-white);
   border-left: solid 0.25em var(--color-red);
+  display: grid;
+  grid-template-columns: 8em 1fr;
+  gap: 1em;
+  align-items: center;
   a {
     display: block;
     text-decoration: none;
@@ -926,7 +930,18 @@ figcaption,
   }
 }
 
+.memberTeaser-logo {
+  aspect-ratio: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background-color: white;
+  padding: 0.5em;
+}
+
 .memberTeaser.small {
+  grid-template-columns: unset;
   h3 {
     line-height: 1.2;
     font-size: large;
@@ -1143,4 +1158,29 @@ figcaption,
   display: grid;
   gap: var(--length-spacer);
   list-style: none;
+}
+
+.memberMeta-wrapper {
+  padding: 0.5em;
+  background-color: var(--color-ground);
+  border-radius: var(--length-border-radius);
+  font-family: var(--font-mono);
+  display: grid;
+  gap: 1em;
+}
+
+.memberMeta-socials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.memberMeta-social-icon {
+  display: block;
+  aspect-ratio: 1;
+  width: 2.5em;
+  height: auto;
 }

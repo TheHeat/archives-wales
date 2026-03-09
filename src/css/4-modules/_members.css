@@ -1,6 +1,10 @@
 .memberTeaser {
 	background-color: var(--color-white);
 	border-left: solid 0.25em var(--color-red);
+	display: grid;
+	grid-template-columns: 8em 1fr;
+	gap: 1em;
+	align-items: center;
 
 	a {
 		display: block;
@@ -10,7 +14,18 @@
 	}
 }
 
+.memberTeaser-logo {
+	aspect-ratio: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	background-color: white;
+	padding: .5em;
+}
+
 .memberTeaser.small {
+	grid-template-columns: unset;
 	h3 {
 		line-height: 1.2;
 		font-size: large;
@@ -29,5 +44,4 @@
 		grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 	}
 }
-
 
