@@ -1,5 +1,4 @@
 .siteNav-wrapper {
-  padding: calc(var(--length-spacer) - 0.5em);
   
   .menu {
     list-style: none;
@@ -18,7 +17,7 @@
   .menu-item {
     min-width: max-content;
     white-space: nowrap;
-    padding: 0.5rem;
+    padding: 0.5em 0 0.5em 0.5em;
   }
 
   .menu-item.current-menu-item {
@@ -30,7 +29,7 @@
 }
 
 /* // pre hiding */
-.siteNav-wrapper.squish-ready {
+/* .siteNav-wrapper.squish-ready {
   .menu {
     flex-wrap: wrap;
   }
@@ -45,8 +44,8 @@
     width: 1px;
     height: 1px;
   }
-}
-
+} */
+/* 
 .siteNav-wrapper.too-small.is-open {
   .menu {
     margin: auto;
@@ -59,4 +58,4 @@
     flex-direction: column;
     text-align: center;
   }
-}
+} */
