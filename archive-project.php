@@ -12,9 +12,13 @@ $labels = $archive_type->labels;
 
 ?>
 
-<div class="archive-header">
 
+<div class="archive-header-wrapper">
+
+	<div class="archive-header">
+		
 		<h1><?php echo $archive_type->labels->archives; ?></h1>	
+	</div>
 </div>
 
 <div class="archive-content">	

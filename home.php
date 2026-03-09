@@ -15,9 +15,13 @@ get_header();
 		<?php _e('Stay up to date with the latest news from across the network', 'acaw'); ?>
 </div>
 </div>
-<div class="archiveSearchbar">
-	<?php get_template_part( 'template-parts/search-form' ); ?>
+
+<div class="archiveSearchbar-wrapper">
+	<div class="archiveSearchbar">
+		<?php get_template_part( 'template-parts/search-form' ); ?>
+	</div>
 </div>
+
 <div class="archive-content">
 
 	
