@@ -69,6 +69,7 @@ h6 {
 }
 
 h1 {
+  max-width: 40ch;
   font-size: clamp(2rem, 1.5rem + 3vw, 3.5rem);
   font-weight: 300;
   line-height: 1.2;
@@ -963,6 +964,40 @@ figcaption,
 .siteFooter-wrapper {
   position: sticky;
   top: 100lvh;
+}
+
+.frontPage-hero-wrapper {
+  background-color: var(--color-surface);
+}
+
+.frontPage-hero {
+  max-width: var(--length-site-max);
+  margin: auto;
+  padding: var(--length-spacer);
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: var(--length-spacer);
+}
+@media (width > 30rem) {
+  .frontPage-hero {
+    display: grid;
+    grid-template-columns: auto clamp(25%, 30rem, 33%);
+  }
+}
+
+.frontPage-hero-title {
+  font-family: var(--font-mono);
+  margin: 0;
+}
+
+.frontPage-hero-image {
+  display: block;
+  aspect-ratio: 1;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--length-border-radius);
 }
 
 .page-wrapper {
