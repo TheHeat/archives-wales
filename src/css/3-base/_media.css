@@ -78,6 +78,6 @@ figcaption,
 
 
   a{
-    display: contents;
+    color: var(--color-blue-light);
   }
 }

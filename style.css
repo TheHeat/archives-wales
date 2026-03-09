@@ -32,6 +32,7 @@ Tags:
   --color-green-contrast: var(--color-white);
   --color-blue: #297d9f;
   --color-blue-contrast: var(--color-white);
+  --color-blue-light: #b5e2f4;
   --length-spacer: clamp(1rem, 0.5rem + 1vw, 2rem);
   --length-border-radius: 0.25rem;
   --length-site-max:120rem;
@@ -435,7 +436,7 @@ figcaption,
   padding: 0.25em 1em;
   margin: 0;
   a {
-    display: contents;
+    color: var(--color-blue-light);
   }
 }
 
