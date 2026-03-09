@@ -30,8 +30,18 @@ $website_url = get_field('website_url');
 
 <?php the_sub_field('map'); ?>
 <?php the_sub_field('address'); ?>
-<?php the_sub_field('email'); ?>
-<?php the_sub_field('telephone'); ?>	
+
+<?php if(get_sub_field('email')): ?>
+	<div>
+		<a href="mailto:<?php the_sub_field('email'); ?>"><?php the_sub_field('email'); ?></a>
+	</div>
+<?php endif; ?>
+
+<?php if(get_sub_field('telephone')): ?>
+	<div>
+		<a href="tel:<?php the_sub_field('telephone'); ?>"><?php the_sub_field('telephone'); ?></a>
+	</div>
+<?php endif; ?>
 
 
 <?php if(count($links) > 0): ?>
