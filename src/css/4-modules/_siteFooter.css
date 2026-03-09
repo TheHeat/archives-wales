@@ -1,10 +1,10 @@
 .siteFooter-wrapper {
   background-color: var(--color-black);
   color: var(--color-white);
-  padding: var(--length-spacer);
 }
 
 .siteFooter-inner {
+  padding: var(--length-spacer);
   max-width:var(--length-site-max);
   margin:auto;
   display: grid;

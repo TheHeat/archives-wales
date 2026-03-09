@@ -49,7 +49,7 @@ $posts = new WP_Query($args);
   <ol class="relatedPosts">
     <?php while ($posts->have_posts()) : $posts->the_post(); ?>
       <li class="relatedPost">
-        <?php get_template_part('template-parts/post-teaser-slim'); ?>
+        <?php get_template_part('template-parts/post-teaser'); ?>
       </li>
     <?php endwhile; ?>
 

@@ -1,8 +1,10 @@
 .postTeaser {
-	padding: var(--length-spacer);
+	padding: calc(var(--length-spacer)/2) var(--length-spacer);
 	background-color: var(--color-white);
 	border-left: solid 0.25em var(--color-red);
 	container-type: inline-size;
+	border-top-right-radius: var(--length-border-radius);
+	border-bottom-right-radius: var(--length-border-radius);
 }
 
 .postTeaser-inner {
@@ -42,6 +44,9 @@
 	padding:0;
 	display:grid;
 	gap:1em;
+	@container (width > 40rem) {
+		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	}
 }
 
 /* Single */

@@ -29,8 +29,23 @@ get_header(); ?>
 		<?php endwhile;?>
 	<?php endif;	?>
 
-	<div class="frontPage-posts">
-		<?php get_template_part( 'template-parts/related-posts' ); ?>
+
+	<div class="frontPage-map-wrapper">
+		<section class="frontPage-map">
+				<img class="frontPage-map-image" src="https://placehold.co/800x600" alt="PLACEHOLDER"/>
+	<div>
+		<h2>Title</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+	</div>	
+		</section>
+	</div>
+
+	<div class="frontPage-posts-wrapper">
+
+		<div class="frontPage-posts">
+			<?php get_template_part( 'template-parts/related-posts' ); ?>
+		</div>
 	</div>
 </div>
+
 <?php get_footer(); ?>
