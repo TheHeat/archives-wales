@@ -9,8 +9,8 @@ get_header();
 
 ?>
 
-<div class="archive-header">
-	<div class="archive-header-inner">
+<div class="archive-header-wrapper">
+	<div class="archive-header">
 		<h1><?php _e( 'News', 'acaw' ); ?></h1>
 		<?php _e('Stay up to date with the latest news from across the network', 'acaw'); ?>
 </div>
