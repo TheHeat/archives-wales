@@ -31,9 +31,6 @@ $website_url = get_field('website_url');
 <?php the_sub_field('map'); ?>
 <?php the_sub_field('address'); ?>
 
-
-
-
 	<ul class="memberMeta-links">
 	<?php if(get_sub_field('email')): ?>
 		<li>
@@ -53,10 +50,6 @@ $website_url = get_field('website_url');
 	<?php endforeach; ?>
 </ul>
 
-<?php the_sub_field('opening_hours'); ?>
-
-
-
 <?php if (count($socials) > 0): ?>
 <ul class="memberMeta-socials">
 	<?php foreach ( $socials as $social ) : ?>
@@ -68,6 +61,15 @@ $website_url = get_field('website_url');
 			<?php endforeach;?>
 		</ul>
 <?php endif; ?>
+
+
+<?php if (get_sub_field('opening_hours')): ?>
+<div class="memberMeta-openingHours">
+	<h2><?php _e('Opening Hours', 'acaw'); ?></h2>
+	<?php echo apply_filters('the_content', get_sub_field('opening_hours')); ?>
+</div>
+<?php endif; ?>
+
 
 
 </div>

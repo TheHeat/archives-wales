@@ -145,6 +145,7 @@ body {
   padding: 0;
   line-height: 1.8;
   font-size: clamp(1rem, 1rem + 1vw, 1.3rem);
+  word-break: break-word;
 }
 
 /**
@@ -1161,7 +1162,7 @@ figcaption,
 }
 
 .memberMeta-wrapper {
-  padding: 0.5em;
+  padding: 1rem;
   background-color: var(--color-ground);
   border-radius: var(--length-border-radius);
   font-family: var(--font-mono);
@@ -1183,4 +1184,12 @@ figcaption,
   aspect-ratio: 1;
   width: 2.5em;
   height: auto;
+}
+
+.memberMeta-openingHours {
+  padding: 1rem;
+  border-top: dashed thick var(--color-surface);
+  padding: 1rem;
+  font-size: smaller;
+  margin-inline: -1rem;
 }
