@@ -58,11 +58,6 @@ background-color: var(--color-surface);
 }
 
 
-.frontPage-posts-wrapper{
-	background-color: var(--color-black);
-	border-top: solid thin var(--color-surface);
-		border-bottom: solid thin var(--color-surface);
-}
 
 .frontPage-posts{
 	container-type: inline-size;

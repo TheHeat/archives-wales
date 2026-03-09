@@ -1034,12 +1034,6 @@ figcaption,
   border-radius: var(--length-border-radius);
 }
 
-.frontPage-posts-wrapper {
-  background-color: var(--color-black);
-  border-top: solid thin var(--color-surface);
-  border-bottom: solid thin var(--color-surface);
-}
-
 .frontPage-posts {
   container-type: inline-size;
   max-width: var(--length-site-max);
