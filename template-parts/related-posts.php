@@ -6,13 +6,13 @@ $related_posts = get_field('related_posts');
 
 // if we're looking at a single project
 // only display posts that refer to this project
-if($type === 'project'){
+if($type === 'project' ){
 
   $args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
-    'post__not_in' => array($this_guy),
     'ignore_sticky_posts' => 1,
+    'post__not_in' => array($this_guy),
     'meta_query' => array(
       'relation' => 'AND',
       array(
@@ -24,7 +24,27 @@ if($type === 'project'){
     )
     
   );
-}else{
+}elseif( isset($args['project']) ){
+
+  $args = array(
+    'post_type' => 'post',
+    'post_status' => 'publish',
+    'ignore_sticky_posts' => 1,
+    'post__not_in' => array($this_guy),
+    'meta_query' => array(
+      'relation' => 'AND',
+      array(
+        'key'     => 'related_projects',
+        'value'   => '"' . $args['project'] . '"',
+        'compare' => 'LIKE',
+  
+      ),
+    )
+    
+  );
+}
+
+else{
   
 // if there are related posts specified display them
 // if not, pick 2 off the top
