@@ -46,6 +46,7 @@ Tags:
 .meta {
   padding: 0.5em 0.75em;
   background-color: var(--color-ground);
+  color: var(--color-text);
   width: fit-content;
   border-radius: var(--length-border-radius);
   font-family: var(--font-mono);
@@ -85,6 +86,10 @@ h1 {
 a {
   background: transparent;
   color: var(--color-blue);
+}
+
+a:has(img) {
+  display: contents;
 }
 
 /**
@@ -864,6 +869,48 @@ figcaption,
   background-color: var(--color-green);
 }
 
+.projectTeaser {
+  border-radius: var(--length-border-radius);
+  overflow: clip;
+  background-color: var(--color-surface);
+  display: block;
+}
+
+.projectTeaser-header {
+  background-color: var(--color-green);
+  color: var(--color-green-contrast);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto max-content;
+  align-items: start;
+  gap: 1em;
+}
+
+.projectTeaser-title {
+  font-size: larger;
+  font-weight: bold;
+  margin: 0;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.projectTeaser-image {
+  display: block;
+  aspect-ratio: 3/1;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.projectTeaser-content {
+  padding: 1rem;
+  p:first-child {
+    margin-top: 0;
+  }
+}
+
 .relatedprojects {
   margin: 0;
   padding: 0;
@@ -901,16 +948,15 @@ figcaption,
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   background-color: white;
-  gap: 0.5em;
-  justify-content: center;
+  gap: 1em;
 }
 
 .projectSidebar-logo {
   display: block;
   height: 4rem;
   width: auto;
-  width: 10rem;
   background-color: white;
   object-fit: contain;
   max-width: 100%;

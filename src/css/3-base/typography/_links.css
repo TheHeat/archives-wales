@@ -8,6 +8,10 @@ a {
   color: var(--color-blue);
 }
 
+a:has(img) {
+  display: contents;
+}
+
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */

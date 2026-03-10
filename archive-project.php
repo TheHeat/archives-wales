@@ -25,7 +25,7 @@ $labels = $archive_type->labels;
 
 	
 	<?php if ( have_posts() ) : ?>
-		<ol class="archiveList">
+		<ol class="archiveGrid">
 			<?php while ( have_posts() ) : ?>
 				<?php the_post(); ?>
 				<li>

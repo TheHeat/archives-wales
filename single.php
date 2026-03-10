@@ -22,16 +22,11 @@ get_header(); ?>
 
 			<?php the_content(); ?>
 			<?php edit_post_link( __( 'Edit this entry', 'acaw' ), '<p>', '</p>' ); ?>
-			<?php
-			wp_link_pages(
-				array(
-					'before'         => __( 'Pages: ', 'acaw' ),
-					'next_or_number' => 'number',
-				)
-			);
-			?>
-					<?php get_template_part( 'post', 'meta' ); ?>
-		</main>
+
+			<?php get_template_part('template-parts/post-project-funders'); ?>
+
+
+</main>
 
 
 
