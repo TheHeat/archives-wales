@@ -1,4 +1,5 @@
-<?
+
+<?php
 
 $projects = get_field('related_projects'); ?>
 
