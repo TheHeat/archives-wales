@@ -1227,6 +1227,8 @@ figcaption,
   border-radius: var(--length-border-radius);
   overflow: clip;
   margin: 0;
+  justify-content: stretch;
+  background-color: var(--color-text);
 }
 
 .memberMeta-socials {

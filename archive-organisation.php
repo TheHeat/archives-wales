@@ -6,17 +6,33 @@
  * @package WordPress
  */
 
+
 get_header();
 
 $archive_type = get_queried_object();
 $labels = $archive_type->labels;
 
+
+
+
+while ( have_posts() ) : the_post(); 
+	while( have_rows('member_fields') ) : the_row();
+		$markers[] = get_sub_field('map')['markers'][0] ?? [];
+	endwhile; 
+endwhile; 
+
+
 ?>
+
+
 
 <div class="archive-header-wrapper">
 
 	<div class="archive-header">
 		<div class="archive-header-inner">
+
+		<?php get_template_part('template-parts/map', null, ['markers' => $markers]); ?>
+
 			<h1><?php echo $archive_type->labels->archives; ?></h1>	
 		</div>
 </div>
@@ -42,5 +58,12 @@ $labels = $archive_type->labels;
 				<?php endif; ?>
 			</div>
 
+<?php
+// Example: get pins for all organisations
+$pins = get_field('map_data', 'option'); // Adjust field name and context as needed
+if ($pins && isset($pins['markers'])) {
+    get_template_part('template-parts/map', null, array('pins' => array($pins)));
+}
+?>
 
 <?php get_footer(); ?>

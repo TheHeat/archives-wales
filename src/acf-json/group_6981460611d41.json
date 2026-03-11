@@ -96,7 +96,7 @@
                     "center_lng": 10.00065,
                     "zoom": 12,
                     "height": 400,
-                    "return_format": "leaflet",
+                    "return_format": "raw",
                     "allow_map_layers": 1,
                     "max_markers": "",
                     "layers": [
@@ -331,5 +331,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1773093377
+    "modified": 1773246327
 }

@@ -4,6 +4,7 @@
 	overflow: clip;
 	font-family: var(--font-mono);
 	display: grid;
+	
 }
 
 .memberMeta-location-wrapper{
@@ -12,11 +13,14 @@
 }
 
 .memberMeta-location{
-
 	border-radius: var(--length-border-radius);
 	overflow: clip;
 	margin: 0;
+	justify-content: stretch;
+	background-color: var(--color-text);
 }
+
+
 
 .memberMeta-socials{
 	list-style: none;

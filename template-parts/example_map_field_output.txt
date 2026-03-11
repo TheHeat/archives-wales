@@ -1,0 +1,105 @@
+Array
+(
+    [lat] => 52.4144637
+    [lng] => -4.0685073
+    [zoom] => 12
+    [markers] => Array
+        (
+            [0] => Array
+                (
+                    [label] => Cathedral View, SY23 1HH Aberystwyth, Wales United Kingdom
+                    [default_label] => Cathedral View, SY23 1HH Aberystwyth, Wales United Kingdom
+                    [lat] => 52.4144637
+                    [lng] => -4.0685073
+                    [geocode] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => National Library of Wales, Cathedral View, Llanbadarn Fawr, Aberystwyth, Ceredigion, Wales, SY23 1HH, United Kingdom
+                                    [html] => Cathedral View, SY23 1HH Aberystwyth, Wales United Kingdom
+                                    [bbox] => Array
+                                        (
+                                            [_southWest] => Array
+                                                (
+                                                    [lat] => 52.4139661
+                                                    [lng] => -4.0688958
+                                                )
+
+                                            [_northEast] => Array
+                                                (
+                                                    [lat] => 52.414971
+                                                    [lng] => -4.066707
+                                                )
+
+                                        )
+
+                                    [center] => Array
+                                        (
+                                            [lat] => 52.4144637
+                                            [lng] => -4.0685073
+                                        )
+
+                                    [properties] => Array
+                                        (
+                                            [place_id] => 256425357
+                                            [licence] => Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright
+                                            [osm_type] => relation
+                                            [osm_id] => 553399
+                                            [lat] => 52.4144637
+                                            [lon] => -4.0685073
+                                            [class] => amenity
+                                            [type] => library
+                                            [place_rank] => 30
+                                            [importance] => 0.58752831731308
+                                            [addresstype] => amenity
+                                            [name] => National Library of Wales
+                                            [display_name] => National Library of Wales, Cathedral View, Llanbadarn Fawr, Aberystwyth, Ceredigion, Wales, SY23 1HH, United Kingdom
+                                            [address] => Array
+                                                (
+                                                    [amenity] => National Library of Wales
+                                                    [road] => Cathedral View
+                                                    [suburb] => Llanbadarn Fawr
+                                                    [town] => Aberystwyth
+                                                    [county] => Ceredigion
+                                                    [ISO3166-2-lvl6] => GB-CGN
+                                                    [state] => Wales
+                                                    [ISO3166-2-lvl4] => GB-WLS
+                                                    [postcode] => SY23 1HH
+                                                    [country] => United Kingdom
+                                                    [country_code] => gb
+                                                    [building] => 
+                                                    [house_number] => 
+                                                    [city] => 
+                                                    [village] => 
+                                                    [hamlet] => 
+                                                )
+
+                                            [boundingbox] => Array
+                                                (
+                                                    [0] => 52.4139661
+                                                    [1] => 52.414971
+                                                    [2] => -4.0688958
+                                                    [3] => -4.066707
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [uuid] => marker_69b1a75438c23
+                )
+
+        )
+
+    [address] => Cathedral View, SY23 1HH Aberystwyth, Wales United Kingdom
+    [layers] => Array
+        (
+            [0] => OpenStreetMap.Mapnik
+        )
+
+    [version] => 1.6.1
+    [center_lat] => 52.4144637
+    [center_lng] => -4.0685073
+)
