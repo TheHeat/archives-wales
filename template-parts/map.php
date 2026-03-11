@@ -24,7 +24,13 @@ crossorigin=""></script>
 
 
 <style>
-	#map { height: 400px; }
+	#map { 
+		aspect-ratio: 16/9;	
+		width:100%;
+	height:auto; 
+	max-height: 50vh;
+	border-radius: .2em;
+}
 	</style>
 
 
@@ -46,9 +52,12 @@ crossorigin=""></script>
 
 			<?php if (!empty($markers)): ?>
 				<?php foreach ($markers as $marker): ?>
-					L.marker([<?php echo $marker['lat']; ?>, <?php echo $marker['lng']; ?>])
+
+					<?php if(!empty($marker['lat']) && !empty($marker['lng'])): ?>
+						L.marker([<?php echo $marker['lat']; ?>, <?php echo $marker['lng']; ?>])
 						.addTo(map)
 						.bindPopup('<?php echo addslashes($marker['geocode'][0]["name"] ?? $marker["label"] ?? ""); ?>');
+					<?php endif; ?>	
 			<?php endforeach; ?>
 			<?php endif; ?>
 
