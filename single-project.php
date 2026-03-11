@@ -11,6 +11,7 @@ get_header(); ?>
 		<main <?php post_class(); ?> id="project-<?php the_ID(); ?>">
 
 			<?php get_template_part('template-parts/featured-image'); ?>
+			<?php get_template_part('template-parts/project-dates'); ?>
 			<?php the_title( '<h1>', '</h1>' ); ?>
 
 			<?php the_content(); ?>

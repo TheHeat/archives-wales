@@ -13,9 +13,9 @@ if (!empty($start_date) || !empty($end_date)):
 	if ($start_year == $end_year) {
 		$dates_string = esc_html($start_year);
 	} elseif ($start_year && $end_year) {
-		$dates_string = esc_html($start_year . ' – ' . $end_year);
+		$dates_string = esc_html($start_year . '–' . $end_year);
 	} elseif ($start_year) {
-		$dates_string = esc_html($start_year);
+		$dates_string = esc_html($start_year) . '–';
 	} elseif ($end_year) {
 		$dates_string = esc_html($end_year);
 	}
