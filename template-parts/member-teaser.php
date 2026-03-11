@@ -4,11 +4,13 @@
 <?php
 	
 	$logo_id = get_field('logo');
-	$logo = $logo_id ? wp_get_attachment_image($logo_id, 'medium', null, array('class' => 'memberTeaser-logo')) : get_proper_svg('fallback-organisation', 'memberTeaser-logo fallback', '');
+	$logo = wp_get_attachment_image($logo_id, 'medium', null, array('class' => 'memberTeaser-logo'));
 	
 	?>	
 <div <?php post_class( 'memberTeaser big'); ?>>
-	<?php echo $logo; ?>
+	<a href="<?php the_permalink(); ?>">
+		<?php echo $logo; ?>
+	</a>
 	<h2>
 		<a href="<?php the_permalink();?>">
 			<?php the_title(); ?>

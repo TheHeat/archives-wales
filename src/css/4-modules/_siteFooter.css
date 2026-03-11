@@ -89,7 +89,10 @@
 
 .footerSocials-icon {
   display: inline-block;
+  vertical-align: baseline;
+  aspect-ratio: 1;
   width: 1em;
   height: 1em;
   margin-right: 0.2em;
+  transform: translateY(.1em);
 }

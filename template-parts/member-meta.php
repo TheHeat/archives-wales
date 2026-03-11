@@ -5,12 +5,20 @@ $website_url = get_field('website_url');
 	while( have_rows('member_fields') ): the_row();
 
 	$links_raw = [
-		'website' => $website_url,
-		'catalogue' => get_sub_field('catalogue_url'),
+		[
+			'label' => __('Website', 'acaw'),
+			'url' => $website_url,
+			'icon' => 'link',
+		],
+		[
+			'label' => __('Catalogue', 'acaw'),
+			'url' => get_sub_field('catalogue_url'),
+			'icon' => 'catalogue',
+		]
 	];
 
 		$links = array_filter($links_raw, function($link) {
-			return !empty($link);
+			return !empty($link['url']);
 		});
 
 		$socials_raw = [
@@ -27,40 +35,47 @@ $website_url = get_field('website_url');
 	?>
 
 <div class="memberMeta-wrapper">
-
-<?php the_sub_field('map'); ?>
-<?php the_sub_field('address'); ?>
-
-	<ul class="memberMeta-links">
-	<?php if(get_sub_field('email')): ?>
-		<li>
-			<a href="mailto:<?php the_sub_field('email'); ?>"><?php the_sub_field('email'); ?></a>
-		</li>
-	<?php endif; ?>
-	
-	<?php if(get_sub_field('telephone')): ?>
-		<li>
-			<a href="tel:<?php the_sub_field('telephone'); ?>"><?php the_sub_field('telephone'); ?></a>
-		</li>
-	<?php endif; ?>
-<?php foreach ($links as $key => $link):  ?>
-	<li>
-		<a href="<?php echo esc_url($link); ?>" target="_blank" rel="noopener"><?php echo  proper_strip_protocol($link); ?></a>
-	</li>
-	<?php endforeach; ?>
-</ul>
-
-<?php if (count($socials) > 0): ?>
-<ul class="memberMeta-socials">
-	<?php foreach ( $socials as $social ) : ?>
-			<li>
-				<a href="<?php echo esc_url( $social['url'] ); ?>" target="_blank" rel="noopener">
-					<img class="memberMeta-social-icon" src="<?php echo get_template_directory_uri() . '/src/svg/' . $social['icon'] . '.svg'; ?>" alt="<?php echo esc_attr( $social['icon'] ); ?>">
-				</a>
-			</li>
-			<?php endforeach;?>
-		</ul>
-<?php endif; ?>
+	<div class="memberMeta-contacts">
+		<?php get_template_part('template-parts/organisation-logo');?>
+		<ul class="memberMeta-links">
+					<?php if(get_sub_field('email')): ?>
+						<li>
+							<a class="button email" href="mailto:<?php the_sub_field('email'); ?>"><?php get_template_part('template-parts/svg', 'email'); the_sub_field('email'); ?></a>
+						</li>
+						<?php endif; ?>
+						<?php if(get_sub_field('telephone')): ?>
+							<li>
+								<a class="button phone" href="tel:<?php the_sub_field('telephone'); ?>"><?php get_template_part('template-parts/svg', 'phone'); the_sub_field('telephone'); ?></a>
+							</li>
+							<?php endif; ?>
+					<?php foreach ($links as $key => $link):  ?>
+						<li>
+							<a class="button <?php echo esc_attr($link['icon']); ?>" href="<?php echo esc_url($link['url']); ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/svg', $link['icon']); ?><?php echo esc_html($link['label']); ?></a>
+						</li>
+						<?php endforeach; ?>
+					</ul>
+					
+					<?php if (count($socials) > 0): ?>
+						<ul class="memberMeta-socials">
+							<?php foreach ( $socials as $social ) : ?>
+								<li>
+									<a href="<?php echo esc_url( $social['url'] ); ?>" target="_blank" rel="noopener">
+										<?php get_template_part('template-parts/svg', $social['icon']); ?>
+									</a>
+								</li>
+								<?php endforeach;?>
+							</ul>
+							<?php endif; ?>
+							
+						</div>
+<div class="memberMeta-location-wrapper">
+	<figure class="memberMeta-location">
+		<?php the_sub_field('map'); ?>
+		<figcaption>
+			<?php the_sub_field('address'); ?>
+		</figcaption>
+	</figure>
+</div>
 
 
 <?php if (get_sub_field('opening_hours')): ?>
