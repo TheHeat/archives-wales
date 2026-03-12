@@ -1,0 +1,8 @@
+.leafletMap { 
+	aspect-ratio: 16/9;	
+	width:100%;
+	height:auto; 
+	max-height: 50vh;
+	border-radius: .2em;
+	overflow: clip;
+}

@@ -70,6 +70,7 @@ $website_url = get_field('website_url');
 						</div>
 <div class="memberMeta-location-wrapper">
 	<figure class="memberMeta-location">
+		
 		<?php get_template_part('template-parts/map', null, ['markers' => get_sub_field('map')['markers']]); ?>
 		<figcaption>
 			<?php the_sub_field('address'); ?>

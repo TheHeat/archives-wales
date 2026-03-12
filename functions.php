@@ -27,6 +27,15 @@ function acaw_scripts_styles() {
 
    wp_enqueue_style('acaw-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
+   // Enqueue Vite-built JS bundle
+   wp_enqueue_script(
+	   'acaw-main',
+	   get_template_directory_uri() . '/build/main.js',
+	   array('wp-element'),
+	   null,
+	   true
+   );
+
 
 	// /**
 	// * Load Comments

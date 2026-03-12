@@ -7,8 +7,11 @@
 	"license": "MIT",
 	"homepage": "",
 	"scripts": {
-		"dev": "npm run styles",
-		"styles": "sass src/css/index.scss:style.css --no-source-map --watch"
+		"start": "npm run dev:styles",
+		"dev:styles": "sass src/css/index.scss:style.css --no-source-map --watch",
+		"dev:js": "npx vite",
+		"dev": "npm run dev:styles & npm run dev:js",
+		"build": "vite build"
 	},
 	"babel": {
 		"presets": [
@@ -19,10 +22,10 @@
 		]
 	},
 	"dependencies": {
-		"@vitejs/plugin-react": "^5.1.2",
-		"browser-sync": "^2.26.12",
+		"browser-sync": "^3.0.4",
 		"fitvids": "latest",
 		"formik": "^2.2.9",
+		"leaflet": "^1.9.4",
 		"react-cookie-consent": "^7.3.1",
 		"react-file-base64": "^1.0.3",
 		"react-google-recaptcha-v3": "^1.9.7",
@@ -30,13 +33,13 @@
 		"react-share": "^4.4.0",
 		"squishMenu": "latest",
 		"vite": "^7.3.1"
-	},
+		},
 	"devDependencies": {
 		"@babel/core": "^7.17.8",
 		"@babel/plugin-proposal-class-properties": "^7.16.7",
 		"@wordpress/babel-preset-default": "^6.6.1",
 		"@wordpress/eslint-plugin": "24.0.0",
-		"@wordpress/scripts": "31.3.0",
+		"@wordpress/scripts": "^31.6.0",
 		"sass": "^1.97.3"
 	}
 }
