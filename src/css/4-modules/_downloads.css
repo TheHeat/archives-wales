@@ -1,0 +1,29 @@
+.downloads-wrapper{
+	border-top: solid thin;
+		display: grid;
+	gap: .5em;
+	padding-top: 0.5em;
+}
+
+.downloads{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: .5em;
+	align-items: center;
+}
+
+.download{
+	display: grid;
+	grid-template-columns: auto max-content;
+	padding: .5em;
+	background-color: var(--color-green);
+	color:var(--color-green-contrast);
+	border-radius: var(--length-border-radius);
+
+}
+
+.download-link{
+	color: currentColor;
+}

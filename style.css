@@ -1797,6 +1797,35 @@ figcaption,
   overflow: clip;
 }
 
+.downloads-wrapper {
+  border-top: solid thin;
+  display: grid;
+  gap: 0.5em;
+  padding-top: 0.5em;
+}
+
+.downloads {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.download {
+  display: grid;
+  grid-template-columns: auto max-content;
+  padding: 0.5em;
+  background-color: var(--color-green);
+  color: var(--color-green-contrast);
+  border-radius: var(--length-border-radius);
+}
+
+.download-link {
+  color: currentColor;
+}
+
 .siteWrapper {
   min-height: 100vh;
   /* // fix for WordPress' admin bar */
@@ -1806,10 +1835,6 @@ figcaption,
       min-height: calc(100vh - 46px);
     }
   }
-}
-
-.siteContent-wrapper {
-  padding: 2em;
 }
 
 .siteFooter-wrapper {
@@ -1887,31 +1912,36 @@ figcaption,
 
 .page-wrapper {
   display: grid;
-  gap: var(--length-spacer);
   max-width: var(--length-site-max);
   margin: auto;
-  padding-inline: var(--length-spacer);
 }
 @media (width > 50rem) {
   .page-wrapper {
+    gap: var(--length-spacer);
+    padding-inline: var(--length-spacer);
     grid-template-columns: auto clamp(20rem, 33vw, 40rem);
   }
 }
 
 .page-wrapper main {
   background-color: var(--color-surface);
-  padding: var(--length-spacer);
   max-width: 80rem;
   overflow: auto; /* Clearfix */
+  padding: var(--length-spacer);
 }
 
 .sidebar {
   align-content: start;
-  padding-block: var(--length-spacer);
   container-name: sidebar;
   container-type: inline-size;
   display: grid;
   gap: var(--length-spacer);
+  padding: var(--length-spacer);
+}
+@media (width > 50rem) {
+  .sidebar {
+    padding: var(--length-spacer) 0;
+  }
 }
 
 .archive-header-wrapper {
