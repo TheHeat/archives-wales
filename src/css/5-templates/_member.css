@@ -87,3 +87,14 @@
 		transform: translateY(.1em);
 	}
 }
+
+.member-relatedPosts{
+	padding: var(--length-spacer);
+	.relatedPosts-wrapper{
+	padding: var(--length-spacer);
+		color: var(--color-green-contrast);
+	background-color: var(--color-green);
+	container-type: inline-size;
+	display: grid;
+	gap: var(--length-spacer);
+}}

@@ -31,7 +31,7 @@ endwhile;
 	<div class="archive-header">
 		<div class="archive-header-inner">
 
-		<?php get_template_part('template-parts/map', null, ['markers' => $markers]); ?>
+		<?php if(!empty($markers)){ get_template_part('template-parts/map', null, ['markers' => $markers]); }?>
 
 			<h1><?php echo $archive_type->labels->archives; ?></h1>	
 		</div>

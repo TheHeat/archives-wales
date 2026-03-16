@@ -1,7 +1,6 @@
 import initMap from './map';
 
-
-const mapMarkers = mapData.markers || [];
+const mapMarkers = window.mapData.markers || [];
 
 initMap({
 	id: 'map',

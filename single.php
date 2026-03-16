@@ -18,14 +18,9 @@ get_header(); ?>
 				<p class="meta"><?php the_field('byline');?></p>
 				<?php endif; ?>
 			</div>
-			
-
 			<?php the_content(); ?>
-			<?php edit_post_link( __( 'Edit this entry', 'acaw' ), '<p>', '</p>' ); ?>
-
+			<?php get_template_part('template-parts/downloads');?>
 			<?php get_template_part('template-parts/post-project-funders'); ?>
-
-
 </main>
 
 

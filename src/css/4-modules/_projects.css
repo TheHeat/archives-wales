@@ -96,3 +96,11 @@
 	object-fit: contain;
 	max-width: 100%;
 }
+
+
+
+.project-relatedPosts{
+	padding: var(--length-spacer);
+	margin-top: var(--length-spacer);
+	border-top: solid thin;
+	}
