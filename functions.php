@@ -53,6 +53,8 @@ foreach ( glob( get_template_directory() . '/inc/*.php' ) as $filename ) {
 	require_once $filename;
 }
 
+require_once get_template_directory() . '/inc/acaw-organisation-map.php';
+
 add_theme_support( 'post-thumbnails' );
 
 /**

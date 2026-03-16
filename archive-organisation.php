@@ -15,11 +15,19 @@ $labels = $archive_type->labels;
 
 
 
-while ( have_posts() ) : the_post(); 
-	while( have_rows('member_fields') ) : the_row();
-		$markers[] = get_sub_field('map')['markers'][0] ?? [];
-	endwhile; 
-endwhile; 
+$markers = array();
+if ( have_posts() ) {
+    while ( have_posts() ) {
+        the_post();
+        $post_id = get_the_ID();
+        $org_markers = acaw_get_organisation_markers_with_title_url($post_id);
+        if ( !empty($org_markers) ) {
+            $markers = array_merge($markers, $org_markers);
+        }
+    }
+    // Rewind posts for later template use
+    rewind_posts();
+} 
 
 
 ?>

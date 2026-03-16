@@ -98,7 +98,7 @@
                     "height": 400,
                     "return_format": "raw",
                     "allow_map_layers": 1,
-                    "max_markers": "",
+                    "max_markers": 1,
                     "layers": [
                         "OpenStreetMap.Mapnik"
                     ],
@@ -331,5 +331,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1773246327
+    "modified": 1773682728
 }

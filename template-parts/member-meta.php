@@ -71,7 +71,7 @@ $website_url = get_field('website_url');
 <div class="memberMeta-location-wrapper">
 	<figure class="memberMeta-location">
 		
-		<?php get_template_part('template-parts/map', null, ['markers' => get_sub_field('map')['markers']]); ?>
+		<?php get_template_part('template-parts/map', null, ['markers' => acaw_get_organisation_markers_with_title_url(get_the_ID(), get_sub_field('map')['markers']) ] ); ?>
 		<figcaption>
 			<?php the_sub_field('address'); ?>
 		</figcaption>

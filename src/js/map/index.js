@@ -4,6 +4,8 @@ import mapPinUrl from '../../svg/mapPin.svg';
 const initMap = ({ id, markers }) => {
 	const mapElement = document.getElementById(id);
 
+	// console.log('Initializing map with markers:', markers);
+
 	if (mapElement) {
 		const map = L.map(mapElement).setView([52.5, -3.5], 7);
 
@@ -23,9 +25,12 @@ const initMap = ({ id, markers }) => {
 
 		// loop markers and add to map
 		markers.forEach((marker) => {
-			const { lat, lng, geocode } = marker;
-			const title = geocode && geocode.length > 0 ? geocode[0].name : 'Title';
-			L.marker([lat, lng], { icon: svgIcon }).addTo(map).bindPopup(title);
+			const { title, url, lat, lng, label } = marker;
+			const popupContent = `<a href="${url}" target="_blank" rel="noopener">${title}</a><div>${label}</div>`;
+
+			if (lat && lng) {
+				L.marker([lat, lng], { icon: svgIcon }).addTo(map).bindPopup(popupContent);
+			}
 		});
 	}
 };
