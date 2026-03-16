@@ -68,8 +68,7 @@ if($type === 'project' ){
 
 else{
   
-// if there are related posts specified display them
-// if not, pick 2 off the top
+// if not, pick 3 off the top
   $query_args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
@@ -89,7 +88,7 @@ $posts = new WP_Query($query_args);
 <?php if ($posts->have_posts()) : ?>
 
   <div class="<?php echo esc_attr($wrapper_classes); ?>">
-    <h2 class="relatedPosts-title"><?php _e('Related Posts', 'acaw');?></h2>
+    <h2 class="relatedPosts-title"><?php echo is_front_page() ? __('Latest News', 'acaw') : __('Related Posts', 'acaw'); ?></h2>
     <ol class="relatedPosts">
       <?php while ($posts->have_posts()) : $posts->the_post(); ?>
       <li class="relatedPost">

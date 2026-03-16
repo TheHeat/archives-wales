@@ -5,6 +5,7 @@
 	container-type: inline-size;
 	border-top-right-radius: var(--length-border-radius);
 	border-bottom-right-radius: var(--length-border-radius);
+	height: 100%;
 }
 
 .postTeaser-inner {
@@ -63,6 +64,8 @@
 	margin:0;
 	padding:0;
 	display:grid;
+	align-content: stretch;
+	grid-template-rows: min-content auto;
 	gap:1em;
 	@container (width > 40rem) {
 		grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
