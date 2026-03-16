@@ -13,7 +13,13 @@ if (!empty($start_date) || !empty($end_date)):
 	if ($start_year == $end_year) {
 		$dates_string = esc_html($start_year);
 	} elseif ($start_year && $end_year) {
-		$dates_string = esc_html($start_year . '–' . $end_year);
+		// If the first two digits match, show only last two digits for end year
+		if (substr($start_year, 0, 2) === substr($end_year, 0, 2)) {
+			$end_short = substr($end_year, 2, 2);
+			$dates_string = esc_html($start_year . '–' . $end_short);
+		} else {
+			$dates_string = esc_html($start_year . '–' . $end_year);
+		}
 	} elseif ($start_year) {
 		$dates_string = esc_html($start_year) . '–';
 	} elseif ($end_year) {
