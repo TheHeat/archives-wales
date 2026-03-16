@@ -5,7 +5,7 @@ $title = get_the_title();
 $link  = get_field( 'website' );
 $image = get_field('logo')
 	? wp_get_attachment_image( get_field('logo'), 'medium', null, array( 'class' => 'projectSidebar-logo' ) )
-	: get_proper_svg( 'fallback-organisation', 'projectSidebar-logo fallback', '' );
+	: sprintf( '<div class="logo-placeholder">%s</div>', $title );
 
 
 

@@ -50,6 +50,16 @@
 	gap: var(--length-spacer);
 }
 
+/* Main project page */
+
+
+.projectSidebar-getInvolved{
+	background-color: var(--color-black);
+	color: var(--color-white);
+	border-radius: var(--length-border-radius);
+	overflow: clip;
+}
+
 
 /* Partners & Funders */
 
@@ -75,17 +85,31 @@
 	overflow: clip;
 }
 
+.projectSidebar-content{
+	color: var(--color-text);
+	margin: 0;
+	padding: .5em 1em;
+	list-style: none;
+	
+		background-color: white;
+
+		p:first-child{
+			margin-top: 0;	
+	}
+	p:last-child{
+		margin-bottom: 0;	
+	}
+}
+
 .projectSidebar-list{
+	color: var(--color-text);
 	margin: 0;
 	padding: .5em .5em 1em;
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
 		background-color: white;
 		gap:1em;
-
-
 }
 
 .projectSidebar-logo{
@@ -102,5 +126,15 @@
 .project-relatedPosts{
 	padding: var(--length-spacer);
 	margin-top: var(--length-spacer);
-	border-top: solid thin;
+	border-top: solid thin;	
+	}
+
+
+	.logo-placeholder{
+		font-size: small;
+		max-width: 30ch;
+		font-family: var(--font-mono);
+		background-color: var(--color-ground);
+		padding: 1em;
+		border-radius: 1em;
 	}

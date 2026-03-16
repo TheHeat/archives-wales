@@ -13,8 +13,8 @@ get_header(); ?>
 				<?php the_content(); ?>
 				<?php get_template_part( 'template-parts/member-meta' ); ?>				
 				<?php
-				// Example: get pins for this organisation
-				$pins = get_field('map_data'); // Adjust field name as needed
+			
+				$pins = get_field('map_data');
 				if ($pins && isset($pins['markers'])) {
 					get_template_part('template-parts/map', null, array('pins' => array($pins)));
 				}
