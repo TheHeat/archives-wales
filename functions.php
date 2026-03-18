@@ -9,53 +9,45 @@
  * Theme setup function
  */
 function acaw_setup() {
-	load_theme_textdomain( 'acaw', get_template_directory() . '/languages' );
 
 	add_theme_support( 'html5', array( 'comment-list', 'search-form', 'comment-form', 'gallery' ) );
 	add_post_type_support( 'page', 'excerpt' );
-
+	
 	register_nav_menu( 'primary', __( 'Header Menu', 'acaw' ) );
-		register_nav_menu( 'secondary', __( 'Footer Menu', 'acaw' ) );
-
+	register_nav_menu( 'secondary', __( 'Footer Menu', 'acaw' ) );
+	
 	}
-add_action( 'after_setup_theme', 'acaw_setup' );
-
-/**
- * Scripts & Styles
- */
-function acaw_scripts_styles() {
-
-   wp_enqueue_style('acaw-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
-
-   // Enqueue Vite-built JS bundle
-   wp_enqueue_script(
-	   'acaw-main',
-	   get_template_directory_uri() . '/build/main.js',
-	   array('wp-element'),
-	   null,
-	   true
-   );
-
-
-	// /**
-	// * Load Comments
-	// */
-	// if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-	// 	wp_enqueue_script( 'comment-reply' );
-	// }
-}
-add_action( 'wp_enqueue_scripts', 'acaw_scripts_styles' );
-
+	add_action( 'after_setup_theme', 'acaw_setup' );
+	
 	/**
-	* Include all PHP files in the inc folder
+	 * Scripts & Styles
 	*/
-foreach ( glob( get_template_directory() . '/inc/*.php' ) as $filename ) {
-	require_once $filename;
-}
-
-require_once get_template_directory() . '/inc/acaw-organisation-map.php';
-
-add_theme_support( 'post-thumbnails' );
+	function acaw_scripts_styles() {
+		
+		wp_enqueue_style('acaw-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
+		
+		// Enqueue Vite-built JS bundle
+		wp_enqueue_script(
+			'acaw-main',
+			get_template_directory_uri() . '/build/main.js',
+			array('wp-element'),
+			null,
+			true
+			);
+			
+			
+			}
+			add_action( 'wp_enqueue_scripts', 'acaw_scripts_styles' );
+			
+			/**
+			 * Include all PHP files in the inc folder
+			*/
+			foreach ( glob( get_template_directory() . '/inc/*.php' ) as $filename ) {
+				require_once $filename;
+				}
+				
+				add_theme_support( 'post-thumbnails' );
+				load_theme_textdomain( 'acaw', get_template_directory() . '/languages' );
 
 /**
  * Set Image sizes
