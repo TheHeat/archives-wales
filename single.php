@@ -19,8 +19,11 @@ get_header(); ?>
 				<?php endif; ?>
 			</div>
 			<?php the_content(); ?>
-			<?php get_template_part('template-parts/downloads');?>
-			<?php get_template_part('template-parts/post-project-funders'); ?>
+
+			<div class="post-footer">
+				<?php get_template_part('template-parts/downloads');?>
+				<?php get_template_part('template-parts/post-project-funders'); ?>
+			</div>
 </main>
 
 

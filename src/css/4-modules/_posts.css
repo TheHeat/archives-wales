@@ -74,8 +74,8 @@
 }
 
 /* Single */
-.post-header{
-	display:flex;
-	flex-direction: column;
+.post-header, .post-footer {
+	display: grid;
 	gap: 1em;
 }
+

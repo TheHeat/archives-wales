@@ -2,9 +2,10 @@
 
 $this_guy = get_the_id();
 $type = get_post_type();
-$related_posts = get_field('related_posts');
-
 $wrapper_classes = isset($args['fullWidth']) ? 'relatedPosts-wrapper fullWidth' : 'relatedPosts-wrapper';
+
+
+$project = isset($args['project']) ? $args['project'] : null;
 
 // if we're looking at a single project
 // only display posts that refer to this project
@@ -27,7 +28,9 @@ if($type === 'project' ){
     )
     
   );
-}elseif( isset($query_args['project']) ){
+  // if a project is passed in as an argument, 
+  // show posts related to that project
+}elseif( $project ){
 
   $query_args = array(
     'post_type' => 'post',
@@ -39,13 +42,15 @@ if($type === 'project' ){
       'relation' => 'AND',
       array(
         'key'     => 'related_projects',
-        'value'   => '"' . $query_args['project'] . '"',
+        'value'   => '"' . $project . '"',
         'compare' => 'LIKE',
   
       ),
     )
     
   );
+  // if we're looking at an organisation, 
+  // show posts that refer to this organisation
 }elseif($type === 'organisation' ){
 
   $query_args = array(
@@ -65,18 +70,15 @@ if($type === 'project' ){
     
   );
 }
-
 else{
   
-// if not, pick 3 off the top
+// if none of the above, pick 3 off the top
   $query_args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
     'posts_per_page' => 3,
     'post__not_in' => array($this_guy),
-    'post__in' => $related_posts,
-    'ignore_sticky_posts' => 1,
-    
+    'ignore_sticky_posts' => 1,    
   );
 }
   
