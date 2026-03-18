@@ -31,13 +31,7 @@ get_header(); ?>
 
 
 	<div class="frontPage-map-wrapper">
-		<section class="frontPage-map">
-				<img class="frontPage-map-image" src="https://placehold.co/800x600" alt="PLACEHOLDER"/>
-	<div>
-		<h2>Title</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
-	</div>	
-		</section>
+		<?php get_template_part( 'template-parts/map-teaser' ); ?>
 	</div>
 
 	<div class="frontPage-posts-wrapper">
