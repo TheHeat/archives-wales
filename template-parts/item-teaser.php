@@ -18,9 +18,9 @@
 
 				<button command="close" commandfor="dialog-<?php the_ID(); ?>" class="itemModal-close" aria-label="Close">&times;</button>
 
+				<div class="itemModal-inner">
 			<?php get_template_part('template-parts/featured-image');?>
 
-			<div class="itemModal-content">
 				<?php the_content();?>
 			</div>
 

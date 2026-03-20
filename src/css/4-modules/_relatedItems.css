@@ -52,19 +52,10 @@ line-height: 1;
 	border-radius: var(--length-border-radius);
 	padding: 0;
 	margin: auto;
+	padding: .5em;
 }
 .itemModal::backdrop{
 	background-color:rgba(0,0,0,0.8);
-}
-
-.itemModal-image{
-	width: 100%;
-	height: auto;
-	max-height: 80svh;
-}
-
-.itemModal-content{
-		padding:1em;
 }
 
 .itemModal-close{
@@ -77,5 +68,10 @@ line-height: 1;
 	top: 0;
 	right: 0;
 	font-size: xx-large;
-	margin: .25em;
+	margin: .5em;
+}
+
+.itemModal-inner{
+	display: grid;
+	gap: 1em;
 }
