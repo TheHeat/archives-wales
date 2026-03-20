@@ -1174,6 +1174,10 @@ iframe[src*=vimeo] {
 .featuredImage {
   display: block;
   margin: 0;
+  max-height: 60svh;
+  height: auto;
+  object-fit: contain;
+  background-color: black;
 }
 
 figcaption,
@@ -1936,6 +1940,88 @@ figcaption,
 
 .familyTree .current_page_item a {
   text-decoration: underline currentColor;
+}
+
+.relatedItems-wrapper {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.relatedItems-inner {
+  max-width: var(--length-site-max);
+  margin: 0 auto;
+  padding: var(--length-spacer);
+}
+
+.relatedItemTeaser {
+  /* background-color: black; */
+  /* background-color: var(--color-ground); */
+  /* color:var(--color-text); */
+  border-radius: var(--length-border-radius);
+  overflow: clip;
+  display: grid;
+}
+
+.relatedItemTeaser-image {
+  background-color: black;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  padding: 1em;
+  height: auto;
+  object-fit: contain;
+  transition: 0.2s;
+  margin: 0;
+}
+
+.relatedItemTeaser-image:hover {
+  padding: 0;
+}
+
+button.relatedItemTeaser-imageButton,
+.itemModal-close {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.itemModal {
+  max-width: calc(var(--length-site-max) * 0.8);
+  background-color: var(--color-surface);
+  border: none;
+  border-radius: var(--length-border-radius);
+  padding: 0;
+  margin: auto;
+}
+
+.itemModal::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.itemModal-image {
+  width: 100%;
+  height: auto;
+  max-height: 80svh;
+}
+
+.itemModal-content {
+  padding: 1em;
+}
+
+.itemModal-close {
+  width: 1.5em;
+  height: 1.5em;
+  aspect-ratio: 1;
+  background-color: black;
+  padding: 0.2em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: xx-large;
+  margin: 0.25em;
 }
 
 .siteWrapper {

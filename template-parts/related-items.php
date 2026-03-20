@@ -42,8 +42,11 @@ $posts = new WP_Query($query_args);
 <?php if ($posts->have_posts()) : ?>
 
   <div class="relatedItems-wrapper">
+
+  <div class="relatedItems-inner">
+
     <h2 class="relatedItems-title"><?php echo is_front_page() ? __('From the collections', 'acaw') : sprintf(__('Items from %s', 'acaw'), get_the_title()); ?></h2>
-    <ol class="relatedItems">
+    <ol class="archiveGrid">
       <?php while ($posts->have_posts()) : $posts->the_post(); ?>
       <li class="relatedItem">
         <?php get_template_part('template-parts/item-teaser'); ?>
@@ -53,5 +56,6 @@ $posts = new WP_Query($query_args);
       <?php wp_reset_query(); ?>
     </ol>
   </div>
+</div>
 
 <?php endif; ?>
