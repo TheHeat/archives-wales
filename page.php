@@ -12,15 +12,8 @@ get_header(); ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 			<?php the_title( '<h1>', '</h1>' ); ?>
 			<?php the_content(); ?>
-			<?php edit_post_link( __( 'Edit this entry', 'acaw' ), '<p>', '</p>' ); ?>
-			<?php
-			wp_link_pages(
-				array(
-					'before'         => __( 'Pages: ', 'acaw' ),
-					'next_or_number' => 'number',
-				)
-			);
-			?>
+			
+			<?php get_template_part('template-parts/downloads'); ?>
 		</main>
 
 
