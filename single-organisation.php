@@ -26,6 +26,8 @@ get_header(); ?>
 		<?php get_template_part( 'template-parts/member-sidebar' ); ?>
 	</div>
 	<?php get_template_part( 'template-parts/related-posts', null, array('fullWidth' => true) ); ?>
+			<?php get_template_part( 'template-parts/related-items'); ?>
+
 </div>
 
 <?php get_footer(); ?>
