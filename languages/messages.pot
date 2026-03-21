@@ -3,19 +3,33 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#: inc/proper-video-functions.php:12 inc/proper-icons.php:34
+#: inc/proper-strip-protocol.php:9 inc/proper-strip-protocol.php:20
+#: inc/proper-strip-protocol.php:21 inc/acaw-members.php:50
+#: inc/acaw-projects.php:11 inc/acaw-types.php:37 inc/acaw-types.php:155
+#: inc/proper-image-functions.php:15 inc/proper-image-functions.php:35
+#: inc/proper-image-functions.php:36 inc/proper-image-functions.php:37
+#: inc/proper-image-functions.php:38 template-parts/member-teaser.php:28
+#: template-parts/header-nav.php:17 template-parts/header-nav.php:19
+#: template-parts/header-nav.php:21 template-parts/header-nav.php:22
+#: template-parts/header-nav.php:23 template-parts/header-nav.php:24
+#: template-parts/header-nav.php:25 template-parts/header-nav.php:27
+#: template-parts/search-form.php:8 template-parts/project-dates.php:11
+#: template-parts/project-dates.php:12 archive-project.php:29 functions.php:70
+#: node_modules/flatted/php/flatted.php:22
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-18 14:26+0000\n"
+"POT-Creation-Date: 2026-03-20 22:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0.1\n"
 
 #: inc/proper-send-mail.php:4
 msgid "wp_mail_failed"
@@ -31,7 +45,7 @@ msgstr ""
 
 #: inc/proper-send-mail.php:24 inc/acaw-members.php:7 inc/acaw-types.php:7
 #: inc/acaw-types.php:67 inc/acaw-types.php:125 template-parts/logo.php:3
-#: template-parts/downloads.php:9 header.php:46 page-contact.php:25
+#: template-parts/downloads.php:9 header.php:47 page-contact.php:25
 #: page-contact.php:32 page-contact.php:38
 msgid "name"
 msgstr ""
@@ -292,23 +306,25 @@ msgid "#^www\\.#"
 msgstr ""
 
 #: inc/proper-strip-protocol.php:23 template-parts/search-form.php:12
-#: header.php:45
+#: header.php:46
 msgid "/"
 msgstr ""
 
-#: inc/acaw-members.php:5 template-parts/related-posts.php:14
-#: template-parts/related-posts.php:33 template-parts/related-posts.php:52
-#: template-parts/related-posts.php:73 template-parts/member-sidebar.php:4
-#: template-parts/project-partners.php:10 template-parts/related-projects.php:9
-#: template-parts/project-funders.php:12 archive-project.php:22
+#: inc/acaw-members.php:5 template-parts/related-posts.php:15
+#: template-parts/related-posts.php:36 template-parts/related-posts.php:57
+#: template-parts/related-posts.php:77 template-parts/member-sidebar.php:4
+#: template-parts/related-items.php:9 template-parts/related-items.php:29
+#: template-parts/project-partners.php:10 template-parts/family-tree.php:10
+#: template-parts/related-projects.php:9 template-parts/project-funders.php:12
+#: archive-project.php:22
 msgid "post_type"
 msgstr ""
 
 #: inc/acaw-members.php:5 inc/acaw-members.php:27 inc/acaw-members.php:67
-#: inc/acaw-types.php:57 template-parts/related-posts.php:49
-#: template-parts/member-sidebar.php:4 template-parts/member-teaser.php:1
-#: template-parts/members-link.php:3 template-parts/project-partners.php:10
-#: template-parts/project-funders.php:12
+#: inc/acaw-types.php:57 template-parts/related-posts.php:54
+#: template-parts/member-sidebar.php:4 template-parts/related-items.php:6
+#: template-parts/member-teaser.php:1 template-parts/members-link.php:3
+#: template-parts/project-partners.php:10 template-parts/project-funders.php:12
 msgid "organisation"
 msgstr ""
 
@@ -327,24 +343,25 @@ msgstr ""
 msgid "ASC"
 msgstr ""
 
-#: inc/acaw-members.php:9 template-parts/related-posts.php:17
-#: template-parts/related-posts.php:35 template-parts/related-posts.php:54
-#: template-parts/related-posts.php:75 template-parts/member-sidebar.php:5
+#: inc/acaw-members.php:9 template-parts/related-posts.php:18
+#: template-parts/related-posts.php:38 template-parts/related-posts.php:59
+#: template-parts/related-posts.php:79 template-parts/member-sidebar.php:5
+#: template-parts/related-items.php:11 template-parts/related-items.php:31
 #: template-parts/related-projects.php:12 archive-project.php:23
 msgid "posts_per_page"
 msgstr ""
 
 #: inc/acaw-members.php:10 inc/acaw-projects.php:8
-#: template-parts/related-posts.php:19 template-parts/related-posts.php:38
-#: template-parts/related-posts.php:56 template-parts/member-sidebar.php:7
-#: archive-project.php:26
+#: template-parts/related-posts.php:20 template-parts/related-posts.php:41
+#: template-parts/related-posts.php:61 template-parts/member-sidebar.php:7
+#: template-parts/related-items.php:13 archive-project.php:26
 msgid "meta_query"
 msgstr ""
 
 #: inc/acaw-members.php:12 inc/acaw-projects.php:10
-#: template-parts/related-posts.php:22 template-parts/related-posts.php:41
-#: template-parts/related-posts.php:59 template-parts/member-sidebar.php:9
-#: archive-project.php:28
+#: template-parts/related-posts.php:23 template-parts/related-posts.php:44
+#: template-parts/related-posts.php:64 template-parts/member-sidebar.php:9
+#: template-parts/related-items.php:16 archive-project.php:28
 msgid "key"
 msgstr ""
 
@@ -356,16 +373,16 @@ msgid "member"
 msgstr ""
 
 #: inc/acaw-members.php:13 inc/acaw-projects.php:11
-#: template-parts/related-posts.php:23 template-parts/related-posts.php:42
-#: template-parts/related-posts.php:60 template-parts/member-sidebar.php:10
-#: archive-project.php:29
+#: template-parts/related-posts.php:24 template-parts/related-posts.php:45
+#: template-parts/related-posts.php:65 template-parts/member-sidebar.php:10
+#: template-parts/related-items.php:17 archive-project.php:29
 msgid "value"
 msgstr ""
 
 #: inc/acaw-members.php:14 inc/acaw-projects.php:12
-#: template-parts/related-posts.php:24 template-parts/related-posts.php:43
-#: template-parts/related-posts.php:61 template-parts/member-sidebar.php:11
-#: archive-project.php:30
+#: template-parts/related-posts.php:25 template-parts/related-posts.php:46
+#: template-parts/related-posts.php:66 template-parts/member-sidebar.php:11
+#: template-parts/related-items.php:18 archive-project.php:30
 msgid "compare"
 msgstr ""
 
@@ -419,24 +436,26 @@ msgstr ""
 #: inc/acaw-types.php:146 inc/acaw-types.php:147 inc/acaw-types.php:148
 #: inc/acaw-types.php:149 inc/acaw-types.php:150 inc/acaw-types.php:151
 #: inc/acaw-types.php:154 inc/acaw-types.php:155 template-parts/post-meta.php:8
-#: template-parts/post-meta.php:9 template-parts/related-posts.php:91
+#: template-parts/post-meta.php:9 template-parts/related-posts.php:93
 #: template-parts/project-get-involved.php:4
-#: template-parts/cookies-notice.php:9 template-parts/cookies-notice.php:10
-#: template-parts/footer-socials.php:2 template-parts/footer-socials.php:3
-#: template-parts/footer-socials.php:4 template-parts/header-nav.php:11
-#: template-parts/downloads.php:3 template-parts/member-meta.php:9
-#: template-parts/member-meta.php:14 template-parts/member-meta.php:84
-#: template-parts/search-form.php:14 template-parts/search-form.php:16
-#: template-parts/project-funders.php:17 template-parts/project-teaser.php:29
-#: archive-project.php:64 page-contact.php:13 page-contact.php:14
-#: page-contact.php:15 page-contact.php:16 page-contact.php:17
-#: page-contact.php:18 page-contact.php:27 page-contact.php:33
-#: page-contact.php:39 page-contact.php:69 page-contact.php:74 functions.php:12
-#: functions.php:17 functions.php:18 home.php:14 home.php:15 home.php:40
-#: archive-organisation.php:64 footer.php:32 page.php:15 page.php:19 404.php:14
-#: comments.php:13 comments.php:20 comments.php:43 comments.php:56
-#: comments.php:65 comments.php:72 comments.php:87 comments.php:101
-#: comments.php:110 comments.php:122 index.php:17
+#: template-parts/related-items.php:48 template-parts/map-teaser.php:4
+#: template-parts/map-teaser.php:5 template-parts/cookies-notice.php:9
+#: template-parts/cookies-notice.php:10 template-parts/footer-socials.php:2
+#: template-parts/footer-socials.php:3 template-parts/footer-socials.php:4
+#: template-parts/header-nav.php:11 template-parts/downloads.php:3
+#: template-parts/member-meta.php:9 template-parts/member-meta.php:14
+#: template-parts/member-meta.php:84 template-parts/search-form.php:14
+#: template-parts/search-form.php:16 template-parts/project-funders.php:17
+#: template-parts/project-teaser.php:29 archive-project.php:64
+#: page-contact.php:13 page-contact.php:14 page-contact.php:15
+#: page-contact.php:16 page-contact.php:17 page-contact.php:18
+#: page-contact.php:27 page-contact.php:33 page-contact.php:39
+#: page-contact.php:69 page-contact.php:74 functions.php:16 functions.php:17
+#: functions.php:50 home.php:14 home.php:15 home.php:40
+#: archive-organisation.php:64 footer.php:32 404.php:14 comments.php:13
+#: comments.php:20 comments.php:43 comments.php:56 comments.php:65
+#: comments.php:72 comments.php:87 comments.php:101 comments.php:110
+#: comments.php:122 index.php:17
 msgid "acaw"
 msgstr ""
 
@@ -477,9 +496,8 @@ msgid "&hellip;"
 msgstr ""
 
 #: inc/acaw-projects.php:5 inc/acaw-types.php:117
-#: template-parts/related-posts.php:11 template-parts/related-posts.php:30
-#: template-parts/related-posts.php:42 template-parts/post-sidebar.php:3
-#: template-parts/post-project-funders.php:11
+#: template-parts/related-posts.php:8 template-parts/related-posts.php:12
+#: template-parts/post-sidebar.php:3 template-parts/post-project-funders.php:11
 #: template-parts/related-projects.php:9 template-parts/project-funders.php:5
 #: archive-project.php:22
 msgid "project"
@@ -811,6 +829,7 @@ msgid "has_archive"
 msgstr ""
 
 #: inc/acaw-types.php:50 inc/acaw-types.php:110 inc/acaw-types.php:168
+#: template-parts/family-tree.php:13
 msgid "hierarchical"
 msgstr ""
 
@@ -831,8 +850,8 @@ msgid "capability_type"
 msgstr ""
 
 #: inc/acaw-types.php:55 inc/acaw-types.php:114 inc/acaw-types.php:172
-#: template-parts/related-posts.php:14 template-parts/related-posts.php:33
-#: template-parts/related-posts.php:52 template-parts/related-posts.php:73
+#: template-parts/related-posts.php:15 template-parts/related-posts.php:36
+#: template-parts/related-posts.php:57 template-parts/related-posts.php:77
 msgid "post"
 msgstr ""
 
@@ -924,7 +943,7 @@ msgstr ""
 msgid "dashicons-clipboard"
 msgstr ""
 
-#: inc/acaw-types.php:100 inc/acaw-types.php:158 functions.php:15
+#: inc/acaw-types.php:100 inc/acaw-types.php:158 functions.php:14
 msgid "excerpt"
 msgstr ""
 
@@ -1024,7 +1043,8 @@ msgstr ""
 msgid "author"
 msgstr ""
 
-#: inc/acaw-types.php:174
+#: inc/acaw-types.php:174 template-parts/related-items.php:9
+#: template-parts/related-items.php:29
 msgid "archiveitem"
 msgstr ""
 
@@ -1053,11 +1073,13 @@ msgstr ""
 msgid "img"
 msgstr ""
 
-#: inc/proper-fotorama.php:42 inc/proper-fotorama.php:43
+#: inc/proper-fotorama.php:42 inc/proper-fotorama.php:43 functions.php:69
+#: functions.php:70
 msgid "sizes"
 msgstr ""
 
-#: inc/proper-fotorama.php:42 front-page.php:22 page.php:12
+#: inc/proper-fotorama.php:42 template-parts/featured-image.php:4
+#: front-page.php:22 page.php:12
 msgid "large"
 msgstr ""
 
@@ -1170,7 +1192,7 @@ msgstr ""
 msgid "<span class=\"next-wrapper\">%link</span>"
 msgstr ""
 
-#: template-parts/map.php:8 functions.php:32
+#: template-parts/map.php:8 functions.php:31
 msgid "acaw-main"
 msgstr ""
 
@@ -1190,98 +1212,115 @@ msgstr ""
 msgid ", "
 msgstr ""
 
-#: template-parts/related-posts.php:5
-msgid "related_posts"
-msgstr ""
-
-#: template-parts/related-posts.php:7 single-project.php:34
+#: template-parts/related-posts.php:5 single-project.php:34
 #: single-organisation.php:28
 msgid "fullWidth"
 msgstr ""
 
-#: template-parts/related-posts.php:7
+#: template-parts/related-posts.php:5
 msgid "relatedPosts-wrapper fullWidth"
 msgstr ""
 
-#: template-parts/related-posts.php:7
+#: template-parts/related-posts.php:5
 msgid "relatedPosts-wrapper"
 msgstr ""
 
-#: template-parts/related-posts.php:15 template-parts/related-posts.php:34
-#: template-parts/related-posts.php:53 template-parts/related-posts.php:74
-#: template-parts/member-sidebar.php:6 template-parts/project-partners.php:9
+#: template-parts/related-posts.php:16 template-parts/related-posts.php:37
+#: template-parts/related-posts.php:58 template-parts/related-posts.php:78
+#: template-parts/member-sidebar.php:6 template-parts/related-items.php:10
+#: template-parts/related-items.php:30 template-parts/project-partners.php:9
 #: template-parts/related-projects.php:10 template-parts/project-funders.php:11
 msgid "post_status"
 msgstr ""
 
-#: template-parts/related-posts.php:15 template-parts/related-posts.php:34
-#: template-parts/related-posts.php:53 template-parts/related-posts.php:74
-#: template-parts/member-sidebar.php:6 template-parts/project-partners.php:9
+#: template-parts/related-posts.php:16 template-parts/related-posts.php:37
+#: template-parts/related-posts.php:58 template-parts/related-posts.php:78
+#: template-parts/member-sidebar.php:6 template-parts/related-items.php:10
+#: template-parts/related-items.php:30 template-parts/project-partners.php:9
 #: template-parts/related-projects.php:10 template-parts/project-funders.php:11
 msgid "publish"
 msgstr ""
 
-#: template-parts/related-posts.php:16 template-parts/related-posts.php:36
-#: template-parts/related-posts.php:78 template-parts/related-projects.php:13
+#: template-parts/related-posts.php:17 template-parts/related-posts.php:39
+#: template-parts/related-posts.php:81 template-parts/related-items.php:33
+#: template-parts/related-projects.php:13
 msgid "ignore_sticky_posts"
 msgstr ""
 
-#: template-parts/related-posts.php:18 template-parts/related-posts.php:37
-#: template-parts/related-posts.php:55 template-parts/related-posts.php:76
+#: template-parts/related-posts.php:19 template-parts/related-posts.php:40
+#: template-parts/related-posts.php:60 template-parts/related-posts.php:80
+#: template-parts/related-items.php:12 template-parts/related-items.php:32
 msgid "post__not_in"
 msgstr ""
 
-#: template-parts/related-posts.php:20 template-parts/related-posts.php:39
-#: template-parts/related-posts.php:57
+#: template-parts/related-posts.php:21 template-parts/related-posts.php:42
+#: template-parts/related-posts.php:62 template-parts/related-items.php:14
 msgid "relation"
 msgstr ""
 
-#: template-parts/related-posts.php:20 template-parts/related-posts.php:39
-#: template-parts/related-posts.php:57
+#: template-parts/related-posts.php:21 template-parts/related-posts.php:42
+#: template-parts/related-posts.php:62 template-parts/related-items.php:14
 msgid "AND"
 msgstr ""
 
-#: template-parts/related-posts.php:22 template-parts/related-posts.php:41
+#: template-parts/related-posts.php:23 template-parts/related-posts.php:44
 #: template-parts/post-sidebar.php:3 template-parts/post-project-funders.php:3
 #: template-parts/related-projects.php:4
 msgid "related_projects"
 msgstr ""
 
-#: template-parts/related-posts.php:23 template-parts/related-posts.php:42
-#: template-parts/related-posts.php:60
+#: template-parts/related-posts.php:24 template-parts/related-posts.php:45
+#: template-parts/related-posts.php:65 template-parts/related-items.php:17
 msgid "\""
 msgstr ""
 
-#: template-parts/related-posts.php:24 template-parts/related-posts.php:43
-#: template-parts/related-posts.php:61
+#: template-parts/related-posts.php:25 template-parts/related-posts.php:46
+#: template-parts/related-posts.php:66 template-parts/related-items.php:18
 msgid "LIKE"
 msgstr ""
 
-#: template-parts/related-posts.php:59
+#: template-parts/related-posts.php:64
 msgid "related_orgs"
 msgstr ""
 
-#: template-parts/related-posts.php:77 template-parts/project-partners.php:11
-#: template-parts/project-partners.php:12
-#: template-parts/related-projects.php:11 template-parts/project-funders.php:13
-#: template-parts/project-funders.php:14
-msgid "post__in"
-msgstr ""
-
-#: template-parts/related-posts.php:91
+#: template-parts/related-posts.php:93
 msgid "Latest News"
 msgstr ""
 
-#: template-parts/related-posts.php:91
+#: template-parts/related-posts.php:93
 msgid "Related Posts"
 msgstr ""
 
-#: template-parts/related-posts.php:95 home.php:33 index.php:24
+#: template-parts/related-posts.php:97 home.php:33 index.php:24
 msgid "template-parts/post-teaser"
 msgstr ""
 
 #: template-parts/header-switcher.php:11
 msgid "pll_the_languages"
+msgstr ""
+
+#: template-parts/item-teaser.php:9
+msgid "relatedItemTeaser"
+msgstr ""
+
+#: template-parts/item-teaser.php:11 template-parts/member-teaser.php:7
+#: template-parts/organisation-logo.php:7
+msgid "medium"
+msgstr ""
+
+#: template-parts/item-teaser.php:11 template-parts/featured-image.php:4
+#: template-parts/member-teaser.php:7 template-parts/organisation-logo.php:7
+#: template-parts/project-teaser.php:22
+msgid "class"
+msgstr ""
+
+#: template-parts/item-teaser.php:11
+msgid "relatedItemTeaser-image"
+msgstr ""
+
+#: template-parts/item-teaser.php:22 single-project.php:13
+#: single-organisation.php:11
+msgid "template-parts/featured-image"
 msgstr ""
 
 #: template-parts/project-get-involved.php:1
@@ -1297,6 +1336,23 @@ msgstr ""
 msgid "template-parts/member-teaser"
 msgstr ""
 
+#: template-parts/related-items.php:16
+msgid "related_repository"
+msgstr ""
+
+#: template-parts/related-items.php:48
+msgid "From the collections"
+msgstr ""
+
+#: template-parts/related-items.php:48
+#, php-format
+msgid "Items from %s"
+msgstr ""
+
+#: template-parts/related-items.php:52
+msgid "template-parts/item-teaser"
+msgstr ""
+
 #: template-parts/catalogue-link.php:4
 msgid "Search the online catalogue"
 msgstr ""
@@ -1305,13 +1361,27 @@ msgstr ""
 msgid "template-parts/related-projects"
 msgstr ""
 
-#: template-parts/post-sidebar.php:8 front-page.php:46 single-project.php:34
+#: template-parts/post-sidebar.php:8 front-page.php:40 single-project.php:34
 #: single-organisation.php:28
 msgid "template-parts/related-posts"
 msgstr ""
 
 #: template-parts/post-teaser-slim.php:9 template-parts/post-teaser.php:9
 msgid "postTeaser"
+msgstr ""
+
+#: template-parts/map-teaser.php:4
+msgid "There are Archives Wales members in every corner of the country"
+msgstr ""
+
+#: template-parts/map-teaser.php:5
+msgid ""
+"Explore the complete list of our members along with a map to help you find "
+"your nearest archive."
+msgstr ""
+
+#: template-parts/page-sidebar.php:1
+msgid "template-parts/family-tree"
 msgstr ""
 
 #: template-parts/page-sidebar.php:2
@@ -1347,16 +1417,6 @@ msgstr ""
 msgid "cookieStrings"
 msgstr ""
 
-#: template-parts/featured-image.php:4 template-parts/project-teaser.php:22
-#: functions.php:64
-msgid "hero"
-msgstr ""
-
-#: template-parts/featured-image.php:4 template-parts/member-teaser.php:7
-#: template-parts/organisation-logo.php:7 template-parts/project-teaser.php:22
-msgid "class"
-msgstr ""
-
 #: template-parts/featured-image.php:4
 msgid "featuredImage"
 msgstr ""
@@ -1369,10 +1429,6 @@ msgstr ""
 #: template-parts/member-teaser.php:6 template-parts/organisation-logo.php:6
 #: template-parts/organisation-logo.php:7
 msgid "logo"
-msgstr ""
-
-#: template-parts/member-teaser.php:7 template-parts/organisation-logo.php:7
-msgid "medium"
 msgstr ""
 
 #: template-parts/member-teaser.php:7
@@ -1431,7 +1487,7 @@ msgstr ""
 msgid "theme_location"
 msgstr ""
 
-#: template-parts/header-nav.php:15 functions.php:17
+#: template-parts/header-nav.php:15 functions.php:16
 msgid "primary"
 msgstr ""
 
@@ -1463,7 +1519,7 @@ msgstr ""
 msgid "fallback_cb"
 msgstr ""
 
-#: template-parts/header-nav.php:22 page-contact.php:69 page.php:19
+#: template-parts/header-nav.php:22 page-contact.php:69
 msgid "before"
 msgstr ""
 
@@ -1479,7 +1535,8 @@ msgstr ""
 msgid "link_after"
 msgstr ""
 
-#: template-parts/header-nav.php:26 template-parts/footer-nav.php:18
+#: template-parts/header-nav.php:26 template-parts/family-tree.php:16
+#: template-parts/footer-nav.php:18
 msgid "depth"
 msgstr ""
 
@@ -1642,6 +1699,13 @@ msgstr ""
 msgid "partners"
 msgstr ""
 
+#: template-parts/project-partners.php:11
+#: template-parts/project-partners.php:12
+#: template-parts/related-projects.php:11 template-parts/project-funders.php:13
+#: template-parts/project-funders.php:14
+msgid "post__in"
+msgstr ""
+
 #: template-parts/project-partners.php:24
 msgid "In partnership with"
 msgstr ""
@@ -1677,6 +1741,39 @@ msgstr ""
 msgid "/assets/img/favicon/"
 msgstr ""
 
+#: template-parts/family-tree.php:4 template-parts/family-tree.php:10
+#: functions.php:14
+msgid "page"
+msgstr ""
+
+#: template-parts/family-tree.php:7
+msgid "<h3><a href=\""
+msgstr ""
+
+#: template-parts/family-tree.php:7
+msgid "\">"
+msgstr ""
+
+#: template-parts/family-tree.php:7
+msgid "</a></h3>"
+msgstr ""
+
+#: template-parts/family-tree.php:12
+msgid "child_of"
+msgstr ""
+
+#: template-parts/family-tree.php:14
+msgid "sort_column"
+msgstr ""
+
+#: template-parts/family-tree.php:14
+msgid "menu_order"
+msgstr ""
+
+#: template-parts/family-tree.php:15
+msgid "title_li"
+msgstr ""
+
 #: template-parts/search-form.php:8 search.php:9
 msgid "s"
 msgstr ""
@@ -1693,7 +1790,7 @@ msgstr ""
 msgid "template-parts/project-teaser"
 msgstr ""
 
-#: template-parts/footer-nav.php:14 functions.php:18
+#: template-parts/footer-nav.php:14 functions.php:17
 msgid "secondary"
 msgstr ""
 
@@ -1712,6 +1809,10 @@ msgstr ""
 
 #: template-parts/project-teaser.php:18 single-project.php:14
 msgid "template-parts/project-dates"
+msgstr ""
+
+#: template-parts/project-teaser.php:22 functions.php:56
+msgid "hero"
 msgstr ""
 
 #: template-parts/project-teaser.php:22
@@ -1754,26 +1855,26 @@ msgid "<meta name=\"robots\" content=\"noindex, nofollow\" />"
 msgstr ""
 
 #: header.php:33
-msgid "template-parts/google-fonts"
+msgid "template-parts/header-scripts"
 msgstr ""
 
-#: header.php:39
+#: header.php:40
 msgid "template-parts/cookies-notice"
 msgstr ""
 
-#: header.php:46
+#: header.php:47
 msgid "display"
 msgstr ""
 
-#: header.php:48 footer.php:21
+#: header.php:49 footer.php:21
 msgid "template-parts/logo"
 msgstr ""
 
-#: header.php:52
+#: header.php:53
 msgid "template-parts/header-nav"
 msgstr ""
 
-#: header.php:53
+#: header.php:54
 msgid "template-parts/header-switcher"
 msgstr ""
 
@@ -1897,131 +1998,143 @@ msgstr ""
 msgid "</h1>"
 msgstr ""
 
-#: page-contact.php:69 page.php:19
+#: page-contact.php:69
 msgid "Pages: "
 msgstr ""
 
-#: page-contact.php:70 page.php:20
+#: page-contact.php:70
 msgid "next_or_number"
 msgstr ""
 
-#: page-contact.php:70 page.php:20
+#: page-contact.php:70
 msgid "number"
 msgstr ""
 
-#: page-contact.php:74 page.php:15
+#: page-contact.php:74
 msgid "Edit this entry"
 msgstr ""
 
-#: page-contact.php:74 page.php:15
+#: page-contact.php:74
 msgid "<p>"
 msgstr ""
 
-#: page-contact.php:74 page.php:15
+#: page-contact.php:74
 msgid "</p>"
 msgstr ""
 
-#: functions.php:12
-msgid "/languages"
-msgstr ""
-
-#: functions.php:14
+#: functions.php:13
 msgid "html5"
 msgstr ""
 
-#: functions.php:14
+#: functions.php:13
 msgid "comment-list"
 msgstr ""
 
-#: functions.php:14
+#: functions.php:13
 msgid "search-form"
 msgstr ""
 
-#: functions.php:14
+#: functions.php:13
 msgid "comment-form"
 msgstr ""
 
-#: functions.php:14
+#: functions.php:13
 msgid "gallery"
 msgstr ""
 
-#: functions.php:15
-msgid "page"
-msgstr ""
-
-#: functions.php:17
+#: functions.php:16
 msgid "Header Menu"
 msgstr ""
 
-#: functions.php:18
+#: functions.php:17
 msgid "Footer Menu"
 msgstr ""
 
-#: functions.php:21
+#: functions.php:20
 msgid "after_setup_theme"
 msgstr ""
 
-#: functions.php:21
+#: functions.php:20
 msgid "acaw_setup"
 msgstr ""
 
-#: functions.php:28
+#: functions.php:27
 msgid "acaw-style"
 msgstr ""
 
-#: functions.php:28
+#: functions.php:27
 msgid "Version"
 msgstr ""
 
-#: functions.php:33
+#: functions.php:32
 msgid "/build/main.js"
 msgstr ""
 
-#: functions.php:34
+#: functions.php:33
 msgid "wp-element"
 msgstr ""
 
-#: functions.php:47
+#: functions.php:40
 msgid "wp_enqueue_scripts"
 msgstr ""
 
-#: functions.php:47
+#: functions.php:40
 msgid "acaw_scripts_styles"
 msgstr ""
 
-#: functions.php:52
+#: functions.php:45
 msgid "/inc/*.php"
 msgstr ""
 
-#: functions.php:56
-msgid "/inc/acaw-organisation-map.php"
-msgstr ""
-
-#: functions.php:58
+#: functions.php:49
 msgid "post-thumbnails"
 msgstr ""
 
-#: functions.php:63
+#: functions.php:50
+msgid "/languages"
+msgstr ""
+
+#: functions.php:55
 msgid "hero-large"
 msgstr ""
 
-#: functions.php:65
+#: functions.php:57
 msgid "hero-small"
 msgstr ""
 
-#: functions.php:66
+#: functions.php:58
 msgid "thumbnail-large"
+msgstr ""
+
+#: functions.php:61
+msgid "wp_content_img_tag"
+msgstr ""
+
+#: functions.php:63
+msgid " sizes=\"auto, "
+msgstr ""
+
+#: functions.php:63
+msgid " sizes=\""
+msgstr ""
+
+#: functions.php:67
+msgid "wp_get_attachment_image_attributes"
+msgstr ""
+
+#: functions.php:70
+msgid "/^auto, /"
 msgstr ""
 
 #: front-page.php:14
 msgid "frontPage-hero"
 msgstr ""
 
-#: single-project.php:13 single-organisation.php:11
-msgid "template-parts/featured-image"
+#: front-page.php:34
+msgid "template-parts/map-teaser"
 msgstr ""
 
-#: single-project.php:23 single.php:22
+#: single-project.php:23 single.php:24 page.php:16
 msgid "template-parts/downloads"
 msgstr ""
 
@@ -2057,15 +2170,19 @@ msgstr ""
 msgid "template-parts/member-sidebar"
 msgstr ""
 
+#: single-organisation.php:31
+msgid "template-parts/related-items"
+msgstr ""
+
 #: single.php:17 single.php:18
 msgid "byline"
 msgstr ""
 
-#: single.php:23
+#: single.php:25
 msgid "template-parts/post-project-funders"
 msgstr ""
 
-#: single.php:33
+#: single.php:36
 msgid "template-parts/post-sidebar"
 msgstr ""
 
@@ -2097,7 +2214,7 @@ msgstr ""
 msgid "Flatted::wrap"
 msgstr ""
 
-#: page.php:33
+#: page.php:26
 msgid "template-parts/page-sidebar"
 msgstr ""
 
