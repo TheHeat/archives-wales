@@ -22,6 +22,8 @@
 			<?php get_template_part('template-parts/featured-image');?>
 
 				<?php the_content();?>
+									<?php edit_post_link( __( 'Edit this item', 'acaw' )); ?>
+
 			</div>
 
   </dialog>
