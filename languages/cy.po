@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-20 22:31+0000\n"
-"PO-Revision-Date: 2026-03-20 22:50+0000\n"
+"PO-Revision-Date: 2026-03-20 23:57+0000\n"
 "Last-Translator: Carl Morris <carl@morris.cymru>\n"
 "Language-Team: \n"
 "Language: cy\n"
@@ -933,35 +933,35 @@ msgstr ""
 
 #: inc/acaw-types.php:74
 msgid "All Projects"
-msgstr ""
+msgstr "Pob Prosiect"
 
 #: inc/acaw-types.php:75
 msgid "Add New Project"
-msgstr ""
+msgstr "Ychwanegu Prosiect"
 
 #: inc/acaw-types.php:77
 msgid "New Project"
-msgstr ""
+msgstr "Ychwanegu Prosiect"
 
 #: inc/acaw-types.php:78
 msgid "Edit Project"
-msgstr ""
+msgstr "Golygu Prosiect"
 
 #: inc/acaw-types.php:79
 msgid "Update Project"
-msgstr ""
+msgstr "Diweddaru Prosiect"
 
 #: inc/acaw-types.php:80
 msgid "View Project"
-msgstr ""
+msgstr "Gweld Prosiect"
 
 #: inc/acaw-types.php:81
 msgid "View Projects"
-msgstr ""
+msgstr "Gweld Prosiectau"
 
 #: inc/acaw-types.php:82
 msgid "Search Project"
-msgstr ""
+msgstr "Chwilio Prosiect"
 
 #: inc/acaw-types.php:89
 msgid "Insert into Project"
@@ -1002,7 +1002,7 @@ msgstr ""
 
 #: inc/acaw-types.php:115
 msgid "projects"
-msgstr ""
+msgstr "prosiectau"
 
 #: inc/acaw-types.php:119
 msgid "create_project_cpt"
@@ -1030,35 +1030,35 @@ msgstr ""
 
 #: inc/acaw-types.php:132
 msgid "All Archive Items"
-msgstr ""
+msgstr "Pob Eitem Archif"
 
 #: inc/acaw-types.php:133
 msgid "Add New Archive Item"
-msgstr ""
+msgstr "Ychwanegu Eitem Archif"
 
 #: inc/acaw-types.php:135
 msgid "New Archive Item"
-msgstr ""
+msgstr "Ychwanegu Eitem Archif"
 
 #: inc/acaw-types.php:136
 msgid "Edit Archive Item"
-msgstr ""
+msgstr "Golygu Eitem Archif"
 
 #: inc/acaw-types.php:137
 msgid "Update Archive Item"
-msgstr ""
+msgstr "Diweddaru Eitem Archif"
 
 #: inc/acaw-types.php:138
 msgid "View Archive Item"
-msgstr ""
+msgstr "Gweld Eitem Archif"
 
 #: inc/acaw-types.php:139
 msgid "View Archive Items"
-msgstr ""
+msgstr "Gweld Eitemau Archif"
 
 #: inc/acaw-types.php:140
 msgid "Search Archive Item"
-msgstr ""
+msgstr "Chwilio Eitem Archif"
 
 #: inc/acaw-types.php:147
 msgid "Insert into Archive Item"
@@ -2035,12 +2035,10 @@ msgid "Website Contact"
 msgstr ""
 
 #: page-contact.php:14
-#, fuzzy
 msgid "submit"
-msgstr "Cyflwyno"
+msgstr "cyflwyno"
 
 #: page-contact.php:14
-#, fuzzy
 msgid "Send"
 msgstr "Anfon"
 
@@ -2069,9 +2067,8 @@ msgid "Sending..."
 msgstr ""
 
 #: page-contact.php:18
-#, fuzzy
 msgid "success"
-msgstr "Llwyddiant"
+msgstr "llwyddiant"
 
 #: page-contact.php:18
 msgid "Your message has been sent."
@@ -2082,36 +2079,30 @@ msgid "fieldsets"
 msgstr ""
 
 #: page-contact.php:22
-#, fuzzy
 msgid "fields"
-msgstr "Meysydd Cyfaddas"
+msgstr "meysydd"
 
 #: page-contact.php:26
-#, fuzzy
 msgid "text"
-msgstr "Gyda thestun "
+msgstr "testun "
 
 #: page-contact.php:27
-#, fuzzy
 msgid "Your Name"
 msgstr "Eich Enw"
 
 #: page-contact.php:28 page-contact.php:34 page-contact.php:40
-#, fuzzy
 msgid "required"
-msgstr "(gofynnol)"
+msgstr "gofynnol"
 
 #: page-contact.php:33
-#, fuzzy
 msgid "Your Email Address"
-msgstr "Eich cyfeiriad e-bost."
+msgstr "Eich Cyfeiriad E-bost"
 
 #: page-contact.php:37
 msgid "textarea"
 msgstr ""
 
 #: page-contact.php:39
-#, fuzzy
 msgid "Your Message"
 msgstr "Eich Neges"
 
@@ -2130,9 +2121,8 @@ msgid "</h1>"
 msgstr ""
 
 #: page-contact.php:69
-#, fuzzy
 msgid "Pages: "
-msgstr "Tudalennau: "
+msgstr "Tudalennau:"
 
 #: page-contact.php:70
 msgid "next_or_number"
@@ -2235,9 +2225,8 @@ msgstr ""
 "Cynnwys Arbennig ar y dudalen gartref."
 
 #: functions.php:50
-#, fuzzy
 msgid "/languages"
-msgstr "Ieithoedd"
+msgstr "/languages"
 
 #: functions.php:55
 msgid "hero-large"
