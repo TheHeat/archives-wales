@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-20 22:31+0000\n"
-"PO-Revision-Date: 2026-03-22 23:33+0000\n"
+"PO-Revision-Date: 2026-03-22 23:54+0000\n"
 "Last-Translator: Carl Morris <carl@morris.cymru>\n"
 "Language-Team: \n"
 "Language: cy\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: inc/proper-send-mail.php:4
 msgid "wp_mail_failed"
-msgstr ""
+msgstr "wp_mail_failed"
 
 #: inc/proper-send-mail.php:20
 #, fuzzy
@@ -43,23 +43,23 @@ msgstr "Enw"
 
 #: inc/proper-send-mail.php:26
 msgid "sender_name"
-msgstr ""
+msgstr "sender_name"
 
 #: inc/proper-send-mail.php:27
 msgid "sender_email"
-msgstr ""
+msgstr "sender_email"
 
 #: inc/proper-send-mail.php:28
 msgid "email_message"
-msgstr ""
+msgstr "email_message"
 
 #: inc/proper-send-mail.php:30
 msgid "email_subject"
-msgstr ""
+msgstr "email_subject"
 
 #: inc/proper-send-mail.php:35
 msgid "Content-Type: text/html; charset=UTF-8"
-msgstr ""
+msgstr "Content-Type: text/html; charset=UTF-8"
 
 #: inc/proper-send-mail.php:40
 msgid "Message Sent"
@@ -71,47 +71,47 @@ msgstr ""
 
 #: inc/proper-send-mail.php:46
 msgid "wp_ajax_proper_send_mail"
-msgstr ""
+msgstr "wp_ajax_proper_send_mail"
 
 #: inc/proper-send-mail.php:46 inc/proper-send-mail.php:47
 msgid "proper_send_mail"
-msgstr ""
+msgstr "proper_send_mail"
 
 #: inc/proper-send-mail.php:47
 msgid "wp_ajax_nopriv_proper_send_mail"
-msgstr ""
+msgstr "wp_ajax_nopriv_proper_send_mail"
 
 #: inc/proper-video-functions.php:9
 msgid "/src=\"(.+?)\"/"
-msgstr ""
+msgstr "/src=\"(.+?)\"/"
 
 #: inc/proper-video-functions.php:12
 msgid "www."
-msgstr ""
+msgstr "www."
 
 #: inc/proper-video-functions.php:14
 msgid "youtu"
-msgstr ""
+msgstr "youtu"
 
 #: inc/proper-video-functions.php:17
 msgid "?feature=oembedvideo"
-msgstr ""
+msgstr "?feature=oembedvideo"
 
 #: inc/proper-video-functions.php:18
 msgid "youtube.com/embed/"
-msgstr ""
+msgstr "youtube.com/embed/"
 
 #: inc/proper-video-functions.php:18
 msgid "youtube.com/watch?v="
-msgstr ""
+msgstr "youtube.com/watch?v="
 
 #: inc/proper-video-functions.php:23
 msgid "player.vimeo.com/video"
-msgstr ""
+msgstr "player.vimeo.com/video"
 
 #: inc/proper-video-functions.php:23
 msgid "vimeo.com"
-msgstr ""
+msgstr "vimeo.com"
 
 #: inc/proper-video-functions.php:31
 msgid ""
@@ -133,11 +133,11 @@ msgstr ""
 
 #: inc/proper-allow-svg.php:6
 msgid "wp_check_filetype_and_ext"
-msgstr ""
+msgstr "wp_check_filetype_and_ext"
 
 #: inc/proper-allow-svg.php:10
 msgid "4.7.1"
-msgstr ""
+msgstr "4.7.1"
 
 #: inc/proper-allow-svg.php:17
 msgid "ext"
@@ -151,23 +151,24 @@ msgstr "Math"
 
 #: inc/proper-allow-svg.php:19
 msgid "proper_filename"
-msgstr ""
+msgstr "proper_filename"
 
 #: inc/proper-allow-svg.php:27
+#, fuzzy
 msgid "svg"
-msgstr ""
+msgstr "Diffiniwch enw ffeil eicon SVG."
 
 #: inc/proper-allow-svg.php:27
 msgid "image/svg+xml"
-msgstr ""
+msgstr "image/svg+xml"
 
 #: inc/proper-allow-svg.php:30
 msgid "upload_mimes"
-msgstr ""
+msgstr "upload_mimes"
 
 #: inc/proper-allow-svg.php:30
 msgid "cc_mime_types"
-msgstr ""
+msgstr "cc_mime_types"
 
 #: inc/proper-allow-svg.php:33
 msgid ""
@@ -178,6 +179,12 @@ msgid ""
 "        }\n"
 "        </style>"
 msgstr ""
+"<style type=\"text/css\">\n"
+"        .attachment-266x266, .thumbnail img {\n"
+"             width: 100% !important;\n"
+"             height: auto !important;\n"
+"        }\n"
+"        </style>"
 
 #: inc/proper-allow-svg.php:40
 msgid "admin_head"
@@ -189,7 +196,7 @@ msgstr ""
 
 #: inc/proper-get-env.php:8 inc/proper-get-env.php:15
 msgid "SERVER_NAME"
-msgstr ""
+msgstr "SERVER_NAME"
 
 #: inc/proper-get-env.php:8
 #, fuzzy
@@ -203,7 +210,7 @@ msgstr "Croatia (Enw Lleol: Hrvatska)"
 
 #: inc/proper-get-env.php:12
 msgid "WP_CLI_CONFIG_PATH"
-msgstr ""
+msgstr "WP_CLI_CONFIG_PATH"
 
 #: inc/proper-get-env.php:12
 msgid "Local.app"
@@ -263,7 +270,7 @@ msgstr ""
 #: inc/acaw-organisation-map.php:25 template-parts/member-meta.php:74
 #, fuzzy
 msgid "map"
-msgstr "Cliciwch i weld Google Map"
+msgstr "+ Google Map"
 
 #: inc/acaw-organisation-map.php:26 inc/acaw-organisation-map.php:27
 #: template-parts/map.php:5 template-parts/map.php:9
@@ -374,7 +381,7 @@ msgstr "Allwedd"
 #: template-parts/member-sidebar.php:9
 #, fuzzy
 msgid "member"
-msgstr "Gwefannau rydych eisoes yn aelod ohonynt:"
+msgstr "template-parts/member-meta"
 
 #: inc/acaw-members.php:13 inc/acaw-projects.php:11
 #: template-parts/related-posts.php:24 template-parts/related-posts.php:45
@@ -411,7 +418,7 @@ msgstr ""
 #: inc/acaw-members.php:33 inc/acaw-members.php:42
 #, fuzzy
 msgid "Member"
-msgstr "Gwefannau rydych eisoes yn aelod ohonynt:"
+msgstr "template-parts/member-meta"
 
 #: inc/acaw-members.php:33 inc/acaw-members.php:42 inc/acaw-types.php:7
 #: inc/acaw-types.php:8 inc/acaw-types.php:9 inc/acaw-types.php:10
@@ -463,8 +470,9 @@ msgstr "Gwefannau rydych eisoes yn aelod ohonynt:"
 #: comments.php:20 comments.php:43 comments.php:56 comments.php:65
 #: comments.php:72 comments.php:87 comments.php:101 comments.php:110
 #: comments.php:122 index.php:17
+#, fuzzy
 msgid "acaw"
-msgstr ""
+msgstr "acaw_scripts_styles"
 
 #: inc/acaw-members.php:41
 msgid "manage_organisation_posts_columns"
@@ -476,7 +484,7 @@ msgstr ""
 
 #: inc/acaw-members.php:50
 msgid "✔️"
-msgstr ""
+msgstr "✔️"
 
 #: inc/acaw-members.php:55
 msgid "save_post_organisation"
@@ -589,7 +597,7 @@ msgstr "archifau"
 
 #: inc/acaw-types.php:11
 msgid "Member repositories"
-msgstr ""
+msgstr "Archifdai sy'n aelodau"
 
 #: inc/acaw-types.php:12 inc/acaw-types.php:72 inc/acaw-types.php:130
 #, fuzzy
@@ -796,7 +804,7 @@ msgstr ""
 #: template-parts/member-meta.php:53 page-contact.php:27 page-contact.php:33
 #: page-contact.php:39
 msgid "label"
-msgstr ""
+msgstr "label"
 
 #: inc/acaw-types.php:37 inc/acaw-types.php:97 inc/acaw-types.php:155
 #, fuzzy
@@ -804,9 +812,8 @@ msgid "description"
 msgstr "Disgrifiad"
 
 #: inc/acaw-types.php:38 inc/acaw-types.php:98 inc/acaw-types.php:156
-#, fuzzy
 msgid "labels"
-msgstr "Labeli "
+msgstr "labeli"
 
 #: inc/acaw-types.php:39 inc/acaw-types.php:99 inc/acaw-types.php:157
 msgid "menu_icon"
@@ -1525,8 +1532,9 @@ msgid "template-parts/svg-bluesky"
 msgstr "template-parts/svg-bluesky"
 
 #: template-parts/footer-socials.php:2
+#, fuzzy
 msgid "Bluesky"
-msgstr ""
+msgstr "bluesky_url"
 
 #: template-parts/footer-socials.php:3
 msgid "template-parts/svg-instagram"
@@ -1560,7 +1568,7 @@ msgstr "Lliw Sylfaenol"
 #: template-parts/header-nav.php:16 template-parts/footer-nav.php:15
 #, fuzzy
 msgid "container"
-msgstr "Dewislen Cynhwysydd"
+msgstr "Bar Ochr Cynhwysydd"
 
 #: template-parts/header-nav.php:17
 msgid "container_id"
@@ -1589,12 +1597,12 @@ msgstr "fallback_cb"
 #: template-parts/header-nav.php:22 page-contact.php:69
 #, fuzzy
 msgid "before"
-msgstr "Cyn i chi fynd"
+msgstr "Cyn cost"
 
 #: template-parts/header-nav.php:23
 #, fuzzy
 msgid "after"
-msgstr "Mewnosod rhes ar ôl"
+msgstr "Ar ôl cost"
 
 #: template-parts/header-nav.php:24
 msgid "link_before"
@@ -1661,7 +1669,6 @@ msgid "website_url"
 msgstr "website_url"
 
 #: template-parts/member-meta.php:9 comments.php:110
-#, fuzzy
 msgid "Website"
 msgstr "Gwefan"
 
@@ -1680,20 +1687,23 @@ msgid "link"
 msgstr "Dolen"
 
 #: template-parts/member-meta.php:14
+#, fuzzy
 msgid "Catalogue"
-msgstr ""
+msgstr "catalogue_url"
 
 #: template-parts/member-meta.php:15
 msgid "catalogue_url"
 msgstr "catalogue_url"
 
 #: template-parts/member-meta.php:16
+#, fuzzy
 msgid "catalogue"
-msgstr ""
+msgstr "catalogue_url"
 
 #: template-parts/member-meta.php:25
+#, fuzzy
 msgid "bluesky"
-msgstr ""
+msgstr "bluesky_url"
 
 #: template-parts/member-meta.php:25
 msgid "bluesky_url"
@@ -1761,8 +1771,9 @@ msgstr "Ffôn"
 
 #: template-parts/member-meta.php:74 archive-organisation.php:42
 #: archive-organisation.php:73 single-organisation.php:19
+#, fuzzy
 msgid "template-parts/map"
-msgstr ""
+msgstr "template-parts/map-teaser"
 
 #: template-parts/member-meta.php:76
 #, fuzzy
@@ -1770,8 +1781,9 @@ msgid "address"
 msgstr "Cyfeiriad:"
 
 #: template-parts/member-meta.php:82 template-parts/member-meta.php:85
+#, fuzzy
 msgid "opening_hours"
-msgstr ""
+msgstr "Oriau Agor"
 
 #: template-parts/member-meta.php:84
 msgid "Opening Hours"
@@ -1799,7 +1811,7 @@ msgstr "Mewn partneriaeth â"
 
 #: template-parts/project-partners.php:24
 msgid "properbear"
-msgstr ""
+msgstr "properbear"
 
 #: template-parts/organisation-logo.php:5
 #, fuzzy
@@ -1890,8 +1902,9 @@ msgid "secondary"
 msgstr "Dewislen eilradd yn y bar ochr chwith"
 
 #: template-parts/project-funders.php:6
+#, fuzzy
 msgid "funders"
-msgstr ""
+msgstr "template-parts/post-project-funders"
 
 #: template-parts/project-funders.php:17
 #, php-format
@@ -1899,8 +1912,9 @@ msgid "%1$s was created thanks to support from"
 msgstr "Crëwyd %1$s gyda diolch i gefnogaeth oddi wrth"
 
 #: template-parts/project-teaser.php:10
+#, fuzzy
 msgid "projectTeaser"
-msgstr ""
+msgstr "projectTeaser-image"
 
 #: template-parts/project-teaser.php:18 single-project.php:14
 msgid "template-parts/project-dates"
@@ -2011,7 +2025,7 @@ msgstr "Pwnc"
 
 #: page-contact.php:13
 msgid "Website Contact"
-msgstr ""
+msgstr "Cyswllt Gwefan"
 
 #: page-contact.php:14
 msgid "submit"
@@ -2063,7 +2077,7 @@ msgstr "meysydd"
 
 #: page-contact.php:26
 msgid "text"
-msgstr "testun "
+msgstr "text"
 
 #: page-contact.php:27
 msgid "Your Name"
@@ -2101,7 +2115,7 @@ msgstr "</h1>"
 
 #: page-contact.php:69
 msgid "Pages: "
-msgstr "Tudalennau:"
+msgstr "Tudalennau: "
 
 #: page-contact.php:70
 msgid "next_or_number"
@@ -2120,7 +2134,7 @@ msgstr "Golygu'r eitem hon"
 #: page-contact.php:74
 #, fuzzy
 msgid "<p>"
-msgstr "%p"
+msgstr "</p>"
 
 #: page-contact.php:74
 msgid "</p>"
