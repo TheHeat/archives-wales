@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-20 22:31+0000\n"
-"PO-Revision-Date: 2026-03-20 23:57+0000\n"
+"PO-Revision-Date: 2026-03-22 23:33+0000\n"
 "Last-Translator: Carl Morris <carl@morris.cymru>\n"
 "Language-Team: \n"
 "Language: cy\n"
@@ -326,7 +326,7 @@ msgstr ""
 #: template-parts/project-partners.php:10 template-parts/project-funders.php:12
 #, fuzzy
 msgid "organisation"
-msgstr "Logo'r sefydliad"
+msgstr "Ychwanegu Sefydliad"
 
 #: inc/acaw-members.php:7 inc/acaw-projects.php:15
 #: template-parts/member-sidebar.php:14 template-parts/project-partners.php:12
@@ -559,7 +559,7 @@ msgstr ""
 #: inc/acaw-types.php:8 inc/acaw-types.php:10 inc/acaw-types.php:36
 #, fuzzy
 msgid "Organisation"
-msgstr "Logo'r sefydliad"
+msgstr "Ychwanegu Sefydliad"
 
 #: inc/acaw-types.php:8 inc/acaw-types.php:68 inc/acaw-types.php:126
 msgid "Post Type Singular Name"
@@ -921,7 +921,7 @@ msgstr "Tagiau Project"
 
 #: inc/acaw-types.php:71
 msgid "Project Archives"
-msgstr ""
+msgstr "Prosiectau"
 
 #: inc/acaw-types.php:72
 msgid "Project Attributes"
@@ -1217,9 +1217,8 @@ msgid "align"
 msgstr "Alinio"
 
 #: inc/proper-image-functions.php:37
-#, fuzzy
 msgid "width"
-msgstr "Lled"
+msgstr "lled"
 
 #: inc/proper-image-functions.php:48
 msgid "<figure id=\""
@@ -1262,12 +1261,10 @@ msgid "mapData"
 msgstr ""
 
 #: template-parts/post-meta.php:8
-#, fuzzy
 msgid "Tagged: "
-msgstr "Tagiwyd: "
+msgstr "Tagged: "
 
 #: template-parts/post-meta.php:9
-#, fuzzy
 msgid "Posted in: "
 msgstr "Postiwyd yn: "
 
@@ -1277,12 +1274,8 @@ msgstr ""
 
 #: template-parts/related-posts.php:5 single-project.php:34
 #: single-organisation.php:28
-#, fuzzy
 msgid "fullWidth"
-msgstr ""
-"Ardal teclyn brig a lled llawn ar gyfer pennyn proffiliau eich grwpiau. (Yn "
-"ymddangos bob amser ym mhroffiliau grwpiau BuddyPress TU FEWN I'R ARDAL "
-"CYNNWYS yn gyntaf)"
+msgstr "fullWidth"
 
 #: template-parts/related-posts.php:5
 msgid "relatedPosts-wrapper fullWidth"
@@ -1305,23 +1298,20 @@ msgstr ""
 #: template-parts/member-sidebar.php:6 template-parts/related-items.php:10
 #: template-parts/related-items.php:30 template-parts/project-partners.php:9
 #: template-parts/related-projects.php:10 template-parts/project-funders.php:11
-#, fuzzy
 msgid "publish"
-msgstr "Cyhoeddi"
+msgstr "publish"
 
 #: template-parts/related-posts.php:17 template-parts/related-posts.php:39
 #: template-parts/related-posts.php:81 template-parts/related-items.php:33
 #: template-parts/related-projects.php:13
-#, fuzzy
 msgid "ignore_sticky_posts"
-msgstr "Anwybyddu Cofnodion Gludiog"
+msgstr "ignore_sticky_posts"
 
 #: template-parts/related-posts.php:19 template-parts/related-posts.php:40
 #: template-parts/related-posts.php:60 template-parts/related-posts.php:80
 #: template-parts/related-items.php:12 template-parts/related-items.php:32
-#, fuzzy
 msgid "post__not_in"
-msgstr "Postio "
+msgstr "post__not_in"
 
 #: template-parts/related-posts.php:21 template-parts/related-posts.php:42
 #: template-parts/related-posts.php:62 template-parts/related-items.php:14
@@ -1355,16 +1345,12 @@ msgid "related_orgs"
 msgstr ""
 
 #: template-parts/related-posts.php:93
-#, fuzzy
 msgid "Latest News"
-msgstr ""
-"<strong>Newyddion WordPress</strong> - Y newyddion diweddaraf o'r project "
-"WordPress swyddogol, y <a href=\"http://planet.wordpress.org/\">Planed "
-"WordPress</a>, ac ategion poblogaidd a diweddar."
+msgstr "Newyddion Diweddaraf"
 
 #: template-parts/related-posts.php:93
 msgid "Related Posts"
-msgstr ""
+msgstr "Cofnodion Perthnasol"
 
 #: template-parts/related-posts.php:97 home.php:33 index.php:24
 msgid "template-parts/post-teaser"
@@ -1380,16 +1366,14 @@ msgstr ""
 
 #: template-parts/item-teaser.php:11 template-parts/member-teaser.php:7
 #: template-parts/organisation-logo.php:7
-#, fuzzy
 msgid "medium"
-msgstr "Medium"
+msgstr "medium"
 
 #: template-parts/item-teaser.php:11 template-parts/featured-image.php:4
 #: template-parts/member-teaser.php:7 template-parts/organisation-logo.php:7
 #: template-parts/project-teaser.php:22
-#, fuzzy
 msgid "class"
-msgstr "Dosbarth botwm gweithredol:"
+msgstr "class"
 
 #: template-parts/item-teaser.php:11
 msgid "relatedItemTeaser-image"
@@ -1436,12 +1420,12 @@ msgstr ""
 
 #: template-parts/post-sidebar.php:7
 msgid "template-parts/related-projects"
-msgstr ""
+msgstr "template-parts/related-projects"
 
 #: template-parts/post-sidebar.php:8 front-page.php:40 single-project.php:34
 #: single-organisation.php:28
 msgid "template-parts/related-posts"
-msgstr ""
+msgstr "template-parts/related-posts"
 
 #: template-parts/post-teaser-slim.php:9 template-parts/post-teaser.php:9
 msgid "postTeaser"
@@ -1459,20 +1443,19 @@ msgstr ""
 
 #: template-parts/page-sidebar.php:1
 msgid "template-parts/family-tree"
-msgstr ""
+msgstr "template-parts/family-tree"
 
 #: template-parts/page-sidebar.php:2
 msgid "template-parts/members-link"
-msgstr ""
+msgstr "template-parts/members-link"
 
 #: template-parts/page-sidebar.php:3
 msgid "template-parts/catalogue-link"
-msgstr ""
+msgstr "template-parts/catalogue-link"
 
 #: template-parts/cookies-notice.php:9 page-contact.php:38
-#, fuzzy
 msgid "message"
-msgstr "Neges"
+msgstr "neges"
 
 #: template-parts/cookies-notice.php:9
 #, fuzzy
@@ -1500,30 +1483,29 @@ msgstr ""
 
 #: template-parts/featured-image.php:4
 msgid "featuredImage"
-msgstr ""
+msgstr "featuredImage"
 
 #: template-parts/post-project-funders.php:11
 #: template-parts/project-sidebar.php:1
 msgid "template-parts/project-funders"
-msgstr ""
+msgstr "template-parts/project-funders"
 
 #: template-parts/member-teaser.php:6 template-parts/organisation-logo.php:6
 #: template-parts/organisation-logo.php:7
-#, fuzzy
 msgid "logo"
-msgstr "Logo"
+msgstr "logo"
 
 #: template-parts/member-teaser.php:7
 msgid "memberTeaser-logo"
-msgstr ""
+msgstr "memberTeaser-logo"
 
 #: template-parts/member-teaser.php:10
 msgid "memberTeaser big"
-msgstr ""
+msgstr "memberTeaser big"
 
 #: template-parts/member-teaser.php:28
 msgid "memberTeaser small"
-msgstr ""
+msgstr "memberTeaser small"
 
 #: template-parts/member-teaser.php:28
 #, fuzzy
@@ -1532,15 +1514,15 @@ msgstr "Eitem bresennol "
 
 #: template-parts/project-sidebar.php:2
 msgid "template-parts/project-partners"
-msgstr ""
+msgstr "template-parts/project-partners"
 
 #: template-parts/project-sidebar.php:3
 msgid "template-parts/project-get-involved"
-msgstr ""
+msgstr "template-parts/project-get-involved"
 
 #: template-parts/footer-socials.php:2
 msgid "template-parts/svg-bluesky"
-msgstr ""
+msgstr "template-parts/svg-bluesky"
 
 #: template-parts/footer-socials.php:2
 msgid "Bluesky"
@@ -1548,19 +1530,17 @@ msgstr ""
 
 #: template-parts/footer-socials.php:3
 msgid "template-parts/svg-instagram"
-msgstr ""
+msgstr "template-parts/svg-instagram"
 
 #: template-parts/footer-socials.php:3
-#, fuzzy
 msgid "Instagram"
 msgstr "Instagram"
 
 #: template-parts/footer-socials.php:4
 msgid "template-parts/svg-facebook"
-msgstr ""
+msgstr "template-parts/svg-facebook"
 
 #: template-parts/footer-socials.php:4
-#, fuzzy
 msgid "Facebook"
 msgstr "Facebook"
 
@@ -1569,9 +1549,8 @@ msgid "Menu"
 msgstr "Dewislen"
 
 #: template-parts/header-nav.php:15 template-parts/footer-nav.php:14
-#, fuzzy
 msgid "theme_location"
-msgstr "Lleoliad Thema"
+msgstr "theme_location"
 
 #: template-parts/header-nav.php:15 functions.php:16
 #, fuzzy
@@ -1585,20 +1564,19 @@ msgstr "Dewislen Cynhwysydd"
 
 #: template-parts/header-nav.php:17
 msgid "container_id"
-msgstr ""
+msgstr "container_id"
 
 #: template-parts/header-nav.php:18 template-parts/footer-nav.php:16
 msgid "menu_class"
-msgstr ""
+msgstr "menu_class"
 
 #: template-parts/header-nav.php:18 template-parts/footer-nav.php:16
-#, fuzzy
 msgid "menu"
-msgstr "Dewislen"
+msgstr "dewislen"
 
 #: template-parts/header-nav.php:19
 msgid "menu_id"
-msgstr ""
+msgstr "menu_id"
 
 #: template-parts/header-nav.php:20 template-parts/footer-nav.php:17
 msgid "echo"
@@ -1606,7 +1584,7 @@ msgstr ""
 
 #: template-parts/header-nav.php:21
 msgid "fallback_cb"
-msgstr ""
+msgstr "fallback_cb"
 
 #: template-parts/header-nav.php:22 page-contact.php:69
 #, fuzzy
@@ -1620,11 +1598,11 @@ msgstr "Mewnosod rhes ar ôl"
 
 #: template-parts/header-nav.php:24
 msgid "link_before"
-msgstr ""
+msgstr "link_before"
 
 #: template-parts/header-nav.php:25
 msgid "link_after"
-msgstr ""
+msgstr "link_after"
 
 #: template-parts/header-nav.php:26 template-parts/family-tree.php:16
 #: template-parts/footer-nav.php:18
@@ -1648,9 +1626,8 @@ msgid "en"
 msgstr "cy"
 
 #: template-parts/downloads.php:1 template-parts/downloads.php:5
-#, fuzzy
 msgid "downloads"
-msgstr "Lawrlwythiadau"
+msgstr "lawrlwythiadau"
 
 #: template-parts/downloads.php:3
 #, fuzzy
@@ -1668,6 +1645,8 @@ msgid ""
 "<li class=\"download\">%s<a class=\"download-link\" href=\"%s\">%s (%s)</a></"
 "li>"
 msgstr ""
+"<li class=\"download\">%s<a class=\"download-link\" href=\"%s\">%s (%s)</a></"
+"li>"
 
 #: template-parts/downloads.php:11
 msgid "subtype"
@@ -1679,7 +1658,7 @@ msgstr ""
 
 #: template-parts/member-meta.php:3
 msgid "website_url"
-msgstr ""
+msgstr "website_url"
 
 #: template-parts/member-meta.php:9 comments.php:110
 #, fuzzy
@@ -1706,7 +1685,7 @@ msgstr ""
 
 #: template-parts/member-meta.php:15
 msgid "catalogue_url"
-msgstr ""
+msgstr "catalogue_url"
 
 #: template-parts/member-meta.php:16
 msgid "catalogue"
@@ -1718,7 +1697,7 @@ msgstr ""
 
 #: template-parts/member-meta.php:25
 msgid "bluesky_url"
-msgstr ""
+msgstr "bluesky_url"
 
 #: template-parts/member-meta.php:26
 #, fuzzy
@@ -1727,7 +1706,7 @@ msgstr "YouTube"
 
 #: template-parts/member-meta.php:26
 msgid "youtube_url"
-msgstr ""
+msgstr "youtube_url"
 
 #: template-parts/member-meta.php:27
 msgid "tiktok"
@@ -1735,7 +1714,7 @@ msgstr ""
 
 #: template-parts/member-meta.php:27
 msgid "tiktok_url"
-msgstr ""
+msgstr "tiktok_url"
 
 #: template-parts/member-meta.php:28
 #, fuzzy
@@ -1744,7 +1723,7 @@ msgstr "Facebook"
 
 #: template-parts/member-meta.php:28
 msgid "facebook_url"
-msgstr ""
+msgstr "facebook_url"
 
 #: template-parts/member-meta.php:29
 #, fuzzy
@@ -1753,12 +1732,12 @@ msgstr "Instagram"
 
 #: template-parts/member-meta.php:29
 msgid "instagram_url"
-msgstr ""
+msgstr "instagram_url"
 
 #: template-parts/member-meta.php:39 template-parts/project-partners.php:32
 #: template-parts/project-funders.php:32
 msgid "template-parts/organisation-logo"
-msgstr ""
+msgstr "template-parts/organisation-logo"
 
 #: template-parts/member-meta.php:41 template-parts/member-meta.php:43
 #: page-contact.php:31 page-contact.php:32
@@ -1769,7 +1748,7 @@ msgstr "E-bost:"
 #: template-parts/member-meta.php:43 template-parts/member-meta.php:48
 #: template-parts/member-meta.php:53 template-parts/member-meta.php:63
 msgid "template-parts/svg"
-msgstr ""
+msgstr "template-parts/svg"
 
 #: template-parts/member-meta.php:46 template-parts/member-meta.php:48
 msgid "telephone"
@@ -1796,7 +1775,7 @@ msgstr ""
 
 #: template-parts/member-meta.php:84
 msgid "Opening Hours"
-msgstr ""
+msgstr "Oriau Agor"
 
 #: template-parts/members-link.php:13
 msgid "Our member repositories"
@@ -1829,17 +1808,17 @@ msgstr "Gwefan:"
 
 #: template-parts/organisation-logo.php:7
 msgid "projectSidebar-logo"
-msgstr ""
+msgstr "projectSidebar-logo"
 
 #: template-parts/organisation-logo.php:8
 #, php-format
 msgid "<div class=\"logo-placeholder\">%s</div>"
-msgstr ""
+msgstr "<div class=\"logo-placeholder\">%s</div>"
 
 #: template-parts/organisation-logo.php:12
 #, php-format
 msgid "<a title=\"%1$s\" href=\"%2$s\">%3$s</a>"
-msgstr ""
+msgstr "<a title=\"%1$s\" href=\"%2$s\">%3$s</a>"
 
 #: template-parts/organisation-logo.php:12
 #, fuzzy, php-format
@@ -1848,7 +1827,7 @@ msgstr "Hawlfraint %1$s %2$s %3$s"
 
 #: template-parts/favicon.php:9
 msgid "/assets/img/favicon/"
-msgstr ""
+msgstr "/assets/img/favicon/"
 
 #: template-parts/family-tree.php:4 template-parts/family-tree.php:10
 #: functions.php:14
@@ -1858,15 +1837,15 @@ msgstr "Tudalen"
 
 #: template-parts/family-tree.php:7
 msgid "<h3><a href=\""
-msgstr ""
+msgstr "<h3><a href=\""
 
 #: template-parts/family-tree.php:7
 msgid "\">"
-msgstr ""
+msgstr "\">"
 
 #: template-parts/family-tree.php:7
 msgid "</a></h3>"
-msgstr ""
+msgstr "</a></h3>"
 
 #: template-parts/family-tree.php:12
 #, fuzzy
@@ -1875,7 +1854,7 @@ msgstr "plentyn"
 
 #: template-parts/family-tree.php:14
 msgid "sort_column"
-msgstr ""
+msgstr "sort_column"
 
 #: template-parts/family-tree.php:14
 #, fuzzy
@@ -1884,7 +1863,7 @@ msgstr "Trefn y ddewislen"
 
 #: template-parts/family-tree.php:15
 msgid "title_li"
-msgstr ""
+msgstr "title_li"
 
 #: template-parts/search-form.php:8 search.php:9
 #, fuzzy
@@ -1903,7 +1882,7 @@ msgstr "Chwilio"
 
 #: template-parts/related-projects.php:27 archive-project.php:58
 msgid "template-parts/project-teaser"
-msgstr ""
+msgstr "template-parts/project-teaser"
 
 #: template-parts/footer-nav.php:14 functions.php:17
 #, fuzzy
@@ -1925,7 +1904,7 @@ msgstr ""
 
 #: template-parts/project-teaser.php:18 single-project.php:14
 msgid "template-parts/project-dates"
-msgstr ""
+msgstr "template-parts/project-dates"
 
 #: template-parts/project-teaser.php:22 functions.php:56
 msgid "hero"
@@ -1933,7 +1912,7 @@ msgstr ""
 
 #: template-parts/project-teaser.php:22
 msgid "projectTeaser-image"
-msgstr ""
+msgstr "projectTeaser-image"
 
 #: template-parts/project-teaser.php:29
 #, fuzzy
@@ -1954,7 +1933,7 @@ msgstr ""
 #: template-parts/project-dates.php:29
 #, php-format
 msgid "<span class=\"meta project-dates\">%s</span>"
-msgstr ""
+msgstr "<span class=\"meta project-dates\">%s</span>"
 
 #: header.php:21 header.php:24
 msgid "|"
@@ -1971,15 +1950,15 @@ msgstr ""
 
 #: header.php:29
 msgid "<meta name=\"robots\" content=\"noindex, nofollow\" />"
-msgstr ""
+msgstr "<meta name=\"robots\" content=\"noindex, nofollow\" />"
 
 #: header.php:33
 msgid "template-parts/header-scripts"
-msgstr ""
+msgstr "template-parts/header-scripts"
 
 #: header.php:40
 msgid "template-parts/cookies-notice"
-msgstr ""
+msgstr "template-parts/cookies-notice"
 
 #: header.php:47
 #, fuzzy
@@ -1988,19 +1967,19 @@ msgstr "Dangos"
 
 #: header.php:49 footer.php:21
 msgid "template-parts/logo"
-msgstr ""
+msgstr "template-parts/logo"
 
 #: header.php:53
 msgid "template-parts/header-nav"
-msgstr ""
+msgstr "template-parts/header-nav"
 
 #: header.php:54
 msgid "template-parts/header-switcher"
-msgstr ""
+msgstr "template-parts/header-switcher"
 
 #: archive-project.php:30
 msgid "!="
-msgstr ""
+msgstr "!="
 
 #: archive-project.php:64 home.php:40 archive-organisation.php:64
 #, fuzzy
@@ -2018,7 +1997,7 @@ msgstr ""
 
 #: search.php:23 home.php:21 404.php:18
 msgid "template-parts/search-form"
-msgstr ""
+msgstr "template-parts/search-form"
 
 #: search.php:42
 #, fuzzy, php-format
@@ -2044,7 +2023,7 @@ msgstr "Anfon"
 
 #: page-contact.php:15
 msgid "formError"
-msgstr ""
+msgstr "formError"
 
 #: page-contact.php:15
 msgid "There a problem with your form"
@@ -2052,7 +2031,7 @@ msgstr ""
 
 #: page-contact.php:16
 msgid "fieldError"
-msgstr ""
+msgstr "fieldError"
 
 #: page-contact.php:16
 msgid "You will need to complete this field"
@@ -2100,7 +2079,7 @@ msgstr "Eich Cyfeiriad E-bost"
 
 #: page-contact.php:37
 msgid "textarea"
-msgstr ""
+msgstr "textarea"
 
 #: page-contact.php:39
 msgid "Your Message"
@@ -2108,17 +2087,17 @@ msgstr "Eich Neges"
 
 #: page-contact.php:48
 msgid "contactFormConfig"
-msgstr ""
+msgstr "contactFormConfig"
 
 #: page-contact.php:63 single-project.php:15 single-organisation.php:12
 #: single.php:16 page.php:13
 msgid "<h1>"
-msgstr ""
+msgstr "<h1>"
 
 #: page-contact.php:63 single-project.php:15 single-organisation.php:12
 #: single.php:16 page.php:13
 msgid "</h1>"
-msgstr ""
+msgstr "</h1>"
 
 #: page-contact.php:69
 msgid "Pages: "
@@ -2126,7 +2105,7 @@ msgstr "Tudalennau:"
 
 #: page-contact.php:70
 msgid "next_or_number"
-msgstr ""
+msgstr "next_or_number"
 
 #: page-contact.php:70
 #, fuzzy
@@ -2145,15 +2124,15 @@ msgstr "%p"
 
 #: page-contact.php:74
 msgid "</p>"
-msgstr ""
+msgstr "</p>"
 
 #: functions.php:13
 msgid "html5"
-msgstr ""
+msgstr "html5"
 
 #: functions.php:13
 msgid "comment-list"
-msgstr ""
+msgstr "comment-list"
 
 #: functions.php:13
 #, fuzzy
@@ -2162,7 +2141,7 @@ msgstr "Ffurflen Chwilio"
 
 #: functions.php:13
 msgid "comment-form"
-msgstr ""
+msgstr "comment-form"
 
 #: functions.php:13
 #, fuzzy
@@ -2179,15 +2158,15 @@ msgstr "Dewislen y Troedyn"
 
 #: functions.php:20
 msgid "after_setup_theme"
-msgstr ""
+msgstr "after_setup_theme"
 
 #: functions.php:20
 msgid "acaw_setup"
-msgstr ""
+msgstr "acaw_setup"
 
 #: functions.php:27
 msgid "acaw-style"
-msgstr ""
+msgstr "acaw-style"
 
 #: functions.php:27
 msgid "Version"
@@ -2195,23 +2174,23 @@ msgstr "Fersiwn"
 
 #: functions.php:32
 msgid "/build/main.js"
-msgstr ""
+msgstr "/build/main.js"
 
 #: functions.php:33
 msgid "wp-element"
-msgstr ""
+msgstr "wp-element"
 
 #: functions.php:40
 msgid "wp_enqueue_scripts"
-msgstr ""
+msgstr "wp_enqueue_scripts"
 
 #: functions.php:40
 msgid "acaw_scripts_styles"
-msgstr ""
+msgstr "acaw_scripts_styles"
 
 #: functions.php:45
 msgid "/inc/*.php"
-msgstr ""
+msgstr "/inc/*.php"
 
 #: functions.php:49
 #, fuzzy
@@ -2230,23 +2209,23 @@ msgstr "/languages"
 
 #: functions.php:55
 msgid "hero-large"
-msgstr ""
+msgstr "hero-large"
 
 #: functions.php:57
 msgid "hero-small"
-msgstr ""
+msgstr "hero-small"
 
 #: functions.php:58
 msgid "thumbnail-large"
-msgstr ""
+msgstr "thumbnail-large"
 
 #: functions.php:61
 msgid "wp_content_img_tag"
-msgstr ""
+msgstr "wp_content_img_tag"
 
 #: functions.php:63
 msgid " sizes=\"auto, "
-msgstr ""
+msgstr " sizes=\"auto, "
 
 #: functions.php:63
 #, fuzzy
@@ -2255,7 +2234,7 @@ msgstr "Maint Ffont"
 
 #: functions.php:67
 msgid "wp_get_attachment_image_attributes"
-msgstr ""
+msgstr "wp_get_attachment_image_attributes"
 
 #: functions.php:70
 #, fuzzy
@@ -2264,19 +2243,19 @@ msgstr "Awto"
 
 #: front-page.php:14
 msgid "frontPage-hero"
-msgstr ""
+msgstr "frontPage-hero"
 
 #: front-page.php:34
 msgid "template-parts/map-teaser"
-msgstr ""
+msgstr "template-parts/map-teaser"
 
 #: single-project.php:23 single.php:24 page.php:16
 msgid "template-parts/downloads"
-msgstr ""
+msgstr "template-parts/downloads"
 
 #: single-project.php:32
 msgid "template-parts/project-sidebar"
-msgstr ""
+msgstr "template-parts/project-sidebar"
 
 #: home.php:14
 #, fuzzy
@@ -2289,7 +2268,7 @@ msgstr ""
 
 #: archive-organisation.php:71 single-organisation.php:17
 msgid "map_data"
-msgstr ""
+msgstr "map_data"
 
 #: archive-organisation.php:71
 #, fuzzy
@@ -2302,15 +2281,15 @@ msgstr ""
 
 #: single-organisation.php:14
 msgid "template-parts/member-meta"
-msgstr ""
+msgstr "template-parts/member-meta"
 
 #: single-organisation.php:26
 msgid "template-parts/member-sidebar"
-msgstr ""
+msgstr "template-parts/member-sidebar"
 
 #: single-organisation.php:31
 msgid "template-parts/related-items"
-msgstr ""
+msgstr "template-parts/related-items"
 
 #: single.php:17 single.php:18
 #, fuzzy
@@ -2321,23 +2300,23 @@ msgstr ""
 
 #: single.php:25
 msgid "template-parts/post-project-funders"
-msgstr ""
+msgstr "template-parts/post-project-funders"
 
 #: single.php:36
 msgid "template-parts/post-sidebar"
-msgstr ""
+msgstr "template-parts/post-sidebar"
 
 #: footer.php:16
 msgid "template-parts/footer-nav"
-msgstr ""
+msgstr "template-parts/footer-nav"
 
 #: footer.php:17
 msgid "template-parts/footer-socials"
-msgstr ""
+msgstr "template-parts/footer-socials"
 
 #: footer.php:22
 msgid "template-parts/wg-logo"
-msgstr ""
+msgstr "template-parts/wg-logo"
 
 #: footer.php:32
 #, php-format
@@ -2345,19 +2324,21 @@ msgid ""
 "Archives Wales is a brand of the Archives and Records Council Wales (ARCW) © "
 "%s. All Rights Reserved ARCW unless otherwise stated."
 msgstr ""
+"Mae Archifau Cymru yn frand o Gyngor Archifau a Chofnodion Cymru © %s. "
+"Cedwir Pob Hawl oni nodir yn wahanol."
 
 #: node_modules/flatted/php/flatted.php:33
 msgid "Flatted::asString"
-msgstr ""
+msgstr "Flatted::asString"
 
 #: node_modules/flatted/php/flatted.php:35
 #: node_modules/flatted/php/flatted.php:145
 msgid "Flatted::wrap"
-msgstr ""
+msgstr "Flatted::wrap"
 
 #: page.php:26
 msgid "template-parts/page-sidebar"
-msgstr ""
+msgstr "template-parts/page-sidebar"
 
 #: 404.php:14
 #, fuzzy
@@ -2366,11 +2347,11 @@ msgstr "Gwall 404 - Heb Ganfod Tudalen"
 
 #: comments.php:8
 msgid "SCRIPT_FILENAME"
-msgstr ""
+msgstr "SCRIPT_FILENAME"
 
 #: comments.php:8
 msgid "comments.php"
-msgstr ""
+msgstr "comments.php"
 
 #: comments.php:9
 msgid "Please do not load this page directly. Thanks!"
@@ -2434,7 +2415,7 @@ msgstr "er mwyn postio sylw."
 
 #: comments.php:68 comments.php:72
 msgid "siteurl"
-msgstr ""
+msgstr "siteurl"
 
 #: comments.php:72
 #, fuzzy
@@ -2448,7 +2429,7 @@ msgstr "Allgofnodi"
 
 #: comments.php:84 comments.php:98
 msgid "aria-required='true'"
-msgstr ""
+msgstr "aria-required='true'"
 
 #: comments.php:87
 msgid "Name"
@@ -2468,7 +2449,7 @@ msgstr "Cynnig Sylw"
 
 #: comments.php:126
 msgid "comment_form"
-msgstr ""
+msgstr "comment_form"
 
 #: index.php:17
 msgid "Blog"
