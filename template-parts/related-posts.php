@@ -11,6 +11,8 @@ $project = isset($args['project']) ? $args['project'] : null;
 // only display posts that refer to this project
 if($type === 'project' ){
 
+  $title_string = sprintf(__('Updates from <i>%s</i>', 'acaw'), get_the_title());
+
   $query_args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
@@ -31,6 +33,8 @@ if($type === 'project' ){
   // if a project is passed in as an argument, 
   // show posts related to that project
 }elseif( $project ){
+
+  $title_string = sprintf(__('More from <i>%s</i>', 'acaw'), get_the_title($project));
 
   $query_args = array(
     'post_type' => 'post',
@@ -53,6 +57,8 @@ if($type === 'project' ){
   // show posts that refer to this organisation
 }elseif($type === 'organisation' ){
 
+  $title_string = sprintf(__('Updates from %s', 'acaw'), get_the_title());
+
   $query_args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
@@ -71,7 +77,7 @@ if($type === 'project' ){
   );
 }
 else{
-  
+  $title_string = __('Latest Updates', 'acaw');
 // if none of the above, pick 3 off the top
   $query_args = array(
     'post_type' => 'post',
@@ -90,7 +96,7 @@ $posts = new WP_Query($query_args);
 <?php if ($posts->have_posts()) : ?>
 
   <div class="<?php echo esc_attr($wrapper_classes); ?>">
-    <h2 class="relatedPosts-title"><?php echo is_front_page() ? __('Latest News', 'acaw') : __('Related Posts', 'acaw'); ?></h2>
+    <h2 class="relatedPosts-title"><?php echo is_front_page() ? __('Latest Updates from Archives Wales', 'acaw') : $title_string; ?></h2>
     <ol class="relatedPosts">
       <?php while ($posts->have_posts()) : $posts->the_post(); ?>
       <li class="relatedPost">
