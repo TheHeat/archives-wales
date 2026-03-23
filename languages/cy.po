@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-20 22:31+0000\n"
-"PO-Revision-Date: 2026-03-22 23:56+0000\n"
+"PO-Revision-Date: 2026-03-23 00:00+0000\n"
 "Last-Translator: Carl Morris <carl@morris.cymru>\n"
 "Language-Team: \n"
 "Language: cy\n"
@@ -1423,7 +1423,7 @@ msgstr ""
 
 #: template-parts/catalogue-link.php:4
 msgid "Search the online catalogue"
-msgstr ""
+msgstr "Chwilio'r catalog ar-lein"
 
 #: template-parts/post-sidebar.php:7
 msgid "template-parts/related-projects"
@@ -1629,16 +1629,14 @@ msgid "cy"
 msgstr ""
 
 #: template-parts/logo.php:30
-#, fuzzy
 msgid "en"
-msgstr "cy"
+msgstr "en"
 
 #: template-parts/downloads.php:1 template-parts/downloads.php:5
 msgid "downloads"
 msgstr "lawrlwythiadau"
 
 #: template-parts/downloads.php:3
-#, fuzzy
 msgid "Downloads"
 msgstr "Lawrlwythiadau"
 
@@ -1687,9 +1685,8 @@ msgid "link"
 msgstr "Dolen"
 
 #: template-parts/member-meta.php:14
-#, fuzzy
 msgid "Catalogue"
-msgstr "catalogue_url"
+msgstr "Catalog"
 
 #: template-parts/member-meta.php:15
 msgid "catalogue_url"
