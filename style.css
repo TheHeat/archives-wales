@@ -1829,7 +1829,7 @@ figcaption,
 
 .catalogueLink {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr auto;
   padding: 1em;
   color: inherit;
   text-decoration: none;
