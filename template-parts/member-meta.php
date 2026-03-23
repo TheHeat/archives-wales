@@ -50,7 +50,7 @@ $website_url = get_field('website_url');
 							<?php endif; ?>
 					<?php foreach ($links as $key => $link):  ?>
 						<li>
-							<a class="button <?php echo esc_attr($link['icon']); ?>" href="<?php echo esc_url($link['url']); ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/svg', $link['icon']); ?><?php echo esc_html($link['label']); ?></a>
+							<a class="button <?php echo esc_attr($link['icon']); ?>" href="<?php echo esc_url($link['url']); ?>"  rel="noopener"><?php get_template_part('template-parts/svg', $link['icon']); ?><?php echo esc_html($link['label']); ?></a>
 						</li>
 						<?php endforeach; ?>
 					</ul>
@@ -59,7 +59,7 @@ $website_url = get_field('website_url');
 						<ul class="memberMeta-socials">
 							<?php foreach ( $socials as $social ) : ?>
 								<li>
-									<a href="<?php echo esc_url( $social['url'] ); ?>" target="_blank" rel="noopener">
+									<a href="<?php echo esc_url( $social['url'] ); ?>"  rel="noopener">
 										<?php get_template_part('template-parts/svg', $social['icon']); ?>
 									</a>
 								</li>
