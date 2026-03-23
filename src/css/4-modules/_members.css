@@ -1,6 +1,7 @@
 .memberTeaser {
 	background-color: var(--color-white);
 	border-left: solid 0.25em var(--color-red);
+	height: 100%;
 	display: grid;
 	grid-template-columns: 8em 1fr;
 	gap: 1em;

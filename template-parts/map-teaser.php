@@ -1,7 +1,7 @@
 
 <section class="frontPage-map">
 
-<?php get_template_part('map-with-query'); ?>
+<?php get_template_part('template-parts/map-with-query'); ?>
 	<div>
 		<h2><?php _e('There are Archives Wales members in every corner of the country', 'acaw'); ?></h2>
 		<p><?php _e('Explore the complete list of our members along with a map to help you find your nearest archive.', 'acaw'); ?></p>
