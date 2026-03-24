@@ -35,39 +35,37 @@ $website_url = get_field('website_url');
 	?>
 
 <div class="memberMeta-wrapper">
-	<div class="memberMeta-contacts">
-		<?php get_template_part('template-parts/organisation-logo');?>
-		<ul class="memberMeta-links">
-					<?php if(get_sub_field('email')): ?>
-						<li>
-							<a class="button email" href="mailto:<?php the_sub_field('email'); ?>"><?php get_template_part('template-parts/svg', 'email'); the_sub_field('email'); ?></a>
-						</li>
-						<?php endif; ?>
-						<?php if(get_sub_field('telephone')): ?>
-							<li>
-								<a class="button phone" href="tel:<?php the_sub_field('telephone'); ?>"><?php get_template_part('template-parts/svg', 'phone'); the_sub_field('telephone'); ?></a>
-							</li>
-							<?php endif; ?>
-					<?php foreach ($links as $key => $link):  ?>
-						<li>
-							<a class="button <?php echo esc_attr($link['icon']); ?>" href="<?php echo esc_url($link['url']); ?>"  rel="noopener"><?php get_template_part('template-parts/svg', $link['icon']); ?><?php echo esc_html($link['label']); ?></a>
-						</li>
-						<?php endforeach; ?>
-					</ul>
-					
-					<?php if (count($socials) > 0): ?>
-						<ul class="memberMeta-socials">
-							<?php foreach ( $socials as $social ) : ?>
-								<li>
-									<a href="<?php echo esc_url( $social['url'] ); ?>"  rel="noopener">
-										<?php get_template_part('template-parts/svg', $social['icon']); ?>
-									</a>
-								</li>
-								<?php endforeach;?>
-							</ul>
-							<?php endif; ?>
-							
-						</div>
+
+
+	<div class="memberMeta-contacts-wrapper">
+		<div class="memberMeta-logo-wrapper">
+			<?php get_template_part('template-parts/organisation-logo', null, ['class' => 'memberMeta-logo']);?>
+		</div>
+
+		<div class="memberMeta-contacts">
+			<?php if(get_sub_field('email')): ?>
+				<a class="button email" href="mailto:<?php the_sub_field('email'); ?>"><?php get_template_part('template-parts/svg', 'email'); ?><span><?php the_sub_field('email'); ?></span></a>
+			<?php endif; ?>
+	
+			<?php if(get_sub_field('telephone')): ?>
+				<a class="button phone" href="tel:<?php the_sub_field('telephone'); ?>"><?php get_template_part('template-parts/svg', 'phone'); ?><span><?php the_sub_field('telephone'); ?></span></a>
+			<?php endif; ?>
+
+			<?php foreach ($links as $key => $link):  ?>
+				<a class="button <?php echo esc_attr($link['icon']); ?>" href="<?php echo esc_url($link['url']); ?>"  rel="noopener"><?php get_template_part('template-parts/svg', $link['icon']); ?><span><?php echo esc_html($link['label']); ?></span></a>
+			<?php endforeach; ?>
+				
+			<?php if (count($socials) > 0): ?>
+				<?php foreach ( $socials as $social ) : ?>
+					<a class="button social" href="<?php echo esc_url( $social['url'] ); ?>"  rel="noopener">
+						<?php get_template_part('template-parts/svg', $social['icon']); ?> <span><?php echo esc_html($social['icon']); ?></span>
+					</a>
+				<?php endforeach;?>
+			<?php endif; ?>
+		</div>
+	</div>
+
+
 <div class="memberMeta-location-wrapper">
 	<figure class="memberMeta-location">
 		

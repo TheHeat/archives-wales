@@ -4,7 +4,7 @@
   margin: auto;
   
   
-  @media (width > 50rem) {
+  @media (width > 60rem) {
     gap:var(--length-spacer);
     padding-inline: var(--length-spacer);
     padding-block-end: var(--length-spacer);
@@ -29,7 +29,7 @@
        padding:var(--length-spacer);
 
   
-  @media (width > 50rem) {
+  @media (width > 60rem) {
      padding: var(--length-spacer) 0;
 }
 }
