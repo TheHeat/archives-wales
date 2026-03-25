@@ -7,6 +7,8 @@
 	max-width: var(--length-site-max);
 	margin: 0 auto;
 	padding: var(--length-spacer);
+	display: grid;
+	gap: var(--length-spacer);
 }
 
 
@@ -69,9 +71,24 @@ line-height: 1;
 	right: 0;
 	font-size: xx-large;
 	margin: .5em;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .itemModal-inner{
 	display: grid;
 	gap: 1em;
+}
+
+.itemModal-content{
+
+	p:first-child{
+		margin-top: 0;
+	}
+	
+	p:last-child{
+		margin-bottom: 0;
+	}
 }

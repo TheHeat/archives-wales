@@ -1,12 +1,12 @@
 .familyTree-wrapper{
 	background-color: var(--color-surface);
-	border-radius: var(--length-border-radius);
-	overflow: clip;
+	    border-radius: var(--length-border-radius);
+    overflow: clip;
 }
 
 
 
-.familyTree-wrapper li {
+.familyTree-wrapper li li {
 	border-top: solid  var(--color-ground);
 }
 
@@ -15,6 +15,7 @@
 	text-decoration: none;
 	display: block;
 	padding: 0.25em 0.5em;
+	border-left: solid 0.25em var(--color-green);
 }
 
 .familyTree-wrapper a:hover {
@@ -46,9 +47,9 @@
 	padding: 0;
 }
 
-.familyTree li li > ul a {
-	border-left: solid 1em var(--color-green);
-}
 
 .familyTree .current_page_item a {
-text-decoration: underline currentColor;}
+text-decoration: underline currentColor;
+border-left-color: var(--color-red);
+}
+

@@ -9,6 +9,11 @@
   
 }
 
+.archive-header-inner {
+  display: grid;
+  gap: var(--length-spacer);
+}
+
 .archiveSearchbar-wrapper {
   background-color: var(--color-black);
 }

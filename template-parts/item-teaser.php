@@ -20,9 +20,18 @@
 
 				<div class="itemModal-inner">
 			<?php get_template_part('template-parts/featured-image');?>
+			<div class="itemModal-content">
 
 				<?php the_content();?>
-									<?php edit_post_link( __( 'Edit this item', 'acaw' )); ?>
+				<?php the_field('catalogue_url'); ?>
+				<?php edit_post_link( __( 'Edit this item', 'acaw' )); ?>
+				<?php if(get_field('historical_year')): ?>
+					<span class="meta"><?php the_field('historical_year'); ?></span>
+				<?php endif; ?>
+				</div>
+
+
+
 
 			</div>
 

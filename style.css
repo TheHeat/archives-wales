@@ -1896,7 +1896,7 @@ figcaption,
   overflow: clip;
 }
 
-.familyTree-wrapper li {
+.familyTree-wrapper li li {
   border-top: solid var(--color-ground);
 }
 
@@ -1905,6 +1905,7 @@ figcaption,
   text-decoration: none;
   display: block;
   padding: 0.25em 0.5em;
+  border-left: solid 0.25em var(--color-green);
 }
 
 .familyTree-wrapper a:hover {
@@ -1937,12 +1938,9 @@ figcaption,
   padding: 0;
 }
 
-.familyTree li li > ul a {
-  border-left: solid 1em var(--color-green);
-}
-
 .familyTree .current_page_item a {
   text-decoration: underline currentColor;
+  border-left-color: var(--color-red);
 }
 
 .relatedItems-wrapper {
@@ -1954,6 +1952,8 @@ figcaption,
   max-width: var(--length-site-max);
   margin: 0 auto;
   padding: var(--length-spacer);
+  display: grid;
+  gap: var(--length-spacer);
 }
 
 .relatedItemTeaser {
@@ -2016,11 +2016,23 @@ button.relatedItemTeaser-imageButton,
   right: 0;
   font-size: xx-large;
   margin: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .itemModal-inner {
   display: grid;
   gap: 1em;
+}
+
+.itemModal-content {
+  p:first-child {
+    margin-top: 0;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .siteWrapper {
@@ -2152,6 +2164,11 @@ button.relatedItemTeaser-imageButton,
   padding: var(--length-spacer);
 }
 
+.archive-header-inner {
+  display: grid;
+  gap: var(--length-spacer);
+}
+
 .archiveSearchbar-wrapper {
   background-color: var(--color-black);
 }
@@ -2257,6 +2274,8 @@ button.relatedItemTeaser-imageButton,
   aspect-ratio: 1;
   object-fit: contain;
   background-color: white;
+  width: 100%;
+  height: auto;
 }
 
 .memberMeta-contacts {
