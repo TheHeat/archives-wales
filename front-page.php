@@ -29,7 +29,7 @@ get_header(); ?>
 		<?php endwhile;?>
 	<?php endif;	?>
 
-
+	<?php get_template_part( 'template-parts/searchbar' ); ?>
 	<div class="frontPage-map-wrapper">
 		<?php get_template_part( 'template-parts/map-teaser' ); ?>
 	</div>

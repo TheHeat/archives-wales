@@ -16,11 +16,7 @@ get_header();
 </div>
 </div>
 
-<div class="archiveSearchbar-wrapper">
-	<div class="archiveSearchbar">
-		<?php get_template_part( 'template-parts/search-form' ); ?>
-	</div>
-</div>
+<?php get_template_part( 'template-parts/searchbar' ); ?>
 
 <div class="archive-content">
 

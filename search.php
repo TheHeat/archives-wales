@@ -14,19 +14,16 @@ $title = sprintf($title_format, $results, $search_term);
 
 ?>
 
-<div class="archive-header">
-	<div class="archive-header-inner">
+<div class="archive-header-wrapper">
+	<div class="archive-header">
 		<h1><?php echo $title; ?></h1>
 </div>
 </div>
-<div class="archiveSearchbar">
-	<?php get_template_part( 'template-parts/search-form' ); ?>
-</div>
+<?php get_template_part( 'template-parts/searchbar' ); ?>
+
 <div class="archive-content">
 
 	<?php if ( have_posts() ) : ?>
-
-		<?php the_posts_pagination(); ?>
 
 		<ol class="archiveList">
 		<?php
@@ -39,7 +36,7 @@ $title = sprintf($title_format, $results, $search_term);
 			<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 			<h2>
 				<a href="<?php the_permalink();?>">
-					<?php echo sprintf('%s : %s', get_post_type(), get_the_title()) ?>
+					<?php echo sprintf('%s : %s', get_post_type_object(get_post_type())->labels->singular_name, get_the_title()) ?>
 				</a>
 			</h2>
 	

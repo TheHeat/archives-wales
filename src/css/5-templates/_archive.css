@@ -14,19 +14,6 @@
   gap: var(--length-spacer);
 }
 
-.archiveSearchbar-wrapper {
-  background-color: var(--color-black);
-}
-
-.archiveSearchbar {
-  max-width: var(--length-site-max);
-  margin: auto;
-  padding: calc(var(--length-spacer) / 2) var(--length-spacer);
-  display: flex;
-  justify-content: flex-end;
-}
-
-
 
 .archive-content {
     max-width:var(--length-site-max);

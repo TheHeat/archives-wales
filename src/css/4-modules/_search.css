@@ -1,6 +1,18 @@
+.searchbar-wrapper {
+  background-color: var(--color-black);
+}
+
+.searchbar {
+  width: 100%;
+  max-width: var(--length-site-max);
+  margin: auto;
+  padding: calc(var(--length-spacer) / 2) var(--length-spacer);
+}
+
+
+
 .search-form {
 	max-width: 600px;
-	margin: 0 auto;
 	background-color: var(--color-white);
 	padding: calc(var(--length-border-radius) / 2);
 	width: fit-content;
@@ -16,3 +28,5 @@
 		text-transform: uppercase;
 	}
 }
+
+
