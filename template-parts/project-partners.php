@@ -29,7 +29,7 @@ if ( $partners ) :
 						$partners_query->the_post();
 						?>
 						<li>
-							<?php get_template_part( 'template-parts/organisation-logo' ); ?>
+						<?php get_template_part( 'template-parts/organisation-logo', null, ['class' => 'projectSidebar-logo'] ); ?>
 
 						</li>
 					<?php endwhile; ?>
