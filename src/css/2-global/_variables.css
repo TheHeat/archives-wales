@@ -33,7 +33,7 @@
 
 
 .meta{
-	padding: .5em .75em;
+	padding: .3em .5em;
 	background-color:var(--color-ground);
   color: var(--color-text);
 	width: fit-content;

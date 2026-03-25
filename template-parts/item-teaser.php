@@ -23,11 +23,20 @@
 			<div class="itemModal-content">
 
 				<?php the_content();?>
-				<?php the_field('catalogue_url'); ?>
 				<?php edit_post_link( __( 'Edit this item', 'acaw' )); ?>
+			</div>
+
+			<div class="itemModal-footer">
+
 				<?php if(get_field('historical_year')): ?>
 					<span class="meta"><?php the_field('historical_year'); ?></span>
-				<?php endif; ?>
+					<?php endif; ?>
+
+					<?php if(get_field('catalogue_url')): ?>
+						<a href="<?php the_field('catalogue_url'); ?>" class="button"><?php get_template_part('template-parts/svg', 'catalogue'); ?> <?php _e('Catalogue Link', 'acaw');?></a>
+					<?php endif; ?>
+
+
 				</div>
 
 

@@ -26,15 +26,21 @@ textarea {
 button,
 .button {
   display: inline-flex;
-  gap: .2em;
-  line-height: 1.2;
+  gap: .3em;
+  line-height: 1.5;
   background-color: var(--color-red);
   color: var(--color-red-contrast);
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.3em 0.5em;
-  font-size: 1em;
+  font-size: smaller;
   border-radius:var(--length-border-radius);
+
+  svg{
+    display: block;
+    aspect-ratio: 1;
+    height: 1.5em;	
+  }
 
 }
 

@@ -79,29 +79,6 @@
 	max-width: 28em;
 }
 
-.button.email{
-	text-transform: unset;
-	overflow: clip;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-
-.link,
-.catalogue,
-.phone,
-.email,
-.social{
-	font-size: smaller;
-	svg{
-		display: block;
-		aspect-ratio: 1;
-		width: 1em;	
-		height: 1em;
-		margin-right: .25em;
-		vertical-align: baseline;
-		transform: translateY(.1em);
-	}
-}
 
 .member-relatedPosts{
 	padding: var(--length-spacer);
