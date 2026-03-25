@@ -68,7 +68,7 @@ function create_project_cpt()
     'singular_name' => _x('Project', 'Post Type Singular Name', 'acaw'),
     'menu_name' => _x('Projects', 'Admin Menu text', 'acaw'),
     'name_admin_bar' => _x('Project', 'Add New on Toolbar', 'acaw'),
-    'archives' => __('Project Archives', 'acaw'),
+    'archives' => __('Projects', 'acaw'),
     'attributes' => __('Project Attributes', 'acaw'),
     'parent_item_colon' => __('Parent Project:', 'acaw'),
     'all_items' => __('All Projects', 'acaw'),
