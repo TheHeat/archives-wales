@@ -8,7 +8,7 @@ function create_organisation_cpt() {
 		'singular_name' => _x( 'Organisation', 'Post Type Singular Name', 'acaw' ),
 		'menu_name' => _x( 'Organisations', 'Admin Menu text', 'acaw' ),
 		'name_admin_bar' => _x( 'Organisation', 'Add New on Toolbar', 'acaw' ),
-		'archives' => __( 'Member repositories', 'acaw' ),
+		'archives' => 		__( 'Archives Wales Members', 'acaw' ),
 		'attributes' => __( 'Organisation Attributes', 'acaw' ),
 		'parent_item_colon' => __( 'Parent Organisation:', 'acaw' ),
 		'all_items' => __( 'All Organisations', 'acaw' ),
@@ -33,7 +33,7 @@ function create_organisation_cpt() {
 		'filter_items_list' => __( 'Filter Organisations list', 'acaw' ),
 	);
 	$args = array(
-		'label' => __( 'Organisation', 'acaw' ),
+		'label' => __( 'Organisations', 'acaw' ),
 		'description' => __( 'Use this map to find your local archive service. Search results will show you the contact information for the archive, brief information about their collections, and opening times. 
 ', 'acaw' ),
 		'labels' => $labels,
