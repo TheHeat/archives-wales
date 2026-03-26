@@ -37,11 +37,14 @@ if ( have_posts() ) {
 <div class="archive-header-wrapper">
 
 	<div class="archive-header">
-		<div class="archive-header-inner">
-
+		
 		<?php if(!empty($markers)){ get_template_part('template-parts/map', null, ['markers' => $markers]); }?>
-
+		
+		<div class="archive-header-inner">
 			<h1><?php echo $archive_type->labels->archives; ?></h1>	
+					<?php if (!empty($archive_type->description)) : ?>
+				<?php echo wp_kses_post(wpautop($archive_type->description)); ?>
+			<?php endif; ?>
 		</div>
 </div>
 </div>

@@ -34,7 +34,8 @@ function create_organisation_cpt() {
 	);
 	$args = array(
 		'label' => __( 'Organisation', 'acaw' ),
-		'description' => __( '', 'acaw' ),
+		'description' => __( 'Use this map to find your local archive service. Search results will show you the contact information for the archive, brief information about their collections, and opening times. 
+', 'acaw' ),
 		'labels' => $labels,
 		'menu_icon' => 'dashicons-admin-multisite',
 		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
@@ -94,7 +95,7 @@ function create_project_cpt()
   );
   $args = array(
     'label' => __('Project', 'acaw'),
-    'description' => __('AW/AC Projects', 'acaw'),
+    'description' => __('Collaborative working has been a key feature of ARCW’s work, developing sustainable and effective projects using resources and expertise that individual services would not be able to provide. In recent years projects have focussed on ensuring that the history of Welsh industry is recognised and promoted. (You can read more about some of our projects here).', 'acaw'),
     'labels' => $labels,
     'menu_icon' => 'dashicons-clipboard',
     'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),

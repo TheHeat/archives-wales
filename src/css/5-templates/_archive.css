@@ -6,12 +6,13 @@
   max-width:var(--length-site-max);
   margin: auto;
   padding: var(--length-spacer);
+  display: grid;
+  gap: var(--length-spacer);
   
 }
 
 .archive-header-inner {
-  display: grid;
-  gap: var(--length-spacer);
+  max-width: 60ch;
 }
 
 

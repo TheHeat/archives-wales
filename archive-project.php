@@ -45,7 +45,14 @@ if ($finished_projects->have_posts()) {
 
 <div class="archive-header-wrapper">
 	<div class="archive-header">
-		<h1><?php echo $archive_type->labels->archives; ?></h1>	
+
+	<div class="archive-header-inner">
+
+		<h1><?php echo $archive_type->labels->archives; ?></h1>
+		<?php if (!empty($archive_type->description)) : ?>
+				<?php echo wp_kses_post(wpautop($archive_type->description)); ?>
+			<?php endif; ?>
+		</div>
 	</div>
 </div>
 
