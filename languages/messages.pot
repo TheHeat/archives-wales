@@ -6,7 +6,7 @@
 #: inc/proper-video-functions.php:12 inc/proper-icons.php:34
 #: inc/proper-strip-protocol.php:9 inc/proper-strip-protocol.php:20
 #: inc/proper-strip-protocol.php:21 inc/acaw-members.php:50
-#: inc/acaw-projects.php:11 inc/acaw-types.php:37 inc/acaw-types.php:155
+#: inc/acaw-projects.php:11 inc/acaw-types.php:156
 #: inc/proper-image-functions.php:15 inc/proper-image-functions.php:35
 #: inc/proper-image-functions.php:36 inc/proper-image-functions.php:37
 #: inc/proper-image-functions.php:38 template-parts/member-teaser.php:28
@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-24 11:27+0000\n"
+"POT-Creation-Date: 2026-03-29 22:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,24 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: page-parent.php:18
+msgid "archive-header-inner"
+msgstr ""
+
+#: page-parent.php:19 page-contact.php:63 single-project.php:15
+#: single-organisation.php:12 single.php:16 page.php:13
+msgid "<h1>"
+msgstr ""
+
+#: page-parent.php:19 page-contact.php:63 single-project.php:15
+#: single-organisation.php:12 single.php:16 page.php:13
+msgid "</h1>"
+msgstr ""
+
+#: page-parent.php:25
+msgid "template-parts/page-children"
+msgstr ""
 
 #: inc/proper-send-mail.php:4
 msgid "wp_mail_failed"
@@ -44,7 +62,7 @@ msgid "the_title"
 msgstr ""
 
 #: inc/proper-send-mail.php:24 inc/acaw-members.php:7 inc/acaw-types.php:7
-#: inc/acaw-types.php:67 inc/acaw-types.php:125 template-parts/logo.php:3
+#: inc/acaw-types.php:68 inc/acaw-types.php:126 template-parts/logo.php:3
 #: template-parts/downloads.php:9 header.php:47 page-contact.php:25
 #: page-contact.php:32 page-contact.php:38
 msgid "name"
@@ -244,7 +262,7 @@ msgid "acaw_json_load_point"
 msgstr ""
 
 #: inc/acaw-organisation-map.php:17 inc/acaw-organisation-map.php:28
-#: inc/acaw-types.php:40 inc/acaw-types.php:100 inc/acaw-types.php:158
+#: inc/acaw-types.php:41 inc/acaw-types.php:101 inc/acaw-types.php:159
 #: template-parts/member-sidebar.php:14 template-parts/map-with-query.php:12
 msgid "title"
 msgstr ""
@@ -255,7 +273,7 @@ msgstr ""
 #: template-parts/member-meta.php:25 template-parts/member-meta.php:26
 #: template-parts/member-meta.php:27 template-parts/member-meta.php:28
 #: template-parts/member-meta.php:29 template-parts/member-meta.php:32
-#: template-parts/member-meta.php:53 template-parts/member-meta.php:62
+#: template-parts/member-meta.php:55 template-parts/member-meta.php:60
 msgid "url"
 msgstr ""
 
@@ -264,14 +282,14 @@ msgstr ""
 msgid "member_fields"
 msgstr ""
 
-#: inc/acaw-organisation-map.php:25 template-parts/member-meta.php:74
+#: inc/acaw-organisation-map.php:25 template-parts/member-meta.php:72
 msgid "map"
 msgstr ""
 
 #: inc/acaw-organisation-map.php:26 inc/acaw-organisation-map.php:27
 #: template-parts/map.php:7 template-parts/map.php:11
-#: template-parts/member-meta.php:74 template-parts/map-with-query.php:30
-#: archive-organisation.php:42 archive-organisation.php:72
+#: template-parts/member-meta.php:72 template-parts/map-with-query.php:30
+#: archive-organisation.php:41 archive-organisation.php:75
 #: single-organisation.php:18
 msgid "markers"
 msgstr ""
@@ -322,7 +340,7 @@ msgid "post_type"
 msgstr ""
 
 #: inc/acaw-members.php:5 inc/acaw-members.php:27 inc/acaw-members.php:67
-#: inc/acaw-types.php:57 template-parts/related-posts.php:58
+#: inc/acaw-types.php:58 template-parts/related-posts.php:58
 #: template-parts/member-sidebar.php:4 template-parts/related-items.php:6
 #: template-parts/map-teaser.php:8 template-parts/member-teaser.php:1
 #: template-parts/members-link.php:3 template-parts/project-partners.php:10
@@ -331,20 +349,20 @@ msgid "organisation"
 msgstr ""
 
 #: inc/acaw-members.php:7 inc/acaw-projects.php:15
-#: template-parts/member-sidebar.php:14 template-parts/project-partners.php:12
-#: template-parts/map-with-query.php:12 template-parts/project-funders.php:14
-#: archive-project.php:24
+#: template-parts/member-sidebar.php:14 template-parts/page-children.php:13
+#: template-parts/project-partners.php:12 template-parts/map-with-query.php:12
+#: template-parts/project-funders.php:14 archive-project.php:24
 msgid "orderby"
 msgstr ""
 
 #: inc/acaw-members.php:8 inc/acaw-projects.php:17
-#: template-parts/member-sidebar.php:15 template-parts/map-with-query.php:13
-#: archive-project.php:25
+#: template-parts/member-sidebar.php:15 template-parts/page-children.php:14
+#: template-parts/map-with-query.php:13 archive-project.php:25
 msgid "order"
 msgstr ""
 
 #: inc/acaw-members.php:8 template-parts/member-sidebar.php:15
-#: template-parts/map-with-query.php:13
+#: template-parts/page-children.php:14 template-parts/map-with-query.php:13
 msgid "ASC"
 msgstr ""
 
@@ -427,45 +445,47 @@ msgstr ""
 #: inc/acaw-types.php:26 inc/acaw-types.php:27 inc/acaw-types.php:28
 #: inc/acaw-types.php:29 inc/acaw-types.php:30 inc/acaw-types.php:31
 #: inc/acaw-types.php:32 inc/acaw-types.php:33 inc/acaw-types.php:36
-#: inc/acaw-types.php:37 inc/acaw-types.php:67 inc/acaw-types.php:68
-#: inc/acaw-types.php:69 inc/acaw-types.php:70 inc/acaw-types.php:71
-#: inc/acaw-types.php:72 inc/acaw-types.php:73 inc/acaw-types.php:74
-#: inc/acaw-types.php:75 inc/acaw-types.php:76 inc/acaw-types.php:77
-#: inc/acaw-types.php:78 inc/acaw-types.php:79 inc/acaw-types.php:80
-#: inc/acaw-types.php:81 inc/acaw-types.php:82 inc/acaw-types.php:83
-#: inc/acaw-types.php:84 inc/acaw-types.php:85 inc/acaw-types.php:86
-#: inc/acaw-types.php:87 inc/acaw-types.php:88 inc/acaw-types.php:89
-#: inc/acaw-types.php:90 inc/acaw-types.php:91 inc/acaw-types.php:92
-#: inc/acaw-types.php:93 inc/acaw-types.php:96 inc/acaw-types.php:97
-#: inc/acaw-types.php:125 inc/acaw-types.php:126 inc/acaw-types.php:127
-#: inc/acaw-types.php:128 inc/acaw-types.php:129 inc/acaw-types.php:130
-#: inc/acaw-types.php:131 inc/acaw-types.php:132 inc/acaw-types.php:133
-#: inc/acaw-types.php:134 inc/acaw-types.php:135 inc/acaw-types.php:136
-#: inc/acaw-types.php:137 inc/acaw-types.php:138 inc/acaw-types.php:139
-#: inc/acaw-types.php:140 inc/acaw-types.php:141 inc/acaw-types.php:142
-#: inc/acaw-types.php:143 inc/acaw-types.php:144 inc/acaw-types.php:145
-#: inc/acaw-types.php:146 inc/acaw-types.php:147 inc/acaw-types.php:148
-#: inc/acaw-types.php:149 inc/acaw-types.php:150 inc/acaw-types.php:151
-#: inc/acaw-types.php:154 inc/acaw-types.php:155 template-parts/post-meta.php:8
+#: inc/acaw-types.php:38 inc/acaw-types.php:68 inc/acaw-types.php:69
+#: inc/acaw-types.php:70 inc/acaw-types.php:71 inc/acaw-types.php:72
+#: inc/acaw-types.php:73 inc/acaw-types.php:74 inc/acaw-types.php:75
+#: inc/acaw-types.php:76 inc/acaw-types.php:77 inc/acaw-types.php:78
+#: inc/acaw-types.php:79 inc/acaw-types.php:80 inc/acaw-types.php:81
+#: inc/acaw-types.php:82 inc/acaw-types.php:83 inc/acaw-types.php:84
+#: inc/acaw-types.php:85 inc/acaw-types.php:86 inc/acaw-types.php:87
+#: inc/acaw-types.php:88 inc/acaw-types.php:89 inc/acaw-types.php:90
+#: inc/acaw-types.php:91 inc/acaw-types.php:92 inc/acaw-types.php:93
+#: inc/acaw-types.php:94 inc/acaw-types.php:97 inc/acaw-types.php:98
+#: inc/acaw-types.php:126 inc/acaw-types.php:127 inc/acaw-types.php:128
+#: inc/acaw-types.php:129 inc/acaw-types.php:130 inc/acaw-types.php:131
+#: inc/acaw-types.php:132 inc/acaw-types.php:133 inc/acaw-types.php:134
+#: inc/acaw-types.php:135 inc/acaw-types.php:136 inc/acaw-types.php:137
+#: inc/acaw-types.php:138 inc/acaw-types.php:139 inc/acaw-types.php:140
+#: inc/acaw-types.php:141 inc/acaw-types.php:142 inc/acaw-types.php:143
+#: inc/acaw-types.php:144 inc/acaw-types.php:145 inc/acaw-types.php:146
+#: inc/acaw-types.php:147 inc/acaw-types.php:148 inc/acaw-types.php:149
+#: inc/acaw-types.php:150 inc/acaw-types.php:151 inc/acaw-types.php:152
+#: inc/acaw-types.php:155 inc/acaw-types.php:156 template-parts/post-meta.php:8
 #: template-parts/post-meta.php:9 template-parts/related-posts.php:14
 #: template-parts/related-posts.php:37 template-parts/related-posts.php:60
 #: template-parts/related-posts.php:80 template-parts/related-posts.php:99
-#: template-parts/item-teaser.php:25 template-parts/project-get-involved.php:4
+#: template-parts/item-teaser.php:26 template-parts/item-teaser.php:36
+#: template-parts/project-get-involved.php:4
 #: template-parts/related-items.php:48 template-parts/map-teaser.php:6
 #: template-parts/map-teaser.php:7 template-parts/map-teaser.php:8
 #: template-parts/cookies-notice.php:9 template-parts/cookies-notice.php:10
 #: template-parts/footer-socials.php:2 template-parts/footer-socials.php:3
 #: template-parts/footer-socials.php:4 template-parts/header-nav.php:11
 #: template-parts/downloads.php:3 template-parts/member-meta.php:9
-#: template-parts/member-meta.php:14 template-parts/member-meta.php:84
+#: template-parts/member-meta.php:14 template-parts/member-meta.php:82
 #: template-parts/search-form.php:14 template-parts/search-form.php:16
 #: template-parts/project-funders.php:17 template-parts/project-teaser.php:29
-#: archive-project.php:64 page-contact.php:13 page-contact.php:14
-#: page-contact.php:15 page-contact.php:16 page-contact.php:17
-#: page-contact.php:18 page-contact.php:27 page-contact.php:33
-#: page-contact.php:39 page-contact.php:69 page-contact.php:74 functions.php:16
-#: functions.php:17 functions.php:50 home.php:14 home.php:15 home.php:40
-#: archive-organisation.php:64 footer.php:32 404.php:14 comments.php:13
+#: template-parts/project-dates.php:24 archive-project.php:71
+#: page-contact.php:13 page-contact.php:14 page-contact.php:15
+#: page-contact.php:16 page-contact.php:17 page-contact.php:18
+#: page-contact.php:27 page-contact.php:33 page-contact.php:39
+#: page-contact.php:69 page-contact.php:74 functions.php:16 functions.php:17
+#: functions.php:50 home.php:14 home.php:15 home.php:36
+#: archive-organisation.php:67 footer.php:32 404.php:14 comments.php:13
 #: comments.php:20 comments.php:43 comments.php:56 comments.php:65
 #: comments.php:72 comments.php:87 comments.php:101 comments.php:110
 #: comments.php:122 index.php:17
@@ -508,7 +528,7 @@ msgstr ""
 msgid "&hellip;"
 msgstr ""
 
-#: inc/acaw-projects.php:5 inc/acaw-types.php:117
+#: inc/acaw-projects.php:5 inc/acaw-types.php:118
 #: template-parts/related-posts.php:8 template-parts/related-posts.php:12
 #: template-parts/post-sidebar.php:3 template-parts/post-project-funders.php:11
 #: template-parts/related-projects.php:9 template-parts/project-funders.php:5
@@ -545,51 +565,51 @@ msgstr ""
 msgid "projects_query"
 msgstr ""
 
-#: inc/acaw-types.php:7 inc/acaw-types.php:9
+#: inc/acaw-types.php:7 inc/acaw-types.php:9 inc/acaw-types.php:36
 msgid "Organisations"
 msgstr ""
 
-#: inc/acaw-types.php:7 inc/acaw-types.php:67 inc/acaw-types.php:125
+#: inc/acaw-types.php:7 inc/acaw-types.php:68 inc/acaw-types.php:126
 msgid "Post Type General Name"
 msgstr ""
 
-#: inc/acaw-types.php:8 inc/acaw-types.php:68 inc/acaw-types.php:126
+#: inc/acaw-types.php:8 inc/acaw-types.php:69 inc/acaw-types.php:127
 msgid "singular_name"
 msgstr ""
 
-#: inc/acaw-types.php:8 inc/acaw-types.php:10 inc/acaw-types.php:36
+#: inc/acaw-types.php:8 inc/acaw-types.php:10
 msgid "Organisation"
 msgstr ""
 
-#: inc/acaw-types.php:8 inc/acaw-types.php:68 inc/acaw-types.php:126
+#: inc/acaw-types.php:8 inc/acaw-types.php:69 inc/acaw-types.php:127
 msgid "Post Type Singular Name"
 msgstr ""
 
-#: inc/acaw-types.php:9 inc/acaw-types.php:69 inc/acaw-types.php:127
+#: inc/acaw-types.php:9 inc/acaw-types.php:70 inc/acaw-types.php:128
 msgid "menu_name"
 msgstr ""
 
-#: inc/acaw-types.php:9 inc/acaw-types.php:69 inc/acaw-types.php:127
+#: inc/acaw-types.php:9 inc/acaw-types.php:70 inc/acaw-types.php:128
 msgid "Admin Menu text"
 msgstr ""
 
-#: inc/acaw-types.php:10 inc/acaw-types.php:70 inc/acaw-types.php:128
+#: inc/acaw-types.php:10 inc/acaw-types.php:71 inc/acaw-types.php:129
 msgid "name_admin_bar"
 msgstr ""
 
-#: inc/acaw-types.php:10 inc/acaw-types.php:70 inc/acaw-types.php:128
+#: inc/acaw-types.php:10 inc/acaw-types.php:71 inc/acaw-types.php:129
 msgid "Add New on Toolbar"
 msgstr ""
 
-#: inc/acaw-types.php:11 inc/acaw-types.php:71 inc/acaw-types.php:129
+#: inc/acaw-types.php:11 inc/acaw-types.php:72 inc/acaw-types.php:130
 msgid "archives"
 msgstr ""
 
 #: inc/acaw-types.php:11
-msgid "Member repositories"
+msgid "Archives Wales Members"
 msgstr ""
 
-#: inc/acaw-types.php:12 inc/acaw-types.php:72 inc/acaw-types.php:130
+#: inc/acaw-types.php:12 inc/acaw-types.php:73 inc/acaw-types.php:131
 msgid "attributes"
 msgstr ""
 
@@ -597,7 +617,7 @@ msgstr ""
 msgid "Organisation Attributes"
 msgstr ""
 
-#: inc/acaw-types.php:13 inc/acaw-types.php:73 inc/acaw-types.php:131
+#: inc/acaw-types.php:13 inc/acaw-types.php:74 inc/acaw-types.php:132
 msgid "parent_item_colon"
 msgstr ""
 
@@ -605,7 +625,7 @@ msgstr ""
 msgid "Parent Organisation:"
 msgstr ""
 
-#: inc/acaw-types.php:14 inc/acaw-types.php:74 inc/acaw-types.php:132
+#: inc/acaw-types.php:14 inc/acaw-types.php:75 inc/acaw-types.php:133
 msgid "all_items"
 msgstr ""
 
@@ -613,7 +633,7 @@ msgstr ""
 msgid "All Organisations"
 msgstr ""
 
-#: inc/acaw-types.php:15 inc/acaw-types.php:75 inc/acaw-types.php:133
+#: inc/acaw-types.php:15 inc/acaw-types.php:76 inc/acaw-types.php:134
 msgid "add_new_item"
 msgstr ""
 
@@ -621,15 +641,15 @@ msgstr ""
 msgid "Add New Organisation"
 msgstr ""
 
-#: inc/acaw-types.php:16 inc/acaw-types.php:76 inc/acaw-types.php:134
+#: inc/acaw-types.php:16 inc/acaw-types.php:77 inc/acaw-types.php:135
 msgid "add_new"
 msgstr ""
 
-#: inc/acaw-types.php:16 inc/acaw-types.php:76 inc/acaw-types.php:134
+#: inc/acaw-types.php:16 inc/acaw-types.php:77 inc/acaw-types.php:135
 msgid "Add New"
 msgstr ""
 
-#: inc/acaw-types.php:17 inc/acaw-types.php:77 inc/acaw-types.php:135
+#: inc/acaw-types.php:17 inc/acaw-types.php:78 inc/acaw-types.php:136
 msgid "new_item"
 msgstr ""
 
@@ -637,7 +657,7 @@ msgstr ""
 msgid "New Organisation"
 msgstr ""
 
-#: inc/acaw-types.php:18 inc/acaw-types.php:78 inc/acaw-types.php:136
+#: inc/acaw-types.php:18 inc/acaw-types.php:79 inc/acaw-types.php:137
 msgid "edit_item"
 msgstr ""
 
@@ -645,7 +665,7 @@ msgstr ""
 msgid "Edit Organisation"
 msgstr ""
 
-#: inc/acaw-types.php:19 inc/acaw-types.php:79 inc/acaw-types.php:137
+#: inc/acaw-types.php:19 inc/acaw-types.php:80 inc/acaw-types.php:138
 msgid "update_item"
 msgstr ""
 
@@ -653,7 +673,7 @@ msgstr ""
 msgid "Update Organisation"
 msgstr ""
 
-#: inc/acaw-types.php:20 inc/acaw-types.php:80 inc/acaw-types.php:138
+#: inc/acaw-types.php:20 inc/acaw-types.php:81 inc/acaw-types.php:139
 msgid "view_item"
 msgstr ""
 
@@ -661,7 +681,7 @@ msgstr ""
 msgid "View Organisation"
 msgstr ""
 
-#: inc/acaw-types.php:21 inc/acaw-types.php:81 inc/acaw-types.php:139
+#: inc/acaw-types.php:21 inc/acaw-types.php:82 inc/acaw-types.php:140
 msgid "view_items"
 msgstr ""
 
@@ -669,7 +689,7 @@ msgstr ""
 msgid "View Organisations"
 msgstr ""
 
-#: inc/acaw-types.php:22 inc/acaw-types.php:82 inc/acaw-types.php:140
+#: inc/acaw-types.php:22 inc/acaw-types.php:83 inc/acaw-types.php:141
 msgid "search_items"
 msgstr ""
 
@@ -677,55 +697,55 @@ msgstr ""
 msgid "Search Organisation"
 msgstr ""
 
-#: inc/acaw-types.php:23 inc/acaw-types.php:83 inc/acaw-types.php:141
+#: inc/acaw-types.php:23 inc/acaw-types.php:84 inc/acaw-types.php:142
 msgid "not_found"
 msgstr ""
 
-#: inc/acaw-types.php:23 inc/acaw-types.php:83 inc/acaw-types.php:141
+#: inc/acaw-types.php:23 inc/acaw-types.php:84 inc/acaw-types.php:142
 msgid "Not found"
 msgstr ""
 
-#: inc/acaw-types.php:24 inc/acaw-types.php:84 inc/acaw-types.php:142
+#: inc/acaw-types.php:24 inc/acaw-types.php:85 inc/acaw-types.php:143
 msgid "not_found_in_trash"
 msgstr ""
 
-#: inc/acaw-types.php:24 inc/acaw-types.php:84 inc/acaw-types.php:142
+#: inc/acaw-types.php:24 inc/acaw-types.php:85 inc/acaw-types.php:143
 msgid "Not found in Trash"
 msgstr ""
 
-#: inc/acaw-types.php:25 inc/acaw-types.php:85 inc/acaw-types.php:143
+#: inc/acaw-types.php:25 inc/acaw-types.php:86 inc/acaw-types.php:144
 msgid "featured_image"
 msgstr ""
 
-#: inc/acaw-types.php:25 inc/acaw-types.php:85 inc/acaw-types.php:143
+#: inc/acaw-types.php:25 inc/acaw-types.php:86 inc/acaw-types.php:144
 msgid "Featured Image"
 msgstr ""
 
-#: inc/acaw-types.php:26 inc/acaw-types.php:86 inc/acaw-types.php:144
+#: inc/acaw-types.php:26 inc/acaw-types.php:87 inc/acaw-types.php:145
 msgid "set_featured_image"
 msgstr ""
 
-#: inc/acaw-types.php:26 inc/acaw-types.php:86 inc/acaw-types.php:144
+#: inc/acaw-types.php:26 inc/acaw-types.php:87 inc/acaw-types.php:145
 msgid "Set featured image"
 msgstr ""
 
-#: inc/acaw-types.php:27 inc/acaw-types.php:87 inc/acaw-types.php:145
+#: inc/acaw-types.php:27 inc/acaw-types.php:88 inc/acaw-types.php:146
 msgid "remove_featured_image"
 msgstr ""
 
-#: inc/acaw-types.php:27 inc/acaw-types.php:87 inc/acaw-types.php:145
+#: inc/acaw-types.php:27 inc/acaw-types.php:88 inc/acaw-types.php:146
 msgid "Remove featured image"
 msgstr ""
 
-#: inc/acaw-types.php:28 inc/acaw-types.php:88 inc/acaw-types.php:146
+#: inc/acaw-types.php:28 inc/acaw-types.php:89 inc/acaw-types.php:147
 msgid "use_featured_image"
 msgstr ""
 
-#: inc/acaw-types.php:28 inc/acaw-types.php:88 inc/acaw-types.php:146
+#: inc/acaw-types.php:28 inc/acaw-types.php:89 inc/acaw-types.php:147
 msgid "Use as featured image"
 msgstr ""
 
-#: inc/acaw-types.php:29 inc/acaw-types.php:89 inc/acaw-types.php:147
+#: inc/acaw-types.php:29 inc/acaw-types.php:90 inc/acaw-types.php:148
 msgid "insert_into_item"
 msgstr ""
 
@@ -733,7 +753,7 @@ msgstr ""
 msgid "Insert into Organisation"
 msgstr ""
 
-#: inc/acaw-types.php:30 inc/acaw-types.php:90 inc/acaw-types.php:148
+#: inc/acaw-types.php:30 inc/acaw-types.php:91 inc/acaw-types.php:149
 msgid "uploaded_to_this_item"
 msgstr ""
 
@@ -741,7 +761,7 @@ msgstr ""
 msgid "Uploaded to this Organisation"
 msgstr ""
 
-#: inc/acaw-types.php:31 inc/acaw-types.php:91 inc/acaw-types.php:149
+#: inc/acaw-types.php:31 inc/acaw-types.php:92 inc/acaw-types.php:150
 msgid "items_list"
 msgstr ""
 
@@ -749,7 +769,7 @@ msgstr ""
 msgid "Organisations list"
 msgstr ""
 
-#: inc/acaw-types.php:32 inc/acaw-types.php:92 inc/acaw-types.php:150
+#: inc/acaw-types.php:32 inc/acaw-types.php:93 inc/acaw-types.php:151
 msgid "items_list_navigation"
 msgstr ""
 
@@ -757,7 +777,7 @@ msgstr ""
 msgid "Organisations list navigation"
 msgstr ""
 
-#: inc/acaw-types.php:33 inc/acaw-types.php:93 inc/acaw-types.php:151
+#: inc/acaw-types.php:33 inc/acaw-types.php:94 inc/acaw-types.php:152
 msgid "filter_items_list"
 msgstr ""
 
@@ -765,303 +785,311 @@ msgstr ""
 msgid "Filter Organisations list"
 msgstr ""
 
-#: inc/acaw-types.php:36 inc/acaw-types.php:96 inc/acaw-types.php:154
+#: inc/acaw-types.php:36 inc/acaw-types.php:97 inc/acaw-types.php:155
 #: template-parts/member-meta.php:9 template-parts/member-meta.php:14
-#: template-parts/member-meta.php:53 page-contact.php:27 page-contact.php:33
+#: template-parts/member-meta.php:55 page-contact.php:27 page-contact.php:33
 #: page-contact.php:39
 msgid "label"
 msgstr ""
 
-#: inc/acaw-types.php:37 inc/acaw-types.php:97 inc/acaw-types.php:155
+#: inc/acaw-types.php:37 inc/acaw-types.php:98 inc/acaw-types.php:156
 msgid "description"
 msgstr ""
 
-#: inc/acaw-types.php:38 inc/acaw-types.php:98 inc/acaw-types.php:156
-msgid "labels"
+#: inc/acaw-types.php:37
+msgid ""
+"Use this map to find your local archive service. Search results will show "
+"you the contact information for the archive, brief information about their "
+"collections, and opening times. \n"
 msgstr ""
 
 #: inc/acaw-types.php:39 inc/acaw-types.php:99 inc/acaw-types.php:157
+msgid "labels"
+msgstr ""
+
+#: inc/acaw-types.php:40 inc/acaw-types.php:100 inc/acaw-types.php:158
 msgid "menu_icon"
 msgstr ""
 
-#: inc/acaw-types.php:39
+#: inc/acaw-types.php:40
 msgid "dashicons-admin-multisite"
 msgstr ""
 
-#: inc/acaw-types.php:40 inc/acaw-types.php:100 inc/acaw-types.php:158
+#: inc/acaw-types.php:41 inc/acaw-types.php:101 inc/acaw-types.php:159
 msgid "supports"
 msgstr ""
 
-#: inc/acaw-types.php:40 inc/acaw-types.php:100
+#: inc/acaw-types.php:41 inc/acaw-types.php:101
 msgid "editor"
 msgstr ""
 
-#: inc/acaw-types.php:40 inc/acaw-types.php:100 inc/acaw-types.php:158
+#: inc/acaw-types.php:41 inc/acaw-types.php:101 inc/acaw-types.php:159
 #: inc/proper-fotorama.php:43
 msgid "thumbnail"
 msgstr ""
 
-#: inc/acaw-types.php:40 inc/acaw-types.php:158
+#: inc/acaw-types.php:41 inc/acaw-types.php:159
 msgid "custom-fields"
 msgstr ""
 
-#: inc/acaw-types.php:41 inc/acaw-types.php:101 inc/acaw-types.php:159
+#: inc/acaw-types.php:42 inc/acaw-types.php:102 inc/acaw-types.php:160
 msgid "taxonomies"
 msgstr ""
 
-#: inc/acaw-types.php:42 inc/acaw-types.php:102 inc/acaw-types.php:160
+#: inc/acaw-types.php:43 inc/acaw-types.php:103 inc/acaw-types.php:161
 msgid "public"
 msgstr ""
 
-#: inc/acaw-types.php:43 inc/acaw-types.php:103 inc/acaw-types.php:161
+#: inc/acaw-types.php:44 inc/acaw-types.php:104 inc/acaw-types.php:162
 msgid "show_ui"
 msgstr ""
 
-#: inc/acaw-types.php:44 inc/acaw-types.php:104 inc/acaw-types.php:162
+#: inc/acaw-types.php:45 inc/acaw-types.php:105 inc/acaw-types.php:163
 msgid "show_in_menu"
 msgstr ""
 
-#: inc/acaw-types.php:45 inc/acaw-types.php:105 inc/acaw-types.php:163
+#: inc/acaw-types.php:46 inc/acaw-types.php:106 inc/acaw-types.php:164
 msgid "menu_position"
 msgstr ""
 
-#: inc/acaw-types.php:46 inc/acaw-types.php:106 inc/acaw-types.php:164
+#: inc/acaw-types.php:47 inc/acaw-types.php:107 inc/acaw-types.php:165
 msgid "show_in_admin_bar"
 msgstr ""
 
-#: inc/acaw-types.php:47 inc/acaw-types.php:107 inc/acaw-types.php:165
+#: inc/acaw-types.php:48 inc/acaw-types.php:108 inc/acaw-types.php:166
 msgid "show_in_nav_menus"
 msgstr ""
 
-#: inc/acaw-types.php:48 inc/acaw-types.php:108 inc/acaw-types.php:166
+#: inc/acaw-types.php:49 inc/acaw-types.php:109 inc/acaw-types.php:167
 msgid "can_export"
 msgstr ""
 
-#: inc/acaw-types.php:49 inc/acaw-types.php:109 inc/acaw-types.php:167
+#: inc/acaw-types.php:50 inc/acaw-types.php:110 inc/acaw-types.php:168
 msgid "has_archive"
 msgstr ""
 
-#: inc/acaw-types.php:50 inc/acaw-types.php:110 inc/acaw-types.php:168
+#: inc/acaw-types.php:51 inc/acaw-types.php:111 inc/acaw-types.php:169
 #: template-parts/family-tree.php:13
 msgid "hierarchical"
 msgstr ""
 
-#: inc/acaw-types.php:51 inc/acaw-types.php:111 inc/acaw-types.php:169
+#: inc/acaw-types.php:52 inc/acaw-types.php:112 inc/acaw-types.php:170
 msgid "exclude_from_search"
 msgstr ""
 
-#: inc/acaw-types.php:53 inc/acaw-types.php:112 inc/acaw-types.php:170
+#: inc/acaw-types.php:54 inc/acaw-types.php:113 inc/acaw-types.php:171
 msgid "show_in_rest"
 msgstr ""
 
-#: inc/acaw-types.php:54 inc/acaw-types.php:113 inc/acaw-types.php:171
+#: inc/acaw-types.php:55 inc/acaw-types.php:114 inc/acaw-types.php:172
 msgid "publicly_queryable"
 msgstr ""
 
-#: inc/acaw-types.php:55 inc/acaw-types.php:114 inc/acaw-types.php:172
+#: inc/acaw-types.php:56 inc/acaw-types.php:115 inc/acaw-types.php:173
 msgid "capability_type"
 msgstr ""
 
-#: inc/acaw-types.php:55 inc/acaw-types.php:114 inc/acaw-types.php:172
+#: inc/acaw-types.php:56 inc/acaw-types.php:115 inc/acaw-types.php:173
 #: template-parts/related-posts.php:17 template-parts/related-posts.php:40
 #: template-parts/related-posts.php:63 template-parts/related-posts.php:83
 msgid "post"
 msgstr ""
 
-#: inc/acaw-types.php:60 inc/acaw-types.php:119 inc/acaw-types.php:177
+#: inc/acaw-types.php:61 inc/acaw-types.php:120 inc/acaw-types.php:178
 msgid "init"
 msgstr ""
 
-#: inc/acaw-types.php:60
+#: inc/acaw-types.php:61
 msgid "create_organisation_cpt"
 msgstr ""
 
-#: inc/acaw-types.php:67 inc/acaw-types.php:69
+#: inc/acaw-types.php:68 inc/acaw-types.php:70 inc/acaw-types.php:72
 msgid "Projects"
 msgstr ""
 
-#: inc/acaw-types.php:68 inc/acaw-types.php:70 inc/acaw-types.php:96
+#: inc/acaw-types.php:69 inc/acaw-types.php:71 inc/acaw-types.php:97
 msgid "Project"
 msgstr ""
 
-#: inc/acaw-types.php:71
-msgid "Project Archives"
-msgstr ""
-
-#: inc/acaw-types.php:72
+#: inc/acaw-types.php:73
 msgid "Project Attributes"
 msgstr ""
 
-#: inc/acaw-types.php:73
+#: inc/acaw-types.php:74
 msgid "Parent Project:"
 msgstr ""
 
-#: inc/acaw-types.php:74
+#: inc/acaw-types.php:75
 msgid "All Projects"
 msgstr ""
 
-#: inc/acaw-types.php:75
+#: inc/acaw-types.php:76
 msgid "Add New Project"
 msgstr ""
 
-#: inc/acaw-types.php:77
+#: inc/acaw-types.php:78
 msgid "New Project"
 msgstr ""
 
-#: inc/acaw-types.php:78
+#: inc/acaw-types.php:79
 msgid "Edit Project"
 msgstr ""
 
-#: inc/acaw-types.php:79
+#: inc/acaw-types.php:80
 msgid "Update Project"
 msgstr ""
 
-#: inc/acaw-types.php:80
+#: inc/acaw-types.php:81
 msgid "View Project"
 msgstr ""
 
-#: inc/acaw-types.php:81
+#: inc/acaw-types.php:82
 msgid "View Projects"
 msgstr ""
 
-#: inc/acaw-types.php:82
+#: inc/acaw-types.php:83
 msgid "Search Project"
 msgstr ""
 
-#: inc/acaw-types.php:89
+#: inc/acaw-types.php:90
 msgid "Insert into Project"
 msgstr ""
 
-#: inc/acaw-types.php:90
+#: inc/acaw-types.php:91
 msgid "Uploaded to this Project"
 msgstr ""
 
-#: inc/acaw-types.php:91
+#: inc/acaw-types.php:92
 msgid "Projects list"
 msgstr ""
 
-#: inc/acaw-types.php:92
+#: inc/acaw-types.php:93
 msgid "Projects list navigation"
 msgstr ""
 
-#: inc/acaw-types.php:93
+#: inc/acaw-types.php:94
 msgid "Filter Projects list"
 msgstr ""
 
-#: inc/acaw-types.php:97
-msgid "AW/AC Projects"
+#: inc/acaw-types.php:98
+msgid ""
+"Collaborative working has been a key feature of ARCW’s work, developing "
+"sustainable and effective projects using resources and expertise that "
+"individual services would not be able to provide. In recent years projects "
+"have focussed on ensuring that the history of Welsh industry is recognised "
+"and promoted. (You can read more about some of our projects here)."
 msgstr ""
 
-#: inc/acaw-types.php:99
+#: inc/acaw-types.php:100
 msgid "dashicons-clipboard"
 msgstr ""
 
-#: inc/acaw-types.php:100 inc/acaw-types.php:158 functions.php:14
+#: inc/acaw-types.php:101 inc/acaw-types.php:159 functions.php:14
 msgid "excerpt"
 msgstr ""
 
-#: inc/acaw-types.php:115
+#: inc/acaw-types.php:116
 msgid "rewrite"
 msgstr ""
 
-#: inc/acaw-types.php:115
+#: inc/acaw-types.php:116
 msgid "projects"
 msgstr ""
 
-#: inc/acaw-types.php:119
+#: inc/acaw-types.php:120
 msgid "create_project_cpt"
 msgstr ""
 
-#: inc/acaw-types.php:125 inc/acaw-types.php:127
+#: inc/acaw-types.php:126 inc/acaw-types.php:128
 msgid "Archive Items"
 msgstr ""
 
-#: inc/acaw-types.php:126 inc/acaw-types.php:128 inc/acaw-types.php:154
+#: inc/acaw-types.php:127 inc/acaw-types.php:129 inc/acaw-types.php:155
 msgid "Archive Item"
 msgstr ""
 
-#: inc/acaw-types.php:129
+#: inc/acaw-types.php:130
 msgid "Archive Item Archives"
 msgstr ""
 
-#: inc/acaw-types.php:130
+#: inc/acaw-types.php:131
 msgid "Archive Item Attributes"
 msgstr ""
 
-#: inc/acaw-types.php:131
+#: inc/acaw-types.php:132
 msgid "Parent Archive Item:"
 msgstr ""
 
-#: inc/acaw-types.php:132
+#: inc/acaw-types.php:133
 msgid "All Archive Items"
 msgstr ""
 
-#: inc/acaw-types.php:133
+#: inc/acaw-types.php:134
 msgid "Add New Archive Item"
 msgstr ""
 
-#: inc/acaw-types.php:135
+#: inc/acaw-types.php:136
 msgid "New Archive Item"
 msgstr ""
 
-#: inc/acaw-types.php:136
+#: inc/acaw-types.php:137
 msgid "Edit Archive Item"
 msgstr ""
 
-#: inc/acaw-types.php:137
+#: inc/acaw-types.php:138
 msgid "Update Archive Item"
 msgstr ""
 
-#: inc/acaw-types.php:138
+#: inc/acaw-types.php:139
 msgid "View Archive Item"
 msgstr ""
 
-#: inc/acaw-types.php:139
+#: inc/acaw-types.php:140
 msgid "View Archive Items"
 msgstr ""
 
-#: inc/acaw-types.php:140
+#: inc/acaw-types.php:141
 msgid "Search Archive Item"
 msgstr ""
 
-#: inc/acaw-types.php:147
+#: inc/acaw-types.php:148
 msgid "Insert into Archive Item"
 msgstr ""
 
-#: inc/acaw-types.php:148
+#: inc/acaw-types.php:149
 msgid "Uploaded to this Archive Item"
 msgstr ""
 
-#: inc/acaw-types.php:149
+#: inc/acaw-types.php:150
 msgid "Archive Items list"
 msgstr ""
 
-#: inc/acaw-types.php:150
+#: inc/acaw-types.php:151
 msgid "Archive Items list navigation"
 msgstr ""
 
-#: inc/acaw-types.php:151
+#: inc/acaw-types.php:152
 msgid "Filter Archive Items list"
 msgstr ""
 
-#: inc/acaw-types.php:157
+#: inc/acaw-types.php:158
 msgid "dashicons-media-document"
 msgstr ""
 
-#: inc/acaw-types.php:158
+#: inc/acaw-types.php:159
 msgid "revisions"
 msgstr ""
 
-#: inc/acaw-types.php:158
+#: inc/acaw-types.php:159
 msgid "author"
 msgstr ""
 
-#: inc/acaw-types.php:174 template-parts/related-items.php:9
+#: inc/acaw-types.php:175 template-parts/related-items.php:9
 #: template-parts/related-items.php:29
 msgid "archiveitem"
 msgstr ""
 
-#: inc/acaw-types.php:177
+#: inc/acaw-types.php:178
 msgid "create_archiveitem_cpt"
 msgstr ""
 
@@ -1141,7 +1169,7 @@ msgid "image_send_to_editor"
 msgstr ""
 
 #: inc/proper-image-functions.php:7 template-parts/project-get-involved.php:6
-#: template-parts/member-meta.php:85
+#: template-parts/member-meta.php:83
 msgid "the_content"
 msgstr ""
 
@@ -1246,16 +1274,18 @@ msgstr ""
 #: template-parts/related-posts.php:18 template-parts/related-posts.php:41
 #: template-parts/related-posts.php:64 template-parts/related-posts.php:84
 #: template-parts/member-sidebar.php:6 template-parts/related-items.php:10
-#: template-parts/related-items.php:30 template-parts/project-partners.php:9
-#: template-parts/related-projects.php:10 template-parts/project-funders.php:11
+#: template-parts/related-items.php:30 template-parts/page-children.php:12
+#: template-parts/project-partners.php:9 template-parts/related-projects.php:10
+#: template-parts/project-funders.php:11
 msgid "post_status"
 msgstr ""
 
 #: template-parts/related-posts.php:18 template-parts/related-posts.php:41
 #: template-parts/related-posts.php:64 template-parts/related-posts.php:84
 #: template-parts/member-sidebar.php:6 template-parts/related-items.php:10
-#: template-parts/related-items.php:30 template-parts/project-partners.php:9
-#: template-parts/related-projects.php:10 template-parts/project-funders.php:11
+#: template-parts/related-items.php:30 template-parts/page-children.php:12
+#: template-parts/project-partners.php:9 template-parts/related-projects.php:10
+#: template-parts/project-funders.php:11
 msgid "publish"
 msgstr ""
 
@@ -1319,7 +1349,7 @@ msgstr ""
 msgid "Latest Updates from Archives Wales"
 msgstr ""
 
-#: template-parts/related-posts.php:103 home.php:33 index.php:24
+#: template-parts/related-posts.php:103 home.php:29 index.php:24
 msgid "template-parts/post-teaser"
 msgstr ""
 
@@ -1336,8 +1366,11 @@ msgstr ""
 msgid "medium"
 msgstr ""
 
-#: template-parts/item-teaser.php:11 template-parts/featured-image.php:4
-#: template-parts/member-teaser.php:7 template-parts/organisation-logo.php:7
+#: template-parts/item-teaser.php:11 template-parts/page-children.php:31
+#: template-parts/featured-image.php:4 template-parts/member-teaser.php:7
+#: template-parts/member-meta.php:42 template-parts/project-partners.php:32
+#: template-parts/organisation-logo.php:3
+#: template-parts/organisation-logo.php:7 template-parts/project-funders.php:32
 #: template-parts/project-teaser.php:22
 msgid "class"
 msgstr ""
@@ -1351,8 +1384,31 @@ msgstr ""
 msgid "template-parts/featured-image"
 msgstr ""
 
-#: template-parts/item-teaser.php:25
+#: template-parts/item-teaser.php:26
 msgid "Edit this item"
+msgstr ""
+
+#: template-parts/item-teaser.php:31 template-parts/item-teaser.php:32
+msgid "historical_year"
+msgstr ""
+
+#: template-parts/item-teaser.php:35 template-parts/item-teaser.php:36
+#: template-parts/member-meta.php:15
+msgid "catalogue_url"
+msgstr ""
+
+#: template-parts/item-teaser.php:36 template-parts/member-meta.php:47
+#: template-parts/member-meta.php:51 template-parts/member-meta.php:55
+#: template-parts/member-meta.php:61
+msgid "template-parts/svg"
+msgstr ""
+
+#: template-parts/item-teaser.php:36 template-parts/member-meta.php:16
+msgid "catalogue"
+msgstr ""
+
+#: template-parts/item-teaser.php:36
+msgid "Catalogue Link"
 msgstr ""
 
 #: template-parts/project-get-involved.php:1
@@ -1364,7 +1420,7 @@ msgstr ""
 msgid "Get Involved"
 msgstr ""
 
-#: template-parts/member-sidebar.php:23 archive-organisation.php:57
+#: template-parts/member-sidebar.php:23 archive-organisation.php:60
 msgid "template-parts/member-teaser"
 msgstr ""
 
@@ -1389,6 +1445,35 @@ msgstr ""
 msgid "Search the online catalogue"
 msgstr ""
 
+#: template-parts/page-children.php:11
+msgid "post_parent"
+msgstr ""
+
+#: template-parts/page-children.php:13 template-parts/family-tree.php:14
+msgid "menu_order"
+msgstr ""
+
+#: template-parts/page-children.php:29
+msgid "pageTeaser"
+msgstr ""
+
+#: template-parts/page-children.php:31 template-parts/project-teaser.php:22
+#: functions.php:56
+msgid "hero"
+msgstr ""
+
+#: template-parts/page-children.php:31
+msgid "pageTeaser-thumbnail"
+msgstr ""
+
+#: template-parts/page-children.php:45
+msgid "Read More"
+msgstr ""
+
+#: template-parts/page-children.php:45 template-parts/project-partners.php:24
+msgid "properbear"
+msgstr ""
+
 #: template-parts/post-sidebar.php:7
 msgid "template-parts/related-projects"
 msgstr ""
@@ -1407,7 +1492,7 @@ msgid "template-parts/map-with-query"
 msgstr ""
 
 #: template-parts/map-teaser.php:6
-msgid "There are Archives Wales members in every corner of the country"
+msgid "There are Archive Services in every corner of the country"
 msgstr ""
 
 #: template-parts/map-teaser.php:7
@@ -1417,7 +1502,7 @@ msgid ""
 msgstr ""
 
 #: template-parts/map-teaser.php:8
-msgid "Meet our members"
+msgid "Explore the map"
 msgstr ""
 
 #: template-parts/page-sidebar.php:1
@@ -1630,8 +1715,8 @@ msgstr ""
 #: template-parts/member-meta.php:11 template-parts/member-meta.php:16
 #: template-parts/member-meta.php:25 template-parts/member-meta.php:26
 #: template-parts/member-meta.php:27 template-parts/member-meta.php:28
-#: template-parts/member-meta.php:29 template-parts/member-meta.php:53
-#: template-parts/member-meta.php:63
+#: template-parts/member-meta.php:29 template-parts/member-meta.php:55
+#: template-parts/member-meta.php:61
 msgid "icon"
 msgstr ""
 
@@ -1641,14 +1726,6 @@ msgstr ""
 
 #: template-parts/member-meta.php:14
 msgid "Catalogue"
-msgstr ""
-
-#: template-parts/member-meta.php:15
-msgid "catalogue_url"
-msgstr ""
-
-#: template-parts/member-meta.php:16
-msgid "catalogue"
 msgstr ""
 
 #: template-parts/member-meta.php:25
@@ -1691,44 +1768,43 @@ msgstr ""
 msgid "instagram_url"
 msgstr ""
 
-#: template-parts/member-meta.php:39 template-parts/project-partners.php:32
+#: template-parts/member-meta.php:42 template-parts/project-partners.php:32
 #: template-parts/project-funders.php:32
 msgid "template-parts/organisation-logo"
 msgstr ""
 
-#: template-parts/member-meta.php:41 template-parts/member-meta.php:43
+#: template-parts/member-meta.php:42
+msgid "memberMeta-logo"
+msgstr ""
+
+#: template-parts/member-meta.php:46 template-parts/member-meta.php:47
 #: page-contact.php:31 page-contact.php:32
 msgid "email"
 msgstr ""
 
-#: template-parts/member-meta.php:43 template-parts/member-meta.php:48
-#: template-parts/member-meta.php:53 template-parts/member-meta.php:63
-msgid "template-parts/svg"
-msgstr ""
-
-#: template-parts/member-meta.php:46 template-parts/member-meta.php:48
+#: template-parts/member-meta.php:50 template-parts/member-meta.php:51
 msgid "telephone"
 msgstr ""
 
-#: template-parts/member-meta.php:48
+#: template-parts/member-meta.php:51
 msgid "phone"
 msgstr ""
 
-#: template-parts/member-meta.php:74 template-parts/map-with-query.php:30
-#: archive-organisation.php:42 archive-organisation.php:73
+#: template-parts/member-meta.php:72 template-parts/map-with-query.php:30
+#: archive-organisation.php:41 archive-organisation.php:76
 #: single-organisation.php:19
 msgid "template-parts/map"
 msgstr ""
 
-#: template-parts/member-meta.php:76
+#: template-parts/member-meta.php:74
 msgid "address"
 msgstr ""
 
-#: template-parts/member-meta.php:82 template-parts/member-meta.php:85
+#: template-parts/member-meta.php:80 template-parts/member-meta.php:83
 msgid "opening_hours"
 msgstr ""
 
-#: template-parts/member-meta.php:84
+#: template-parts/member-meta.php:82
 msgid "Opening Hours"
 msgstr ""
 
@@ -1751,31 +1827,31 @@ msgstr ""
 msgid "In partnership with"
 msgstr ""
 
-#: template-parts/project-partners.php:24
-msgid "properbear"
+#: template-parts/project-partners.php:32 template-parts/project-funders.php:32
+msgid "projectSidebar-logo"
+msgstr ""
+
+#: template-parts/organisation-logo.php:3
+msgid "organisation-logo"
 msgstr ""
 
 #: template-parts/organisation-logo.php:5
 msgid "website"
 msgstr ""
 
-#: template-parts/organisation-logo.php:7
-msgid "projectSidebar-logo"
-msgstr ""
-
 #: template-parts/organisation-logo.php:8
 #, php-format
-msgid "<div class=\"logo-placeholder\">%s</div>"
+msgid "<div class=\"logo-placeholder %s\">%s</div>"
 msgstr ""
 
-#: template-parts/organisation-logo.php:12
+#: template-parts/organisation-logo.php:11
 #, php-format
 msgid "<a title=\"%1$s\" href=\"%2$s\">%3$s</a>"
 msgstr ""
 
-#: template-parts/organisation-logo.php:12
+#: template-parts/organisation-logo.php:11
 #, php-format
-msgid "%3$s"
+msgid "<div>%3$s</div>"
 msgstr ""
 
 #: template-parts/favicon.php:9
@@ -1807,10 +1883,6 @@ msgstr ""
 msgid "sort_column"
 msgstr ""
 
-#: template-parts/family-tree.php:14
-msgid "menu_order"
-msgstr ""
-
 #: template-parts/family-tree.php:15
 msgid "title_li"
 msgstr ""
@@ -1839,7 +1911,7 @@ msgstr ""
 msgid "teaser-map"
 msgstr ""
 
-#: template-parts/related-projects.php:27 archive-project.php:58
+#: template-parts/related-projects.php:27 archive-project.php:65
 msgid "template-parts/project-teaser"
 msgstr ""
 
@@ -1864,10 +1936,6 @@ msgstr ""
 msgid "template-parts/project-dates"
 msgstr ""
 
-#: template-parts/project-teaser.php:22 functions.php:56
-msgid "hero"
-msgstr ""
-
 #: template-parts/project-teaser.php:22
 msgid "projectTeaser-image"
 msgstr ""
@@ -1882,8 +1950,11 @@ msgid "Y"
 msgstr ""
 
 #: template-parts/project-dates.php:19 template-parts/project-dates.php:21
-#: template-parts/project-dates.php:24
 msgid "–"
+msgstr ""
+
+#: template-parts/project-dates.php:24
+msgid "Ongoing"
 msgstr ""
 
 #: template-parts/project-dates.php:29
@@ -1935,7 +2006,7 @@ msgstr ""
 msgid "!="
 msgstr ""
 
-#: archive-project.php:64 home.php:40 archive-organisation.php:64
+#: archive-project.php:71 home.php:36 archive-organisation.php:67
 msgid "Nothing Found"
 msgstr ""
 
@@ -1948,11 +2019,11 @@ msgstr ""
 msgid "proper"
 msgstr ""
 
-#: search.php:23 home.php:21 404.php:18
-msgid "template-parts/search-form"
+#: search.php:22 front-page.php:32 home.php:19
+msgid "template-parts/searchbar"
 msgstr ""
 
-#: search.php:42
+#: search.php:39
 #, php-format
 msgid "%s : %s"
 msgstr ""
@@ -2039,16 +2110,6 @@ msgstr ""
 
 #: page-contact.php:48
 msgid "contactFormConfig"
-msgstr ""
-
-#: page-contact.php:63 single-project.php:15 single-organisation.php:12
-#: single.php:16 page.php:13
-msgid "<h1>"
-msgstr ""
-
-#: page-contact.php:63 single-project.php:15 single-organisation.php:12
-#: single.php:16 page.php:13
-msgid "</h1>"
 msgstr ""
 
 #: page-contact.php:69
@@ -2203,15 +2264,15 @@ msgstr ""
 msgid "Stay up to date with the latest news from across the network"
 msgstr ""
 
-#: archive-organisation.php:71 single-organisation.php:17
+#: archive-organisation.php:74 single-organisation.php:17
 msgid "map_data"
 msgstr ""
 
-#: archive-organisation.php:71
+#: archive-organisation.php:74
 msgid "option"
 msgstr ""
 
-#: archive-organisation.php:73 single-organisation.php:19
+#: archive-organisation.php:76 single-organisation.php:19
 msgid "pins"
 msgstr ""
 
@@ -2273,6 +2334,10 @@ msgstr ""
 
 #: 404.php:14
 msgid "Error 404 - Page Not Found"
+msgstr ""
+
+#: 404.php:18
+msgid "template-parts/search-form"
 msgstr ""
 
 #: comments.php:8
