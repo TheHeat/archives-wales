@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-29 22:25+0100\n"
-"PO-Revision-Date: 2026-03-29 22:55+0100\n"
+"PO-Revision-Date: 2026-03-29 23:14+0100\n"
 "Last-Translator: Carl Morris <carl@morris.cymru>\n"
 "Language-Team: \n"
 "Language: cy\n"
@@ -1406,7 +1406,7 @@ msgstr "Wps! Ydych chi wedi mewngofnodi? :-)"
 #: template-parts/related-posts.php:37
 #, php-format
 msgid "More from <i>%s</i>"
-msgstr ""
+msgstr "Wrth brosiect <i>%s</i>"
 
 #: template-parts/related-posts.php:60
 #, fuzzy, php-format
@@ -2150,7 +2150,7 @@ msgid "Nothing Found"
 msgstr "Nothing Found"
 
 #: search.php:12
-#, fuzzy, php-format
+#, php-format
 msgid "We found %1$s search results for  &ldquo;%2$s&rdquo;"
 msgstr "Canfyddwyd %1$s o ganlyniadau chwilio am &ldquo;%2$s&rdquo;"
 
