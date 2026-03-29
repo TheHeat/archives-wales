@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-29 22:04+0100\n"
-"PO-Revision-Date: 2026-03-29 22:08+0100\n"
+"POT-Creation-Date: 2026-03-29 22:25+0100\n"
+"PO-Revision-Date: 2026-03-29 22:29+0100\n"
 "Last-Translator: Carl Morris <carl@morris.cymru>\n"
 "Language-Team: \n"
 "Language: cy\n"
@@ -485,13 +485,14 @@ msgstr "Aelod"
 #: template-parts/related-posts.php:80 template-parts/related-posts.php:99
 #: template-parts/item-teaser.php:26 template-parts/item-teaser.php:36
 #: template-parts/project-get-involved.php:4
-#: template-parts/related-items.php:48 template-parts/map-teaser.php:6
-#: template-parts/map-teaser.php:7 template-parts/map-teaser.php:8
-#: template-parts/cookies-notice.php:9 template-parts/cookies-notice.php:10
-#: template-parts/footer-socials.php:2 template-parts/footer-socials.php:3
-#: template-parts/footer-socials.php:4 template-parts/header-nav.php:11
-#: template-parts/downloads.php:3 template-parts/member-meta.php:9
-#: template-parts/member-meta.php:14 template-parts/member-meta.php:82
+#: template-parts/related-items.php:48 template-parts/page-children.php:45
+#: template-parts/map-teaser.php:6 template-parts/map-teaser.php:7
+#: template-parts/map-teaser.php:8 template-parts/cookies-notice.php:9
+#: template-parts/cookies-notice.php:10 template-parts/footer-socials.php:2
+#: template-parts/footer-socials.php:3 template-parts/footer-socials.php:4
+#: template-parts/header-nav.php:11 template-parts/downloads.php:3
+#: template-parts/member-meta.php:9 template-parts/member-meta.php:14
+#: template-parts/member-meta.php:82 template-parts/project-partners.php:24
 #: template-parts/search-form.php:14 template-parts/search-form.php:16
 #: template-parts/project-funders.php:17 template-parts/project-teaser.php:29
 #: template-parts/project-dates.php:24 archive-project.php:71
@@ -1033,9 +1034,14 @@ msgid ""
 "Collaborative working has been a key feature of ARCW’s work, developing "
 "sustainable and effective projects using resources and expertise that "
 "individual services would not be able to provide. In recent years projects "
-"have focussed on ensuring that the history of Welsh industry is recognised "
+"have focused on ensuring that the history of Welsh industry is recognised "
 "and promoted. (You can read more about some of our projects here)."
 msgstr ""
+"Mae cydweithio wedi bod yn brif nodwedd gwaith Cyngor Archifau a Chofnodion "
+"Cymru, i ddatblygu prosiectau cynaliadwy ac effeithlon na all gwasanaethau "
+"unigol ddarparu. Yn y blynyddoedd diwethaf mae prosiectau wedi canolbwyntio "
+"ar sicrhau bod hanes diwydiant Cymru yn cael ei adnabod a hyrwyddo. (Mae "
+"modd i chi ddarllen am rai o'n prosiectau yma.)"
 
 #: inc/acaw-types.php:100
 msgid "dashicons-clipboard"
@@ -1336,10 +1342,9 @@ msgid "relatedPosts-wrapper"
 msgstr ""
 
 #: template-parts/related-posts.php:14
-#, fuzzy, php-format
-#| msgid "Items from %s"
+#, php-format
 msgid "Updates from <i>%s</i>"
-msgstr "Eitemau %s"
+msgstr "Diweddariadau wrth <i>%s</i>"
 
 #: template-parts/related-posts.php:18 template-parts/related-posts.php:41
 #: template-parts/related-posts.php:64 template-parts/related-posts.php:84
@@ -1489,8 +1494,9 @@ msgstr "Catalog"
 
 #: template-parts/project-get-involved.php:1
 #: template-parts/project-get-involved.php:6
+#, fuzzy
 msgid "get_involved"
-msgstr ""
+msgstr "Cymerwch Ran"
 
 #: template-parts/project-get-involved.php:4
 msgid "Get Involved"
@@ -1555,10 +1561,6 @@ msgstr ""
 #: template-parts/page-children.php:45
 msgid "Read More"
 msgstr "Darllen Mwy"
-
-#: template-parts/page-children.php:45 template-parts/project-partners.php:24
-msgid "properbear"
-msgstr "properbear"
 
 #: template-parts/post-sidebar.php:7
 msgid "template-parts/related-projects"
@@ -1928,7 +1930,7 @@ msgstr "Oriau Agor"
 
 #: template-parts/members-link.php:11
 msgid "Our member repositories"
-msgstr ""
+msgstr "Ein harchifdai"
 
 #: template-parts/project-partners.php:4
 msgid "partners"
@@ -2612,6 +2614,9 @@ msgstr "comment_form"
 #: index.php:17
 msgid "Blog"
 msgstr "Blog"
+
+#~ msgid "properbear"
+#~ msgstr "properbear"
 
 #~ msgid "Member repositories"
 #~ msgstr "Archifdai sy'n aelodau"

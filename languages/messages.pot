@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-29 22:04+0100\n"
+"POT-Creation-Date: 2026-03-29 22:25+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -470,13 +470,14 @@ msgstr ""
 #: template-parts/related-posts.php:80 template-parts/related-posts.php:99
 #: template-parts/item-teaser.php:26 template-parts/item-teaser.php:36
 #: template-parts/project-get-involved.php:4
-#: template-parts/related-items.php:48 template-parts/map-teaser.php:6
-#: template-parts/map-teaser.php:7 template-parts/map-teaser.php:8
-#: template-parts/cookies-notice.php:9 template-parts/cookies-notice.php:10
-#: template-parts/footer-socials.php:2 template-parts/footer-socials.php:3
-#: template-parts/footer-socials.php:4 template-parts/header-nav.php:11
-#: template-parts/downloads.php:3 template-parts/member-meta.php:9
-#: template-parts/member-meta.php:14 template-parts/member-meta.php:82
+#: template-parts/related-items.php:48 template-parts/page-children.php:45
+#: template-parts/map-teaser.php:6 template-parts/map-teaser.php:7
+#: template-parts/map-teaser.php:8 template-parts/cookies-notice.php:9
+#: template-parts/cookies-notice.php:10 template-parts/footer-socials.php:2
+#: template-parts/footer-socials.php:3 template-parts/footer-socials.php:4
+#: template-parts/header-nav.php:11 template-parts/downloads.php:3
+#: template-parts/member-meta.php:9 template-parts/member-meta.php:14
+#: template-parts/member-meta.php:82 template-parts/project-partners.php:24
 #: template-parts/search-form.php:14 template-parts/search-form.php:16
 #: template-parts/project-funders.php:17 template-parts/project-teaser.php:29
 #: template-parts/project-dates.php:24 archive-project.php:71
@@ -976,7 +977,7 @@ msgid ""
 "Collaborative working has been a key feature of ARCW’s work, developing "
 "sustainable and effective projects using resources and expertise that "
 "individual services would not be able to provide. In recent years projects "
-"have focussed on ensuring that the history of Welsh industry is recognised "
+"have focused on ensuring that the history of Welsh industry is recognised "
 "and promoted. (You can read more about some of our projects here)."
 msgstr ""
 
@@ -1468,10 +1469,6 @@ msgstr ""
 
 #: template-parts/page-children.php:45
 msgid "Read More"
-msgstr ""
-
-#: template-parts/page-children.php:45 template-parts/project-partners.php:24
-msgid "properbear"
 msgstr ""
 
 #: template-parts/post-sidebar.php:7
