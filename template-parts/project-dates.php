@@ -21,7 +21,7 @@ if (!empty($start_date) || !empty($end_date)):
 			$dates_string = esc_html($start_year . '–' . $end_year);
 		}
 	} elseif ($start_year) {
-		$dates_string = __('Onoing', 'acaw');
+		$dates_string = __('Ongoing', 'acaw');
 	} elseif ($end_year) {
 		$dates_string = esc_html($end_year);
 	}
