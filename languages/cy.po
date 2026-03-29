@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-29 22:25+0100\n"
-"PO-Revision-Date: 2026-03-29 22:53+0100\n"
+"PO-Revision-Date: 2026-03-29 22:55+0100\n"
 "Last-Translator: Carl Morris <carl@morris.cymru>\n"
 "Language-Team: \n"
 "Language: cy\n"
@@ -2414,9 +2414,8 @@ msgid "template-parts/project-sidebar"
 msgstr "template-parts/project-sidebar"
 
 #: home.php:14
-#, fuzzy
 msgid "News"
-msgstr "Newyddion a Thiwtorialau"
+msgstr "Newyddion"
 
 #: home.php:15
 msgid "Stay up to date with the latest news from across the network"
