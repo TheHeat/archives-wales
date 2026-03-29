@@ -1,7 +1,7 @@
 <div class="catalogueLink-wrapper">
 <a class="catalogueLink" href="#">
 	<h2>
-		<?php _e('Search the online catalogue');?>
+		<?php _e('Search the online catalogue', "acaw");?>
 	</h2>
 
 	<svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
