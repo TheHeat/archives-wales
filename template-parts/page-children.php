@@ -42,7 +42,7 @@ if ($children) : ?>
             <?php the_excerpt(); ?>
           </div>
           <div class="pageTeaser-button-wrapper">
-            <a href="<?php the_permalink() ?>" class="button"><?php _e('Read More', 'properbear'); ?></a>
+            <a href="<?php the_permalink() ?>" class="button"><?php _e('Read More', 'acaw'); ?></a>
           </div>
 
         </article>

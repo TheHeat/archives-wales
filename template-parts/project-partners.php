@@ -21,7 +21,7 @@ if ( $partners ) :
 		?>
 		<div class="projectPartners-wrapper">
 
-			<h3 class='projectSidebar-title'><?php _e( 'In partnership with', 'properbear' ); ?></h3>
+			<h3 class='projectSidebar-title'><?php _e( 'In partnership with', 'acaw' ); ?></h3>
 			<?php if ( $partners_query->have_posts() ) : ?>
 				<ul class='projectSidebar-list'>
 					<?php
