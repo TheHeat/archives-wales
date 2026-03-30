@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-29 22:25+0100\n"
-"PO-Revision-Date: 2026-03-29 23:14+0100\n"
+"PO-Revision-Date: 2026-03-29 23:25+0100\n"
 "Last-Translator: Carl Morris <carl@morris.cymru>\n"
 "Language-Team: \n"
 "Language: cy\n"
@@ -34,10 +34,9 @@ msgid "</h1>"
 msgstr "</h1>"
 
 #: page-parent.php:25
-#, fuzzy
 #| msgid "template-parts/page-sidebar"
 msgid "template-parts/page-children"
-msgstr "template-parts/page-sidebar"
+msgstr "template-parts/page-children"
 
 #: inc/proper-send-mail.php:4
 msgid "wp_mail_failed"
@@ -1409,10 +1408,10 @@ msgid "More from <i>%s</i>"
 msgstr "Wrth brosiect <i>%s</i>"
 
 #: template-parts/related-posts.php:60
-#, fuzzy, php-format
+#, php-format
 #| msgid "Items from %s"
 msgid "Updates from %s"
-msgstr "Diweddariadau %s"
+msgstr "Updates from %s"
 
 #: template-parts/related-posts.php:70
 msgid "related_orgs"
@@ -1829,27 +1828,24 @@ msgid "icon"
 msgstr "Eicon "
 
 #: template-parts/member-meta.php:11
-#, fuzzy
 msgid "link"
-msgstr "Dolen"
+msgstr "link"
 
 #: template-parts/member-meta.php:14
 msgid "Catalogue"
 msgstr "Catalog"
 
 #: template-parts/member-meta.php:25
-#, fuzzy
 msgid "bluesky"
-msgstr "bluesky_url"
+msgstr "bluesky"
 
 #: template-parts/member-meta.php:25
 msgid "bluesky_url"
 msgstr "bluesky_url"
 
 #: template-parts/member-meta.php:26
-#, fuzzy
 msgid "youtube"
-msgstr "YouTube"
+msgstr "youtube"
 
 #: template-parts/member-meta.php:26
 msgid "youtube_url"
@@ -1864,18 +1860,16 @@ msgid "tiktok_url"
 msgstr "tiktok_url"
 
 #: template-parts/member-meta.php:28
-#, fuzzy
 msgid "facebook"
-msgstr "Facebook"
+msgstr "facebook"
 
 #: template-parts/member-meta.php:28
 msgid "facebook_url"
 msgstr "facebook_url"
 
 #: template-parts/member-meta.php:29
-#, fuzzy
 msgid "instagram"
-msgstr "Instagram"
+msgstr "instagram"
 
 #: template-parts/member-meta.php:29
 msgid "instagram_url"
@@ -1887,16 +1881,14 @@ msgid "template-parts/organisation-logo"
 msgstr "template-parts/organisation-logo"
 
 #: template-parts/member-meta.php:42
-#, fuzzy
 #| msgid "memberTeaser-logo"
 msgid "memberMeta-logo"
-msgstr "memberTeaser-logo"
+msgstr "memberMeta-logo"
 
 #: template-parts/member-meta.php:46 template-parts/member-meta.php:47
 #: page-contact.php:31 page-contact.php:32
-#, fuzzy
 msgid "email"
-msgstr "E-bost:"
+msgstr "email"
 
 #: template-parts/member-meta.php:50 template-parts/member-meta.php:51
 msgid "telephone"
@@ -1963,10 +1955,10 @@ msgid "website"
 msgstr "Gwefan:"
 
 #: template-parts/organisation-logo.php:8
-#, fuzzy, php-format
+#, php-format
 #| msgid "<div class=\"logo-placeholder\">%s</div>"
 msgid "<div class=\"logo-placeholder %s\">%s</div>"
-msgstr "<div class=\"logo-placeholder\">%s</div>"
+msgstr "<div class=\"logo-placeholder %s\">%s</div>"
 
 #: template-parts/organisation-logo.php:11
 #, php-format
@@ -2019,17 +2011,14 @@ msgid "s"
 msgstr "Gan %s"
 
 #: template-parts/search-form.php:14
-#, fuzzy
 msgid "Search for:"
-msgstr "Chwilio am:"
+msgstr "Search for:"
 
 #: template-parts/search-form.php:16
-#, fuzzy
 msgid "Search"
-msgstr "Chwilio"
+msgstr "Search"
 
 #: template-parts/map-with-query.php:8
-#, fuzzy
 msgid "1"
 msgstr "1"
 
@@ -2038,19 +2027,17 @@ msgid "wrapper"
 msgstr ""
 
 #: template-parts/map-with-query.php:30
-#, fuzzy
 #| msgid "projectTeaser-image"
 msgid "teaser-map"
-msgstr "projectTeaser-image"
+msgstr "teaser-map"
 
 #: template-parts/related-projects.php:27 archive-project.php:65
 msgid "template-parts/project-teaser"
 msgstr "template-parts/project-teaser"
 
 #: template-parts/footer-nav.php:14 functions.php:17
-#, fuzzy
 msgid "secondary"
-msgstr "Dewislen eilradd yn y bar ochr chwith"
+msgstr "secondary"
 
 #: template-parts/project-funders.php:6
 #, fuzzy
@@ -2496,7 +2483,6 @@ msgid "template-parts/page-sidebar"
 msgstr "template-parts/page-sidebar"
 
 #: 404.php:14
-#, fuzzy
 msgid "Error 404 - Page Not Found"
 msgstr "Gwall 404 - Heb Ganfod Tudalen"
 
