@@ -9,20 +9,21 @@
 #: inc/acaw-projects.php:11 inc/acaw-types.php:156
 #: inc/proper-image-functions.php:15 inc/proper-image-functions.php:35
 #: inc/proper-image-functions.php:36 inc/proper-image-functions.php:37
-#: inc/proper-image-functions.php:38 template-parts/member-teaser.php:28
-#: template-parts/header-nav.php:17 template-parts/header-nav.php:19
-#: template-parts/header-nav.php:21 template-parts/header-nav.php:22
-#: template-parts/header-nav.php:23 template-parts/header-nav.php:24
-#: template-parts/header-nav.php:25 template-parts/header-nav.php:27
-#: template-parts/search-form.php:8 template-parts/project-dates.php:11
-#: template-parts/project-dates.php:12 archive-project.php:29 functions.php:70
+#: inc/proper-image-functions.php:38 template-parts/map.php:8
+#: template-parts/member-teaser.php:28 template-parts/header-nav.php:17
+#: template-parts/header-nav.php:19 template-parts/header-nav.php:21
+#: template-parts/header-nav.php:22 template-parts/header-nav.php:23
+#: template-parts/header-nav.php:24 template-parts/header-nav.php:25
+#: template-parts/header-nav.php:27 template-parts/search-form.php:8
+#: template-parts/project-dates.php:11 template-parts/project-dates.php:12
+#: archive-project.php:29 functions.php:70
 #: node_modules/flatted/php/flatted.php:22
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-29 23:00+0100\n"
+"POT-Creation-Date: 2026-03-30 19:16+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -263,7 +264,7 @@ msgstr ""
 
 #: inc/acaw-organisation-map.php:17 inc/acaw-organisation-map.php:28
 #: inc/acaw-types.php:41 inc/acaw-types.php:101 inc/acaw-types.php:159
-#: template-parts/member-sidebar.php:14 template-parts/map-with-query.php:12
+#: template-parts/member-sidebar.php:14 template-parts/map-with-query.php:17
 msgid "title"
 msgstr ""
 
@@ -287,8 +288,8 @@ msgid "map"
 msgstr ""
 
 #: inc/acaw-organisation-map.php:26 inc/acaw-organisation-map.php:27
-#: template-parts/map.php:7 template-parts/map.php:11
-#: template-parts/member-meta.php:72 template-parts/map-with-query.php:30
+#: template-parts/map.php:3 template-parts/map.php:18
+#: template-parts/member-meta.php:72 template-parts/map-with-query.php:36
 #: archive-organisation.php:41 archive-organisation.php:75
 #: single-organisation.php:18
 msgid "markers"
@@ -334,7 +335,7 @@ msgstr ""
 #: template-parts/related-posts.php:83 template-parts/member-sidebar.php:4
 #: template-parts/related-items.php:9 template-parts/related-items.php:29
 #: template-parts/project-partners.php:10 template-parts/family-tree.php:10
-#: template-parts/map-with-query.php:3 template-parts/related-projects.php:9
+#: template-parts/map-with-query.php:8 template-parts/related-projects.php:9
 #: template-parts/project-funders.php:12 archive-project.php:22
 msgid "post_type"
 msgstr ""
@@ -342,27 +343,28 @@ msgstr ""
 #: inc/acaw-members.php:5 inc/acaw-members.php:27 inc/acaw-members.php:67
 #: inc/acaw-types.php:58 template-parts/related-posts.php:58
 #: template-parts/member-sidebar.php:4 template-parts/related-items.php:6
-#: template-parts/map-teaser.php:8 template-parts/member-teaser.php:1
-#: template-parts/members-link.php:3 template-parts/project-partners.php:10
-#: template-parts/map-with-query.php:3 template-parts/project-funders.php:12
+#: template-parts/map-teaser.php:4 template-parts/map-teaser.php:8
+#: template-parts/member-teaser.php:1 template-parts/members-link.php:3
+#: template-parts/project-partners.php:10 template-parts/map-with-query.php:8
+#: template-parts/project-funders.php:12
 msgid "organisation"
 msgstr ""
 
 #: inc/acaw-members.php:7 inc/acaw-projects.php:15
 #: template-parts/member-sidebar.php:14 template-parts/page-children.php:13
-#: template-parts/project-partners.php:12 template-parts/map-with-query.php:12
+#: template-parts/project-partners.php:12 template-parts/map-with-query.php:17
 #: template-parts/project-funders.php:14 archive-project.php:24
 msgid "orderby"
 msgstr ""
 
 #: inc/acaw-members.php:8 inc/acaw-projects.php:17
 #: template-parts/member-sidebar.php:15 template-parts/page-children.php:14
-#: template-parts/map-with-query.php:13 archive-project.php:25
+#: template-parts/map-with-query.php:18 archive-project.php:25
 msgid "order"
 msgstr ""
 
 #: inc/acaw-members.php:8 template-parts/member-sidebar.php:15
-#: template-parts/page-children.php:14 template-parts/map-with-query.php:13
+#: template-parts/page-children.php:14 template-parts/map-with-query.php:18
 msgid "ASC"
 msgstr ""
 
@@ -370,7 +372,7 @@ msgstr ""
 #: template-parts/related-posts.php:42 template-parts/related-posts.php:65
 #: template-parts/related-posts.php:85 template-parts/member-sidebar.php:5
 #: template-parts/related-items.php:11 template-parts/related-items.php:31
-#: template-parts/map-with-query.php:4 template-parts/related-projects.php:12
+#: template-parts/map-with-query.php:9 template-parts/related-projects.php:12
 #: archive-project.php:23
 msgid "posts_per_page"
 msgstr ""
@@ -378,7 +380,7 @@ msgstr ""
 #: inc/acaw-members.php:10 inc/acaw-projects.php:8
 #: template-parts/related-posts.php:22 template-parts/related-posts.php:45
 #: template-parts/related-posts.php:67 template-parts/member-sidebar.php:7
-#: template-parts/related-items.php:13 template-parts/map-with-query.php:5
+#: template-parts/related-items.php:13 template-parts/map-with-query.php:10
 #: archive-project.php:26
 msgid "meta_query"
 msgstr ""
@@ -386,7 +388,7 @@ msgstr ""
 #: inc/acaw-members.php:12 inc/acaw-projects.php:10
 #: template-parts/related-posts.php:25 template-parts/related-posts.php:48
 #: template-parts/related-posts.php:70 template-parts/member-sidebar.php:9
-#: template-parts/related-items.php:16 template-parts/map-with-query.php:7
+#: template-parts/related-items.php:16 template-parts/map-with-query.php:12
 #: archive-project.php:28
 msgid "key"
 msgstr ""
@@ -394,14 +396,14 @@ msgstr ""
 #: inc/acaw-members.php:12 inc/acaw-members.php:27 inc/acaw-members.php:42
 #: inc/acaw-members.php:48 inc/acaw-members.php:49 inc/acaw-members.php:57
 #: inc/acaw-members.php:58 inc/acaw-members.php:60
-#: template-parts/member-sidebar.php:9 template-parts/map-with-query.php:7
+#: template-parts/member-sidebar.php:9 template-parts/map-with-query.php:12
 msgid "member"
 msgstr ""
 
 #: inc/acaw-members.php:13 inc/acaw-projects.php:11
 #: template-parts/related-posts.php:26 template-parts/related-posts.php:49
 #: template-parts/related-posts.php:71 template-parts/member-sidebar.php:10
-#: template-parts/related-items.php:17 template-parts/map-with-query.php:8
+#: template-parts/related-items.php:17 template-parts/map-with-query.php:13
 #: archive-project.php:29
 msgid "value"
 msgstr ""
@@ -409,13 +411,13 @@ msgstr ""
 #: inc/acaw-members.php:14 inc/acaw-projects.php:12
 #: template-parts/related-posts.php:27 template-parts/related-posts.php:50
 #: template-parts/related-posts.php:72 template-parts/member-sidebar.php:11
-#: template-parts/related-items.php:18 template-parts/map-with-query.php:9
+#: template-parts/related-items.php:18 template-parts/map-with-query.php:14
 #: archive-project.php:30
 msgid "compare"
 msgstr ""
 
 #: inc/acaw-members.php:14 template-parts/member-sidebar.php:11
-#: template-parts/map-with-query.php:9
+#: template-parts/map-with-query.php:14
 msgid "="
 msgstr ""
 
@@ -464,20 +466,21 @@ msgstr ""
 #: inc/acaw-types.php:144 inc/acaw-types.php:145 inc/acaw-types.php:146
 #: inc/acaw-types.php:147 inc/acaw-types.php:148 inc/acaw-types.php:149
 #: inc/acaw-types.php:150 inc/acaw-types.php:151 inc/acaw-types.php:152
-#: inc/acaw-types.php:155 inc/acaw-types.php:156 template-parts/post-meta.php:8
-#: template-parts/post-meta.php:9 template-parts/related-posts.php:14
-#: template-parts/related-posts.php:37 template-parts/related-posts.php:60
-#: template-parts/related-posts.php:80 template-parts/related-posts.php:99
-#: template-parts/item-teaser.php:26 template-parts/item-teaser.php:36
-#: template-parts/project-get-involved.php:4
-#: template-parts/related-items.php:48 template-parts/page-children.php:45
-#: template-parts/map-teaser.php:6 template-parts/map-teaser.php:7
-#: template-parts/map-teaser.php:8 template-parts/cookies-notice.php:9
-#: template-parts/cookies-notice.php:10 template-parts/footer-socials.php:2
-#: template-parts/footer-socials.php:3 template-parts/footer-socials.php:4
-#: template-parts/header-nav.php:11 template-parts/downloads.php:3
-#: template-parts/member-meta.php:9 template-parts/member-meta.php:14
-#: template-parts/member-meta.php:82 template-parts/project-partners.php:24
+#: inc/acaw-types.php:155 inc/acaw-types.php:156 template-parts/map.php:23
+#: template-parts/post-meta.php:8 template-parts/post-meta.php:9
+#: template-parts/related-posts.php:14 template-parts/related-posts.php:37
+#: template-parts/related-posts.php:60 template-parts/related-posts.php:80
+#: template-parts/related-posts.php:99 template-parts/item-teaser.php:26
+#: template-parts/item-teaser.php:36 template-parts/project-get-involved.php:4
+#: template-parts/related-items.php:48 template-parts/catalogue-link.php:4
+#: template-parts/page-children.php:45 template-parts/map-teaser.php:6
+#: template-parts/map-teaser.php:7 template-parts/map-teaser.php:8
+#: template-parts/cookies-notice.php:9 template-parts/cookies-notice.php:10
+#: template-parts/footer-socials.php:2 template-parts/footer-socials.php:3
+#: template-parts/footer-socials.php:4 template-parts/header-nav.php:11
+#: template-parts/downloads.php:3 template-parts/member-meta.php:9
+#: template-parts/member-meta.php:14 template-parts/member-meta.php:82
+#: template-parts/members-link.php:11 template-parts/project-partners.php:24
 #: template-parts/search-form.php:14 template-parts/search-form.php:16
 #: template-parts/project-funders.php:17 template-parts/project-teaser.php:29
 #: template-parts/project-dates.php:24 archive-project.php:71
@@ -978,7 +981,7 @@ msgid ""
 "sustainable and effective projects using resources and expertise that "
 "individual services would not be able to provide. In recent years projects "
 "have focused on ensuring that the history of Welsh industry is recognised "
-"and promoted. (You can read more about some of our projects here)."
+"and promoted."
 msgstr ""
 
 #: inc/acaw-types.php:100
@@ -1234,12 +1237,59 @@ msgstr ""
 msgid "<span class=\"next-wrapper\">%link</span>"
 msgstr ""
 
-#: template-parts/map.php:10 functions.php:31
+#: template-parts/map.php:4 template-parts/map-teaser.php:4
+#: template-parts/members-link.php:8 template-parts/map-with-query.php:3
+#: template-parts/map-with-query.php:4 template-parts/map-with-query.php:41
+msgid "map_options"
+msgstr ""
+
+#: template-parts/map.php:6
+msgid "disable_controls"
+msgstr ""
+
+#: template-parts/map.php:7
+msgid "disable_interactivity"
+msgstr ""
+
+#: template-parts/map.php:10 template-parts/map.php:11
+#: template-parts/map-teaser.php:4 template-parts/members-link.php:8
+msgid "map_link_url"
+msgstr ""
+
+#: template-parts/map.php:12 template-parts/map.php:13
+msgid "overlay_url"
+msgstr ""
+
+#: template-parts/map.php:17 functions.php:31
 msgid "acaw-main"
 msgstr ""
 
-#: template-parts/map.php:10
+#: template-parts/map.php:17
 msgid "mapData"
+msgstr ""
+
+#: template-parts/map.php:19
+msgid "options"
+msgstr ""
+
+#: template-parts/map.php:20
+msgid "disableControls"
+msgstr ""
+
+#: template-parts/map.php:21
+msgid "disableInteractivity"
+msgstr ""
+
+#: template-parts/map.php:22
+msgid "overlayLinkUrl"
+msgstr ""
+
+#: template-parts/map.php:23
+msgid "overlayLinkLabel"
+msgstr ""
+
+#: template-parts/map.php:23
+msgid "Open full map"
 msgstr ""
 
 #: template-parts/post-meta.php:8
@@ -1544,7 +1594,7 @@ msgid "featuredImage"
 msgstr ""
 
 #: template-parts/post-project-funders.php:11
-#: template-parts/project-sidebar.php:1
+#: template-parts/project-sidebar.php:2
 msgid "template-parts/project-funders"
 msgstr ""
 
@@ -1569,12 +1619,12 @@ msgstr ""
 msgid " current"
 msgstr ""
 
-#: template-parts/project-sidebar.php:2
-msgid "template-parts/project-partners"
+#: template-parts/project-sidebar.php:1
+msgid "template-parts/project-get-involved"
 msgstr ""
 
 #: template-parts/project-sidebar.php:3
-msgid "template-parts/project-get-involved"
+msgid "template-parts/project-partners"
 msgstr ""
 
 #: template-parts/footer-socials.php:2
@@ -1787,7 +1837,7 @@ msgstr ""
 msgid "phone"
 msgstr ""
 
-#: template-parts/member-meta.php:72 template-parts/map-with-query.php:30
+#: template-parts/member-meta.php:72 template-parts/map-with-query.php:45
 #: archive-organisation.php:41 archive-organisation.php:76
 #: single-organisation.php:19
 msgid "template-parts/map"
@@ -1896,15 +1946,15 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: template-parts/map-with-query.php:8
+#: template-parts/map-with-query.php:13
 msgid "1"
 msgstr ""
 
-#: template-parts/map-with-query.php:30
+#: template-parts/map-with-query.php:37
 msgid "wrapper"
 msgstr ""
 
-#: template-parts/map-with-query.php:30
+#: template-parts/map-with-query.php:37
 msgid "teaser-map"
 msgstr ""
 
