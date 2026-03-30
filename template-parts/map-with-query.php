@@ -1,4 +1,9 @@
 <?php
+	$markers = array();
+	$map_options = isset($args['map_options']) && is_array($args['map_options'])
+		? $args['map_options']
+		: array();
+
 	$members = new WP_Query(array(
 		'post_type' => 'organisation',
 		'posts_per_page' => -1,
@@ -26,5 +31,18 @@
 		}
 		wp_reset_postdata();
 	}
-?>
-				<?php get_template_part('template-parts/map', null, ['markers' => $markers, 'wrapper' => 'teaser-map']); ?>
+
+	$map_args = [
+		'markers' => $markers,
+		'wrapper' => 'teaser-map',
+	];
+
+	if (!empty($map_options)) {
+		$map_args['map_options'] = $map_options;
+	}
+
+
+	get_template_part('template-parts/map', null, $map_args); 
+	
+	
+	?>
