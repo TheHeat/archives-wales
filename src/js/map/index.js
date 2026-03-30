@@ -2,6 +2,15 @@ import L from 'leaflet';
 import mapPinUrl from '../../svg/mapPin.svg';
 
 const initMap = ({ id, markers }) => {
+
+	const tilesCymraegURL = 'https://openstreetmap.cymru/osm_tiles/{z}/{x}/{y}.png';
+	const tilesEnglishURL = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+
+	const userLang = document.documentElement.lang;
+	const isWelsh = userLang && userLang.toLowerCase().startsWith('cy');
+	const tilesURL = isWelsh ? tilesCymraegURL : tilesEnglishURL;
+	
+
 	const mapElement = document.getElementById(id);
 
 	// console.log('Initializing map with markers:', markers);
@@ -10,7 +19,7 @@ const initMap = ({ id, markers }) => {
 		const map = L.map(mapElement);
 		map.attributionControl.setPrefix(false);
 
-		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		L.tileLayer(tilesURL, {
 
 			attribution: false,
 		}).addTo(map);
