@@ -8,11 +8,11 @@ const initMap = ({ id, markers }) => {
 
 	if (mapElement) {
 		const map = L.map(mapElement).setView([52.5, -3.5], 7);
+		map.attributionControl.setPrefix(false);
 
 		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			maxZoom: 19,
-			attribution:
-				'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+			attribution: false,
 		}).addTo(map);
 
 		// Custom SVG marker icon
