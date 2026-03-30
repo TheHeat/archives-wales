@@ -95,7 +95,7 @@ function create_project_cpt()
   );
   $args = array(
     'label' => __('Project', 'acaw'),
-    'description' => __('Collaborative working has been a key feature of ARCW’s work, developing sustainable and effective projects using resources and expertise that individual services would not be able to provide. In recent years projects have focused on ensuring that the history of Welsh industry is recognised and promoted. (You can read more about some of our projects here).', 'acaw'),
+    'description' => __('Collaborative working has been a key feature of ARCW’s work, developing sustainable and effective projects using resources and expertise that individual services would not be able to provide. In recent years projects have focused on ensuring that the history of Welsh industry is recognised and promoted.', 'acaw'),
     'labels' => $labels,
     'menu_icon' => 'dashicons-clipboard',
     'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
