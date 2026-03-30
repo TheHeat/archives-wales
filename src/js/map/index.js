@@ -2,14 +2,18 @@ import L from 'leaflet';
 import mapPinUrl from '../../svg/mapPin.svg';
 
 const initMap = ({ id, markers }) => {
-
-	const tilesCymraegURL = 'https://openstreetmap.cymru/osm_tiles/{z}/{x}/{y}.png';
-	const tilesEnglishURL = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
-
+	
 	const userLang = document.documentElement.lang;
 	const isWelsh = userLang && userLang.toLowerCase().startsWith('cy');
-	const tilesURL = isWelsh ? tilesCymraegURL : tilesEnglishURL;
 	
+	const tilesCymraegURL = 'https://openstreetmap.cymru/osm_tiles/{z}/{x}/{y}.png';
+	const tilesAttrCymraeg = 'Defnyddiwch openstreetmap.cymru. Data ar y map © Cyfranwyr osm.org';
+	
+	const tilesEnglishURL = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+	const tilesAttrEnglish = 'Map data © OpenStreetMap';
+	
+	const tilesURL = isWelsh ? tilesCymraegURL : tilesEnglishURL;
+	const tilesAttr = isWelsh ? tilesAttrCymraeg : tilesAttrEnglish;
 
 	const mapElement = document.getElementById(id);
 
@@ -19,10 +23,27 @@ const initMap = ({ id, markers }) => {
 		const map = L.map(mapElement);
 		map.attributionControl.setPrefix(false);
 
-		L.tileLayer(tilesURL, {
-
-			attribution: false,
+		const tileLayer = L.tileLayer(tilesURL, {
+			maxZoom: 16,
+			attribution: tilesAttr,
 		}).addTo(map);
+
+
+		// Failsafe guard to fall back to English tiles if Welsh tiles fail to load
+		if (isWelsh) {
+			let hasFallenBackToEnglish = false;
+
+			tileLayer.on('tileerror', () => {
+				if (hasFallenBackToEnglish) {
+					return;
+				}
+
+				hasFallenBackToEnglish = true;
+				tileLayer.setUrl(tilesEnglishURL);
+				map.attributionControl.removeAttribution(tilesAttrCymraeg);
+				map.attributionControl.addAttribution(tilesAttrEnglish);
+			});
+		}
 
 		// Custom SVG marker icon
 		const svgIcon = L.icon({
@@ -55,6 +76,7 @@ const initMap = ({ id, markers }) => {
 				padding: [24, 24],
 			});
 		} else {
+			// No valid markers, set default view over Wales
 			map.setView([52.5, -3.5], 7);
 		}
 	}
