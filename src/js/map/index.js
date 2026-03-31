@@ -103,8 +103,6 @@ const initMap = ({ id, markers, options = {} }) => {
 			const fullMapLink = document.createElement('a');
 			fullMapLink.href = safeOverlayLinkUrl;
 			fullMapLink.className = 'leafletMap-fullLink';
-			fullMapLink.target = '_blank';
-			fullMapLink.rel = 'noopener';
 			fullMapLink.ariaLabel = safeOverlayLinkLabel;
 			fullMapLink.style.position = 'absolute';
 			fullMapLink.style.inset = '0';
