@@ -868,6 +868,9 @@ td, th {
 }
 
 
+p:first-of-type {
+  margin-top: 0;
+}
 
 /**
  * 1. Set default font family to sans-serif.
@@ -2137,28 +2140,26 @@ button.relatedItemTeaser-imageButton,
 .frontPage-map-wrapper {
   background-color: var(--color-green);
   color: var(--color-green-contrast);
+  text-wrap: balance;
 }
 
 .frontPage-map {
-  max-width: calc(var(--length-site-max) * 0.5);
+  max-width: var(--length-site-max);
   margin: auto;
   padding: var(--length-spacer);
   display: grid;
   gap: var(--length-spacer);
+  .leafletMap {
+    max-height: 100%;
+  }
 }
 @media (width > 30rem) {
   .frontPage-map {
-    align-items: center;
+    aspect-ratio: 4/1;
+    width: auto;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
-}
-
-.frontPage-map-image {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: var(--length-border-radius);
 }
 
 .frontPage-posts {
@@ -2166,6 +2167,43 @@ button.relatedItemTeaser-imageButton,
   max-width: var(--length-site-max);
   margin: auto;
   padding: var(--length-spacer);
+}
+
+.frontPage-guides {
+  max-width: var(--length-site-max);
+  margin: auto;
+  padding: var(--length-spacer);
+  display: grid;
+  gap: var(--length-spacer);
+}
+@media (width > 30rem) {
+  .frontPage-guides {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.frontPage-guides-title {
+  grid-column: 1/-1;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.frontPage-guides-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.25em;
+  a {
+    display: block;
+    background-color: var(--color-surface);
+    border-left: solid 0.25em var(--color-green);
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .page-wrapper {

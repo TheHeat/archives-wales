@@ -24,12 +24,14 @@ get_header(); ?>
 	</div>
 
 
-
-
-		<?php endwhile;?>
+	
+	
+	
+	<?php endwhile;?>
 	<?php endif;	?>
-
+	
 	<?php get_template_part( 'template-parts/searchbar' ); ?>
+	<?php get_template_part( 'template-parts/front-page', 'guides' ); ?>
 	<div class="frontPage-map-wrapper">
 		<?php get_template_part( 'template-parts/map-teaser' ); ?>
 	</div>

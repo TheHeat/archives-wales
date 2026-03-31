@@ -2,4 +2,7 @@
 @use 'links.css' as *;
 @use 'tables.css' as *;
 
-/*# sourceMappingURL=index.css.map */
+
+p:first-of-type {
+    margin-top: 0;
+}
