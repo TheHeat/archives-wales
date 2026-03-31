@@ -3,8 +3,6 @@ import mapPinUrl from '../../svg/mapPin.svg';
 
 const initMap = ({ id, markers, options = {} }) => {
 	const {
-		disableControls = false,
-		disableInteractivity = false,
 		overlayLinkUrl = '',
 		overlayLinkLabel = 'Open full map',
 	} = options;
@@ -26,7 +24,7 @@ const initMap = ({ id, markers, options = {} }) => {
 		typeof overlayLinkUrl === 'string' && overlayLinkUrl.trim() ? overlayLinkUrl.trim() : '';
 	const safeOverlayLinkLabel =
 		typeof overlayLinkLabel === 'string' && overlayLinkLabel.trim() ? overlayLinkLabel.trim() : 'Open full map';
-	const effectiveDisableControls = disableControls || Boolean(safeOverlayLinkUrl);
+	const effectiveDisableControls = Boolean(safeOverlayLinkUrl);
 
 	// console.log('Initializing map with markers:', markers);
 
@@ -34,13 +32,13 @@ const initMap = ({ id, markers, options = {} }) => {
 		const map = L.map(mapElement, {
 			zoomControl: !effectiveDisableControls,
 			attributionControl: !effectiveDisableControls,
-			dragging: !disableInteractivity,
-			touchZoom: !disableInteractivity,
-			doubleClickZoom: !disableInteractivity,
-			scrollWheelZoom: !disableInteractivity,
-			boxZoom: !disableInteractivity,
-			keyboard: !disableInteractivity,
-			tap: !disableInteractivity,
+			dragging: !effectiveDisableControls,
+			touchZoom: !effectiveDisableControls,
+			doubleClickZoom: !effectiveDisableControls,
+			scrollWheelZoom: !effectiveDisableControls,
+			boxZoom: !effectiveDisableControls,
+			keyboard: !effectiveDisableControls,
+			tap: !effectiveDisableControls,
 		});
 		const hasAttributionControl = !effectiveDisableControls && Boolean(map.attributionControl);
 
@@ -142,7 +140,7 @@ const initMap = ({ id, markers, options = {} }) => {
 				validMarkerPoints.push(point);
 				const leafletMarker = L.marker(point, { icon: svgIcon }).addTo(map);
 
-				if (!disableInteractivity) {
+				if (!effectiveDisableControls) {
 					leafletMarker.bindPopup(popupContent);
 				}
 			}
