@@ -9,10 +9,15 @@
   display: grid;
   gap: var(--length-spacer);
   
+  h1{
+    margin: 0;
+  }
+  
 }
 
 .archive-header-inner {
   max-width: 60ch;
+
 }
 
 

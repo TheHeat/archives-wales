@@ -10,7 +10,12 @@
  */
 function acaw_setup() {
 
-	add_theme_support( 'html5', array( 'comment-list', 'search-form', 'comment-form', 'gallery' ) );
+	add_theme_support( 'html5', array( 'search-form', 'gallery' ) );
+	add_theme_support( 'wp-block-styles' );
+	add_theme_support( 'responsive-embeds' );
+	add_theme_support( 'align-wide' );
+	add_theme_support( 'editor-styles' );
+	add_editor_style( 'style.css' );
 	add_post_type_support( 'page', 'excerpt' );
 	
 	register_nav_menu( 'primary', __( 'Header Menu', 'acaw' ) );
@@ -23,10 +28,11 @@ function acaw_setup() {
 	 * Scripts & Styles
 	*/
 	function acaw_scripts_styles() {
+
+	$version = filemtime( get_template_directory() . '/style.css' );
 		
-		wp_enqueue_style('acaw-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style('acaw-style', get_stylesheet_uri(), array(), $version);	
 		
-		// Enqueue Vite-built JS bundle
 		wp_enqueue_script(
 			'acaw-main',
 			get_template_directory_uri() . '/build/main.js',
