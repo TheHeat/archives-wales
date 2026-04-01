@@ -7,7 +7,9 @@
 	border-bottom-right-radius: var(--length-border-radius);
 	height: 100%;
 }
-
+.postTeaser-title{
+	margin: 0;
+}
 .postTeaser-inner {
 	display: grid;
 		gap: .5em;

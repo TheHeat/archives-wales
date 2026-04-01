@@ -1,3 +1,15 @@
+.member-logo{
+	display: block;
+	aspect-ratio: 6/1;
+	padding: .5em;
+	object-fit: contain;
+	background-color: white;
+    height: auto;
+	width: 100%;
+	object-position: left;
+}
+
+
 .memberMeta-wrapper{
 	background-color: var(--color-ground);
 	border-radius: var(--length-border-radius);
@@ -9,8 +21,7 @@
 }
 
 .memberMeta-location-wrapper{
-	border-top:dashed thick var(--color-surface);
-	padding: 1em;
+	padding: .5em;
 }
 
 .memberMeta-location{
@@ -33,50 +44,15 @@
 }
 
 
-.memberMeta-contacts-wrapper{
-	display: grid;
-	padding: 1em;
-	gap: 0.5em;
-	align-items: start;
-	grid-template-rows: auto;
-	overflow: hidden;
-	@container (min-width: 50ch){
-		grid-template-columns:min-content 1fr;
-	}
-	
-}
 
-.memberMeta-logo-wrapper{
-	background-color: white;
-	aspect-ratio: 3/1;
-	width: 100%;
-	height: auto;
-	padding: .5em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: var(--length-border-radius);
+.memberMeta-contacts,
+.memberMeta-socials{
+		border-top:dashed thick var(--color-surface);
 
-	
-	@container (min-width: 50ch){
-		aspect-ratio: 1;
-		width:clamp(3em, 20vw, 8em);
-	}
-}
-
-.memberMeta-logo{
-	aspect-ratio: 1;
-	object-fit: contain;
-	background-color: white;
-	    width: 100%;
-    height: auto;
-}
-
-.memberMeta-contacts{
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: 0.5em;
-	max-width: 28em;
+	padding: .5em;
 }
 
 
@@ -90,3 +66,20 @@
 	display: grid;
 	gap: var(--length-spacer);
 }}
+
+
+.button.bluesky{
+	background-color: #1185fe;
+}
+.button.youtube{
+	background-color: #ff0000;
+}
+.button.tiktok{
+	background-color: #000000;
+}
+.button.facebook{
+	background-color: #1877f2;
+}
+.button.instagram{
+	background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}

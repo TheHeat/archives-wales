@@ -26,7 +26,7 @@ textarea {
 button,
 .button {
   display: inline-flex;
-  gap: .3em;
+  gap: .5em;
   line-height: 1.5;
   background-color: var(--color-red);
   color: var(--color-red-contrast);
@@ -40,6 +40,10 @@ button,
     display: block;
     aspect-ratio: 1;
     height: 1.5em;	
+  }
+
+  &:hover{
+    transform: translateY(-.05em);
   }
 
 }

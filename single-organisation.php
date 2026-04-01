@@ -9,16 +9,11 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<main <?php post_class(); ?> id="organisation-<?php the_ID(); ?>">
 				<?php get_template_part('template-parts/featured-image');?>
+				<?php get_template_part('template-parts/organisation-logo', null, ['class' => 'member-logo', 'fallback' => false]);?>
 				<?php the_title( '<h1>', '</h1>' ); ?>
 				<?php the_content(); ?>
-				<?php get_template_part( 'template-parts/member-meta' ); ?>				
-				<?php
-			
-				$pins = get_field('map_data');
-				if ($pins && isset($pins['markers'])) {
-					get_template_part('template-parts/map', null, array('pins' => array($pins)));
-				}
-				?>
+				<?php get_template_part( 'template-parts/member-meta' ); ?>			
+				
 			</main>
 		<?php endwhile;?>
 	<?php endif;?>
