@@ -40,6 +40,7 @@ button,
     display: block;
     aspect-ratio: 1;
     height: 1.5em;	
+    flex-shrink: 0;
   }
 
   &:hover{
