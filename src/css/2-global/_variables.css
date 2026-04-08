@@ -1,4 +1,6 @@
 :root {
+  interpolate-size: allow-keywords; 
+
   --color-black: #232529;
   --color-ivory: #f3f0e9;
   --color-white: #faf9f4;

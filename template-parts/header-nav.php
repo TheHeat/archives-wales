@@ -28,8 +28,10 @@ $menu_args = array(
 
 ?>
 <div id="siteNav-wrapper" class="siteNav-wrapper">
+	<button id="siteNav-toggle" class="siteNav-toggle"><?php esc_attr_e( 'Menu', 'acaw' ); ?></button>
 	<nav class="siteNav" role="navigation">
-		<button id="siteNav-toggle" class="siteNav-toggle"><?php esc_attr_e( 'Menu', 'acaw' ); ?></button>
+			<button id="siteNav-close" class="siteNav-toggle siteNav-close">&times;</button>
+
 		<?php wp_nav_menu( $menu_args ); ?>
 
 	</nav>

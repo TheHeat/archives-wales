@@ -7,8 +7,6 @@
     list-style: none;
     padding: 0;
     margin: 0;
-
-    
   }
   
   .menu-item a{
@@ -16,6 +14,7 @@
     display: inline-block;
     padding: 0.25em;
     white-space: nowrap;
+    line-height: 1;
   }
   
   .menu-item.current-menu-item a{
@@ -30,7 +29,66 @@
   
 }
 
-
+/* all the squished closed styles */
 .too-small{
-  background-color: tomato;
+
+  .siteNav-toggle{
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1em;
+    padding: 0.25em;
+    margin-left: auto;
+  }
+
+  .siteNav{
+    position: absolute;
+    overflow: clip;
+    right:  0;
+    top: 0;
+    width: 0;
+    bottom: 0;
+    transform-origin: center;
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu{
+    flex-direction: column;
+    text-align: center;
+    transform: translateX(100vw);
+    padding: var(--length-spacer);
+    gap:.5em;
+    width: 100%;
+  }
+.menu-item a{
+  display:block;
+  padding:.5em 1em; 
+  border-radius: var(--length-border-radius);
+  background-color: var(--color-black);}
+}
+
+.too-small.is-open{
+  .siteNav{
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100svh;
+    background-color:rgba(0,0,0,0.8);
+    text-align: center;
+    transition: .3s ease;
+  } 
+  
+  .menu{
+    transform: translateX(0);
+    transition: .3s ease;
+    }
+
+   .siteNav-close{
+    position: absolute;
+    top: var(--length-spacer);
+    right: var(--length-spacer);
+    font-size:2em;
+   }
 }
