@@ -1,4 +1,5 @@
 import initMap from './map';
+import { squishMenu } from 'squishMenu';
 
 const mapMarkers = window.mapData.markers || [];
 const mapOptions = window.mapData.options || {};
@@ -8,3 +9,6 @@ initMap({
 	markers: mapMarkers,
 	options: mapOptions,
 });
+
+const menu = document.querySelector('.siteNav-wrapper');
+squishMenu(menu);

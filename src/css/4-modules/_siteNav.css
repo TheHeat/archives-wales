@@ -1,61 +1,36 @@
-.siteNav-wrapper {
+.siteNav-wrapper{
+  container-type: inline-size;
   
-  .menu {
+  .menu{
+    justify-content: flex-end;
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-wrap: nowrap;
-  }
 
-  .siteNav-toggle {
-    display: none;
-    background-color: transparent;
-    border: solid thin;
+    
   }
-
-  .menu-item {
-    min-width: max-content;
+  
+  .menu-item a{
+    /* background-color: pink; */
+    display: inline-block;
+    padding: 0.25em;
     white-space: nowrap;
-    padding: 0.5em 0 0.5em 0.5em;
   }
-
-  .menu-item.current-menu-item {
-    a {
-      text-decoration: underline;
-      text-underline-offset: 0.2em;
-    }
+  
+  .menu-item.current-menu-item a{
+    text-decoration: underline;
+    
   }
+  
+  
+  .siteNav-toggle{
+    display: none;
+  }
+  
 }
 
-/* // pre hiding */
-/* .siteNav-wrapper.squish-ready {
-  .menu {
-    flex-wrap: wrap;
-  }
-}
 
-.siteNav-wrapper.too-small {
-  .siteNav-toggle {
-    display: block;
-  }
-  .menu {
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-  }
-} */
-/* 
-.siteNav-wrapper.too-small.is-open {
-  .menu {
-    margin: auto;
-    padding: var(--length-spacer);
-    background-color: rgba(black, 0.8);
-    position: fixed;
-    inset: 2rem;
-    width: max-content;
-    height: max-content;
-    flex-direction: column;
-    text-align: center;
-  }
-} */
+.too-small{
+  background-color: tomato;
+}
