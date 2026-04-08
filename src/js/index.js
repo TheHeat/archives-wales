@@ -1,5 +1,5 @@
 import initMap from './map';
-import { squishMenu } from 'squishMenu';
+import squishMenu  from 'squishMenu';
 
 const mapMarkers = window.mapData.markers || [];
 const mapOptions = window.mapData.options || {};
@@ -11,4 +11,8 @@ initMap({
 });
 
 const menu = document.querySelector('.siteNav-wrapper');
-squishMenu(menu);
+
+squishMenu({
+	containerId: 'siteNav-wrapper',
+	toggleClass: 'siteNav-toggle',
+});
