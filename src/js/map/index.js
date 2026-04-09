@@ -1,32 +1,28 @@
 import L from 'leaflet';
-import mapPinUrl from '../../svg/mapPin.svg';
+import { getMapPinDataUrl } from './mapPinSVG';
 
 const initMap = ({ id, markers, options = {} }) => {
-	const {
-		overlayLinkUrl = '',
-		overlayLinkLabel = 'Open full map',
-	} = options;
-	
+	const { overlayLinkUrl = '', overlayLinkLabel = 'Open full map' } = options;
 	const userLang = document.documentElement.lang;
 	const isWelsh = userLang && userLang.toLowerCase().startsWith('cy');
-	
-	const tilesCymraegURL = 'https://openstreetmap.cymru/osm_tiles/{z}/{x}/{y}.png';
-	const tilesAttrCymraeg = 'Defnyddiwch openstreetmap.cymru. Data ar y map © Cyfranwyr osm.org';
-	
+	const tilesCymraegURL =
+		'https://openstreetmap.cymru/osm_tiles/{z}/{x}/{y}.png';
+	const tilesAttrCymraeg =
+		'Defnyddiwch openstreetmap.cymru. Data ar y map © Cyfranwyr osm.org';
 	const tilesEnglishURL = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
 	const tilesAttrEnglish = 'Map data © OpenStreetMap';
-	
 	const tilesURL = isWelsh ? tilesCymraegURL : tilesEnglishURL;
 	const tilesAttr = isWelsh ? tilesAttrCymraeg : tilesAttrEnglish;
-
 	const mapElement = document.getElementById(id);
 	const safeOverlayLinkUrl =
-		typeof overlayLinkUrl === 'string' && overlayLinkUrl.trim() ? overlayLinkUrl.trim() : '';
+		typeof overlayLinkUrl === 'string' && overlayLinkUrl.trim()
+			? overlayLinkUrl.trim()
+			: '';
 	const safeOverlayLinkLabel =
-		typeof overlayLinkLabel === 'string' && overlayLinkLabel.trim() ? overlayLinkLabel.trim() : 'Open full map';
+		typeof overlayLinkLabel === 'string' && overlayLinkLabel.trim()
+			? overlayLinkLabel.trim()
+			: 'Open full map';
 	const effectiveDisableControls = Boolean(safeOverlayLinkUrl);
-
-	// console.log('Initializing map with markers:', markers);
 
 	if (mapElement) {
 		const map = L.map(mapElement, {
@@ -40,15 +36,14 @@ const initMap = ({ id, markers, options = {} }) => {
 			keyboard: !effectiveDisableControls,
 			tap: !effectiveDisableControls,
 		});
-		const hasAttributionControl = !effectiveDisableControls && Boolean(map.attributionControl);
+		const hasAttributionControl =
+			!effectiveDisableControls && Boolean(map.attributionControl);
 
 		const tileLayer = L.tileLayer(tilesURL, {
 			maxZoom: 16,
 			attribution: tilesAttr,
 		}).addTo(map);
 
-
-				// Failsafe guard to fall back to English tiles if Welsh tiles fail to load
 		if (isWelsh) {
 			let hasFallenBackToEnglish = false;
 
@@ -70,7 +65,7 @@ const initMap = ({ id, markers, options = {} }) => {
 		if (effectiveDisableControls) {
 			const hideMapControls = () => {
 				const controlNodes = mapElement.querySelectorAll(
-					'.leaflet-control-container, .leaflet-top, .leaflet-bottom, .leaflet-control, .leaflet-control-zoom, .leaflet-control-attribution'
+					'.leaflet-control-container, .leaflet-top, .leaflet-bottom, .leaflet-control, .leaflet-control-zoom, .leaflet-control-attribution',
 				);
 
 				controlNodes.forEach((node) => {
@@ -96,7 +91,6 @@ const initMap = ({ id, markers, options = {} }) => {
 			map.attributionControl.setPrefix(false);
 		}
 
-
 		if (safeOverlayLinkUrl) {
 			mapElement.style.position = 'relative';
 
@@ -113,20 +107,15 @@ const initMap = ({ id, markers, options = {} }) => {
 			mapElement.appendChild(fullMapLink);
 		}
 
-
-
-
-		// Custom SVG marker icon
 		const svgIcon = L.icon({
-			iconUrl: mapPinUrl,
-			iconSize: [24, 24], // adjust as needed
-			iconAnchor: [12, 24],
-			popupAnchor: [0, -24],
+			iconUrl: getMapPinDataUrl(),
+			iconSize: [20, 40], // adjust as needed
+			iconAnchor: [10, 35], // point of the icon which will correspond to marker's location
+			popupAnchor: [0, -40],
 		});
 
 		const validMarkerPoints = [];
 
-		// loop markers and add to map
 		markers.forEach((marker) => {
 			const { title, url, lat, lng, label } = marker;
 			const popupContent = `<a href="${url}" target="_blank" rel="noopener">${title}</a><div>${label}</div>`;
@@ -151,7 +140,6 @@ const initMap = ({ id, markers, options = {} }) => {
 				padding: [24, 24],
 			});
 		} else {
-			// No valid markers, set default view over Wales
 			map.setView([52.5, -3.5], 7);
 		}
 	}
