@@ -118,7 +118,7 @@ const initMap = ({ id, markers, options = {} }) => {
 
 		markers.forEach((marker) => {
 			const { title, url, lat, lng, label } = marker;
-			const popupContent = `<a href="${url}" target="_blank" rel="noopener">${title}</a><div>${label}</div>`;
+			const popupContent = `<a href="${url}">${title}</a><div>${label}</div>`;
 			const latitude = Number(lat);
 			const longitude = Number(lng);
 
