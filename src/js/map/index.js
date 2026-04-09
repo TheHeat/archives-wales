@@ -110,7 +110,7 @@ const initMap = ({ id, markers, options = {} }) => {
 		const svgIcon = L.icon({
 			iconUrl: getMapPinDataUrl(),
 			iconSize: [20, 40], // adjust as needed
-			iconAnchor: [10, 35], // point of the icon which will correspond to marker's location
+			iconAnchor: [10, 37], // point of the icon which will correspond to marker's location
 			popupAnchor: [0, -40],
 		});
 
