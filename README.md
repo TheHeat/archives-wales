@@ -77,4 +77,4 @@ Standard WP post
 - content
 - media (images/video)
 
-Y diwedd. Bye.
+Y diwedd. Bye. Au revoir.
