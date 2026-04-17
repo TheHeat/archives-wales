@@ -1,5 +1,5 @@
 <div class="catalogueLink-wrapper">
-<a class="catalogueLink" href="#">
+<a class="catalogueLink" href="https://archiveshub.jisc.ac.uk/">
 	<h2>
 		<?php _e('Search the online catalogue', "acaw");?>
 	</h2>
