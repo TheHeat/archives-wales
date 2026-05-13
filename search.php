@@ -9,7 +9,7 @@ $results = $wp_query->found_posts;
 $search_term = htmlspecialchars($_GET["s"]);
 
 
-$title_format = __('We found %1$s search results for  &ldquo;%2$s&rdquo;', 'proper');
+$title_format = __('We found %1$s search results for  &ldquo;%2$s&rdquo;', 'acaw');
 $title = sprintf($title_format, $results, $search_term);
 
 ?>

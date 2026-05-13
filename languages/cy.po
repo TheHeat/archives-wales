@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-16 15:54+0100\n"
-"PO-Revision-Date: 2026-04-16 15:56+0100\n"
+"POT-Creation-Date: 2026-05-13 10:39+0100\n"
+"PO-Revision-Date: 2026-05-13 10:50+0100\n"
 "Last-Translator: Carl Morris <carl@morris.cymru>\n"
 "Language-Team: \n"
 "Language: cy\n"
@@ -1925,8 +1925,6 @@ msgid "phone"
 msgstr "Ffôn"
 
 #: template-parts/member-meta.php:31
-#, fuzzy
-#| msgid "Search the online catalogue"
 msgid "Search the catalogue"
 msgstr "Chwilio'r catalog ar-lein"
 
@@ -2214,7 +2212,7 @@ msgstr "Nothing Found"
 #: search.php:12
 #, php-format
 msgid "We found %1$s search results for  &ldquo;%2$s&rdquo;"
-msgstr "Canfyddwyd %1$s o ganlyniadau chwilio am &ldquo;%2$s&rdquo;"
+msgstr "Gwelsom %1$s canlyniad o'ch chwiliad &ldquo;%2$s&rdquo;"
 
 #: search.php:12
 #, fuzzy
@@ -2222,10 +2220,9 @@ msgid "proper"
 msgstr "proper_send_mail"
 
 #: search.php:22 front-page.php:33 home.php:19
-#, fuzzy
 #| msgid "template-parts/search-form"
 msgid "template-parts/searchbar"
-msgstr "template-parts/search-form"
+msgstr "template-parts/searchbar"
 
 #: search.php:39
 #, fuzzy, php-format
@@ -2349,9 +2346,8 @@ msgid "html5"
 msgstr "html5"
 
 #: functions.php:13
-#, fuzzy
 msgid "search-form"
-msgstr "Ffurflen Chwilio"
+msgstr "search-form"
 
 #: functions.php:13
 #, fuzzy
