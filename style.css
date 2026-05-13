@@ -1471,11 +1471,11 @@ figcaption,
     text-decoration: none;
   }
 }
-@media (width > 40rem) {
+@media (width > 60rem) {
   .siteFooter-inner {
     gap: var(--length-spacer);
     align-items: flex-start;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
 }
 
@@ -1485,7 +1485,7 @@ figcaption,
   flex-direction: column;
   gap: var(--length-spacer);
 }
-@media (min-width: 40rem) {
+@media (min-width: 60rem) {
   .siteFooter {
     max-width: 30rem;
     text-align: right;
@@ -1501,29 +1501,30 @@ figcaption,
 .siteFooter-menus {
   display: grid;
   position: relative;
-  grid-template-columns: 1fr 1fr;
-  gap: calc(var(--length-spacer) * 2);
+  gap: 1em;
   grid-column: 1;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 0.1em;
-    background-color: var(--color-white);
-    transform: translateX(-50%);
-    pointer-events: none;
-  }
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
 }
-@media (min-width: 40rem) {
+@media (min-width: 60rem) {
   .siteFooter-menus {
-    width: max-content;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footerNav:not(:last-child) {
+  border-block-end: 1px solid var(--color-white);
+  padding-block-end: 1em;
+}
+@media (min-width: 60rem) {
+  .footerNav:not(:last-child) {
+    border-block-end: none;
+    padding-block-end: 0;
+    border-inline-end: 1px solid var(--color-white);
+    padding-inline-end: 1em;
   }
 }
 
@@ -1532,14 +1533,14 @@ figcaption,
   display: flex;
   justify-content: center;
   gap: var(--length-spacer);
-  height: 3rem;
+  flex-wrap: wrap;
   .wg-logo,
   .acaw-logo {
     height: 3rem;
     width: auto;
   }
 }
-@media (min-width: 40rem) {
+@media (min-width: 60rem) {
   .siteFooter-logos {
     justify-content: flex-end;
   }

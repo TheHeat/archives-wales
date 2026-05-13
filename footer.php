@@ -14,6 +14,7 @@
 
 		<div class="siteFooter-menus">
 			<?php get_template_part( 'template-parts/footer-nav' ); ?>
+			<?php get_template_part( 'template-parts/footer-nav-2' ); ?>
 			<?php get_template_part( 'template-parts/footer-socials' ); ?>
 		</div>
 		<footer id="footer" class="siteFooter">
