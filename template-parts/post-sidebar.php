@@ -1,6 +1,6 @@
 <?php 
 
-$related_posts_args = get_field('related_projects') ? ['project' => get_field('related_projects')[0]] : [];
+$related_posts_args = function_exists('get_field') && get_field('related_projects') ? ['project' => get_field('related_projects')[0]] : [];
 
 ?>
 

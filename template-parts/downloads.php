@@ -1,4 +1,4 @@
-<?php if(get_field('downloads')): ?>
+<?php if( function_exists('get_field') && get_field('downloads')): ?>
 	<div class="downloads-wrapper">
 		<h2 class="downloads-title"><?php _e('Downloads', 'acaw'); ?></h2>
 		<ul class="downloads">

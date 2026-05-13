@@ -69,12 +69,5 @@ if ( have_posts() ) {
 				<?php endif; ?>
 			</div>
 
-<?php
-// Example: get pins for all organisations
-$pins = get_field('map_data', 'option'); // Adjust field name and context as needed
-if ($pins && isset($pins['markers'])) {
-    get_template_part('template-parts/map', null, array('pins' => array($pins)));
-}
-?>
 
 <?php get_footer(); ?>

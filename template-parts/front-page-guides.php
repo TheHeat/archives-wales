@@ -1,6 +1,11 @@
 <?php
 
-$guides_page = get_field('guides_page');
+if(function_exists('get_field')) {
+    $guides_page = get_field('guides_page');
+} else {
+    $guides_page = null;
+}
+
 
 if ($guides_page):
     $title = esc_html($guides_page->post_title);

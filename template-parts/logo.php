@@ -1,4 +1,4 @@
-<?php $lang = pll_current_language(); ?>
+<?php $lang = function_exists('pll_current_language') ? pll_current_language() : 'en'; ?>
 
 <svg 
 class="acaw-logo" 

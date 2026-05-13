@@ -14,7 +14,7 @@ get_header(); ?>
 		<div class="post-header">
 			<?php proper_post_date(); ?>
 			<?php the_title( '<h1>', '</h1>' ); ?>
-			<?php if(get_field('byline')): ?>
+			<?php if( function_exists('get_field') && get_field('byline')): ?>
 				<p class="meta"><?php the_field('byline');?></p>
 				<?php endif; ?>
 			</div>

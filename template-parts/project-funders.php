@@ -3,7 +3,7 @@
 
 
 $project = isset($args['project']) ? $args['project'] : get_the_id();
-$funders = get_field( 'funders', $project);
+$funders =  function_exists('get_field') ? get_field( 'funders', $project) : null;
 
 if ( $funders ) :
 

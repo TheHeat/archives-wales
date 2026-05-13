@@ -2,8 +2,8 @@
 
 
 
-$start_date = get_field('start_date');
-$end_date = get_field('end_date');
+$start_date = function_exists('get_field') ? get_field('start_date') : null;
+$end_date = function_exists('get_field') ? get_field('end_date') : null;
 $dates_string = null;
 
 

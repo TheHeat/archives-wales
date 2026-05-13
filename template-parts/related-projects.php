@@ -1,7 +1,7 @@
 
 <?php
 
-$projects = get_field('related_projects'); ?>
+$projects =  function_exists('get_field') ? get_field('related_projects') : null; ?>
 
 <?php if ($projects) :
 

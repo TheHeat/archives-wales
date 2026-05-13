@@ -1,6 +1,6 @@
 <?php
 
-$project = get_field('related_projects');
+$project =  function_exists('get_field') ? get_field('related_projects') : null;
 
 
 
