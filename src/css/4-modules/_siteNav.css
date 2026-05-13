@@ -7,6 +7,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    gap:.5em;
   }
   
   .menu-item a{
@@ -15,7 +16,11 @@
     padding: 0.25em;
     white-space: nowrap;
     line-height: 1;
+    
+    &:hover{
+    background-color: black;
   }
+}
   
   .menu-item.current-menu-item a{
     text-decoration: underline;

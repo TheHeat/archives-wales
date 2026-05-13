@@ -1375,6 +1375,7 @@ figcaption,
     list-style: none;
     padding: 0;
     margin: 0;
+    gap: 0.5em;
   }
   .menu-item a {
     /* background-color: pink; */
@@ -1382,6 +1383,9 @@ figcaption,
     padding: 0.25em;
     white-space: nowrap;
     line-height: 1;
+    &:hover {
+      background-color: black;
+    }
   }
   .menu-item.current-menu-item a {
     text-decoration: underline;
