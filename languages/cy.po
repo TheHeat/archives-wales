@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-13 10:39+0100\n"
-"PO-Revision-Date: 2026-05-13 10:50+0100\n"
+"POT-Creation-Date: 2026-05-13 11:24+0100\n"
+"PO-Revision-Date: 2026-05-13 11:25+0100\n"
 "Last-Translator: Carl Morris <carl@morris.cymru>\n"
 "Language-Team: \n"
 "Language: cy\n"
@@ -495,7 +495,7 @@ msgstr "Aelod"
 #: template-parts/project-partners.php:24 template-parts/search-form.php:14
 #: template-parts/search-form.php:16 template-parts/project-funders.php:17
 #: template-parts/project-teaser.php:29 template-parts/project-dates.php:24
-#: archive-project.php:71 page-contact.php:13 page-contact.php:14
+#: archive-project.php:71 search.php:12 page-contact.php:13 page-contact.php:14
 #: page-contact.php:15 page-contact.php:16 page-contact.php:17
 #: page-contact.php:18 page-contact.php:27 page-contact.php:33
 #: page-contact.php:39 page-contact.php:69 page-contact.php:74 functions.php:21
@@ -1738,13 +1738,16 @@ msgid "template-parts/project-partners"
 msgstr "template-parts/project-partners"
 
 #: template-parts/footer-socials.php:2
+msgid "https://bsky.app/profile/archiveswales.bsky.social"
+msgstr "https://bsky.app/profile/archifaucymru.bsky.social"
+
+#: template-parts/footer-socials.php:2
 msgid "template-parts/svg-bluesky"
 msgstr "template-parts/svg-bluesky"
 
 #: template-parts/footer-socials.php:2
-#, fuzzy
 msgid "Bluesky"
-msgstr "bluesky"
+msgstr "Bluesky"
 
 #: template-parts/footer-socials.php:3
 msgid "template-parts/svg-instagram"
@@ -2214,13 +2217,7 @@ msgstr "Nothing Found"
 msgid "We found %1$s search results for  &ldquo;%2$s&rdquo;"
 msgstr "Gwelsom %1$s canlyniad o'ch chwiliad &ldquo;%2$s&rdquo;"
 
-#: search.php:12
-#, fuzzy
-msgid "proper"
-msgstr "proper_send_mail"
-
 #: search.php:22 front-page.php:33 home.php:19
-#| msgid "template-parts/search-form"
 msgid "template-parts/searchbar"
 msgstr "template-parts/searchbar"
 
@@ -2708,6 +2705,10 @@ msgstr "comment_form"
 #: index.php:17
 msgid "Blog"
 msgstr "Blog"
+
+#, fuzzy
+#~ msgid "proper"
+#~ msgstr "proper_send_mail"
 
 #~ msgid "Catalogue"
 #~ msgstr "Catalog"
