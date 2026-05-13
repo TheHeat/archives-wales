@@ -20,7 +20,7 @@ function acaw_setup() {
 	
 	register_nav_menu( 'primary', __( 'Header Menu', 'acaw' ) );
 	register_nav_menu( 'secondary', __( 'Footer Menu', 'acaw' ) );
-	register_nav_menu( 'teriary', __( 'Policies', 'acaw' ) );
+	register_nav_menu( 'tertiary', __( 'Policies', 'acaw' ) );
 	
 	}
 	add_action( 'after_setup_theme', 'acaw_setup' );
