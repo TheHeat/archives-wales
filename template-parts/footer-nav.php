@@ -1,27 +1,25 @@
 <?php
 /**
- * The primary menu as defined in functions.php
+ * The secondary menu as defined in functions.php
  *
  * @package WordPress
  */
 
 ?>
+	<?php
+	$args = [
+		'theme_location' => 'secondary',
+		'container'      => false,
+		'menu_class'     => 'menu',
+		'echo'           => false,
+		'fallback_cb'    => false,
+		'depth'          => 1,
+	];
+
+	$menu = wp_nav_menu( $args );
+
+	if ( $menu ) : ?>
 	<nav class="footerNav" role="navigation">
-
-		<?php
-		// Limits the menu to one level by default.
-		$args = array(
-			'theme_location' => 'secondary',
-			'container'      => false,
-			'menu_class'     => 'menu',
-			'echo'           => true,
-			'depth'          => 1,
-			'fallback_cb'    => false,
-
-		);
-
-		wp_nav_menu( $args );
-		
-		?>
-
+		<?php echo $menu; ?>
 	</nav>
+	<?php endif; ?>
