@@ -15,6 +15,7 @@
 			'container'      => false,
 			'menu_class'     => 'menu',
 			'echo'           => true,
+			'fallback_cb'    => false,
 			'depth'          => 1,
 		);
 

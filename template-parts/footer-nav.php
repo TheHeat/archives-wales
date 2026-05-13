@@ -16,6 +16,8 @@
 			'menu_class'     => 'menu',
 			'echo'           => true,
 			'depth'          => 1,
+			'fallback_cb'    => false,
+
 		);
 
 		wp_nav_menu( $args );
