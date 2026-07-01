@@ -156,7 +156,7 @@ function create_archiveitem_cpt() {
 		'description' => __( '', 'acaw' ),
 		'labels' => $labels,
 		'menu_icon' => 'dashicons-media-document',
-		'supports' => array('title', 'excerpt', 'thumbnail', 'revisions', 'author', 'custom-fields'),
+		'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'author', 'custom-fields'),
 		'taxonomies' => array(),
 		'public' => true,
 		'show_ui' => true,
