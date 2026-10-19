@@ -1,50 +1,47 @@
 .archive-header-wrapper {
-  background-color: var(--color-surface);
+	background-color: var(--color-surface);
 }
 
 .archive-header {
-  max-width:var(--length-site-max);
-  margin: auto;
-  padding: var(--length-spacer);
-  display: grid;
-  gap: var(--length-spacer);
-  
-  h1{
-    margin: 0;
-  }
-  
+	max-width: var(--length-site-max);
+	margin: auto;
+	padding: var(--length-spacer);
+	display: grid;
+	gap: var(--length-spacer);
+
+	h1 {
+		margin: 0;
+	}
 }
 
 .archive-header-inner {
-  max-width: 60ch;
-
+	max-width: 60ch;
 }
 
-
 .archive-content {
-    max-width:var(--length-site-max);
-  margin: auto;
-  padding: var(--length-spacer);
+	max-width: var(--length-site-max);
+	margin: auto;
+	padding: var(--length-spacer);
 }
 
 .archiveGrid {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: var(--length-spacer);
-  list-style: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	gap: var(--length-spacer);
+	list-style: none;
 
-  @media (width> 40rem) {
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-  }
+	@media (width> 40rem) {
+		grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+	}
 }
 
 .archiveList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: var(--length-spacer);
-  list-style: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	gap: var(--length-spacer);
+	list-style: none;
 }

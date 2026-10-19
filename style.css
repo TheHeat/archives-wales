@@ -1,7 +1,7 @@
 /*
-Theme Name: Archifau Cymru / Archives Wales
+Theme Name: Archives Wales
 Theme URI: https://marcheatleydesign.com
-Description: Thema Archifau Cymru / Archives Wales Theme
+Description: Archives Wales Theme
 Author: Marc Heatley	
 Author URI: https://marcheatleydesign.com
 Version: 1
@@ -875,6 +875,7 @@ h6 {
   text-wrap: balance;
   &:first-child {
     margin-top: 0;
+    margin-bottom: 0.5rem;
   }
   &:last-child {
     margin-bottom: 0;
@@ -1260,6 +1261,12 @@ iframe[src*=vimeo] {
   object-fit: contain;
   background-color: black;
   border-radius: var(--length-border-radius);
+}
+
+.featuredVideo-wrapper {
+  aspect-ratio: 16/9;
+  border-radius: var(--length-border-radius);
+  overflow: clip;
 }
 
 figcaption,
@@ -1993,14 +2000,14 @@ figcaption,
   overflow: clip;
 }
 
-.downloads-wrapper {
+.resources-wrapper {
   border-top: solid thin;
   display: grid;
   gap: 0.5em;
   padding-top: 0.5em;
 }
 
-.downloads {
+.resources {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -2009,17 +2016,26 @@ figcaption,
   align-items: center;
 }
 
-.download {
+.resource {
   display: grid;
-  grid-template-columns: auto max-content;
+  gap: 0.5em;
+  grid-template-columns: 1fr auto;
   padding: 0.5em;
   background-color: var(--color-green);
   color: var(--color-green-contrast);
   border-radius: var(--length-border-radius);
 }
 
-.download-link {
+.resource-link {
   color: currentColor;
+}
+
+.resource-description {
+  background-color: var(--color-ivory);
+  color: var(--color-black);
+  padding: 0.5em;
+  margin: 0;
+  grid-column: 1/-1;
 }
 
 .familyTree-wrapper {
@@ -2175,11 +2191,25 @@ button.relatedItemTeaser-imageButton,
   gap: 0.5em;
 }
 
+/* Each teaser spans four rows of its list's grid (thumbnail, title, excerpt, button)
+   so titles, excerpts and buttons line up across a row of teasers */
+li:has(> .pageTeaser),
+.pageTeaser {
+  display: grid;
+  grid-row: span 4;
+  grid-template-rows: subgrid;
+  row-gap: 0;
+}
+
 .pageTeaser {
   background-color: var(--color-surface);
   border-radius: var(--length-border-radius);
   overflow: clip;
-  display: grid;
+}
+
+.pageTeaser-thumbnail {
+  aspect-ratio: 2/1;
+  object-fit: cover;
 }
 
 .pageTeaser-title-wrapper {
@@ -2290,14 +2320,9 @@ button.relatedItemTeaser-imageButton,
   display: grid;
   gap: var(--length-spacer);
 }
-@media (width > 30rem) {
-  .frontPage-guides {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 .frontPage-guides-title {
-  grid-column: 1/-1;
+  margin: 0;
   a {
     text-decoration: none;
     color: inherit;
@@ -2309,14 +2334,11 @@ button.relatedItemTeaser-imageButton,
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 0.25em;
-  a {
-    display: block;
-    background-color: var(--color-surface);
-    border-left: solid 0.25em var(--color-green);
-    padding: 0.5em 1em;
-    text-decoration: none;
-    color: inherit;
+  gap: var(--length-spacer);
+}
+@media (width > 50rem) {
+  .frontPage-guides-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

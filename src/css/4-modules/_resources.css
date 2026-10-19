@@ -1,29 +1,37 @@
-.downloads-wrapper{
+.resources-wrapper {
 	border-top: solid thin;
-		display: grid;
-	gap: .5em;
+	display: grid;
+	gap: 0.5em;
 	padding-top: 0.5em;
 }
 
-.downloads{
+.resources {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	display: grid;
-	gap: .5em;
+	gap: 0.5em;
 	align-items: center;
 }
 
-.download{
+.resource {
 	display: grid;
-	grid-template-columns: auto max-content;
-	padding: .5em;
+	gap: 0.5em;
+	grid-template-columns: 1fr auto;
+	padding: 0.5em;
 	background-color: var(--color-green);
-	color:var(--color-green-contrast);
+	color: var(--color-green-contrast);
 	border-radius: var(--length-border-radius);
-
 }
 
-.download-link{
+.resource-link {
 	color: currentColor;
+}
+
+.resource-description {
+	background-color: var(--color-ivory);
+	color: var(--color-black);
+	padding: 0.5em;
+	margin: 0;
+	grid-column: 1/-1;
 }

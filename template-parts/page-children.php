@@ -3,8 +3,8 @@
 // GET THE KIDS//
 /////////////////
 
-// where are we?
-$parent_ID = get_the_id();
+// where are we? (allow a parent to be passed in via get_template_part args)
+$parent_ID = !empty($args['parent_id']) ? $args['parent_id'] : get_the_id();
 
 // pick up the kids
 $children = get_children(array(
@@ -26,26 +26,7 @@ if ($children) : ?>
       // Treat each child item as $post
       setup_postdata($post); ?>
       <li>
-        <article id="page-<?php the_ID(); ?>" <?php post_class('pageTeaser'); ?>>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail('hero', ['class' => 'pageTeaser-thumbnail']); ?>
-				</a>
-<div class="pageTeaser-title-wrapper">
-
-  <h2 class="pageTeaser-title">
-    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-      <?php the_title(); ?>
-    </a>
-  </h2>
-</div>
-          <div class="pageTeaser-excerpt">
-            <?php the_excerpt(); ?>
-          </div>
-          <div class="pageTeaser-button-wrapper">
-            <a href="<?php the_permalink() ?>" class="button"><?php _e('Read More', 'acaw'); ?></a>
-          </div>
-
-        </article>
+        <?php get_template_part('template-parts/page-teaser'); ?>
       </li>
 
     <?php

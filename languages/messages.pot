@@ -2530,3 +2530,7 @@ msgstr ""
 #: index.php:17
 msgid "Blog"
 msgstr ""
+
+#: template-parts/resources.php:3
+msgid "Resources"
+msgstr ""

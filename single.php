@@ -21,7 +21,7 @@ get_header(); ?>
 			<?php the_content(); ?>
 
 			<div class="post-footer">
-				<?php get_template_part('template-parts/downloads');?>
+				<?php get_template_part('template-parts/resources');?>
 				<?php get_template_part('template-parts/post-project-funders'); ?>
 			</div>
 </main>

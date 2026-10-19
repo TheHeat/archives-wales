@@ -11,35 +11,34 @@ if ($guides_page):
     $title = esc_html($guides_page->post_title);
     $content = wp_kses_post($guides_page->post_content);
     $permalink = esc_url(get_permalink($guides_page->ID));
-    
-    $child_pages = get_pages(array(
-        'parent' => $guides_page->ID,
-        'sort_column' => 'menu_order',
-    ));?>
+
+    $guides = new WP_Query(array(
+        'post_type'      => 'page',
+        'post_parent'    => $guides_page->ID,
+        'post_status'    => 'publish',
+        'posts_per_page' => -1,
+        'orderby'        => 'menu_order',
+        'order'          => 'ASC',
+    )); ?>
 
     <div class="frontPage-guides-wrapper">
 
     <div class="frontPage-guides">
-
-        
-  
-            <h2 class="frontPage-guides-title"><a href="<?php echo $permalink; ?>"><?php echo $title; ?></a></h2>
-            <div class="frontPage-guides-content"><?php echo $content; ?></div>
-  
-        
-        <?php
-    if (!empty($child_pages)) : ?>
-            <ul class="frontPage-guides-list">
-            <?php
-        foreach ($child_pages as $child):
-            $child_title = esc_html($child->post_title);
-            $child_permalink = esc_url(get_permalink($child->ID)); ?>
-            <li>
-        
-                <a href="<?php echo $child_permalink; ?>"><?php echo $child_title; ?></a></li>
-        <?php endforeach; ?>
-            </ul>
-            <?php endif; ?>
+        <div>
+    <h2 class="frontPage-guides-title"><a href="<?php echo $permalink; ?>"><?php echo $title; ?></a></h2>
+    <?php echo $content; ?>
+</div>
+    
+    <?php if ($guides->have_posts()) : ?>
+        <ul class="frontPage-guides-list">
+            <?php while ($guides->have_posts()) : $guides->the_post(); ?>
+                <li>
+                    <?php get_template_part('template-parts/page-teaser'); ?>
+                </li>
+            <?php endwhile;
+            wp_reset_postdata(); ?>
+        </ul>
+    <?php endif; ?>
 
 </div>
     </div>

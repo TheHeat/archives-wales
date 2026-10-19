@@ -2706,6 +2706,10 @@ msgstr "comment_form"
 msgid "Blog"
 msgstr "Blog"
 
+#: template-parts/resources.php:3
+msgid "Resources"
+msgstr "Adnoddau"
+
 #, fuzzy
 #~ msgid "proper"
 #~ msgstr "proper_send_mail"

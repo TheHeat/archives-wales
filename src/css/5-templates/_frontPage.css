@@ -1,5 +1,5 @@
 .frontPage-hero-wrapper {
-background-color: var(--color-surface);
+	background-color: var(--color-surface);
 }
 
 .frontPage-hero {
@@ -11,10 +11,10 @@ background-color: var(--color-surface);
 	flex-direction: column-reverse;
 	gap: var(--length-spacer);
 
-	@media(width > 30rem) {
-	display: grid;
-	grid-template-columns: auto clamp(25%, 30rem, 30%);
-}
+	@media (width > 30rem) {
+		display: grid;
+		grid-template-columns: auto clamp(25%, 30rem, 30%);
+	}
 }
 
 .frontPage-hero-title {
@@ -32,7 +32,6 @@ background-color: var(--color-surface);
 }
 
 .frontPage-map-wrapper {
-
 	background-color: var(--color-green);
 	color: var(--color-green-contrast);
 	text-wrap: balance;
@@ -41,31 +40,26 @@ background-color: var(--color-surface);
 .frontPage-map {
 	max-width: var(--length-site-max);
 	margin: auto;
-	padding: var(--length-spacer);	
+	padding: var(--length-spacer);
 	display: grid;
 	gap: var(--length-spacer);
-	@media(width > 30rem) {
+	@media (width > 30rem) {
 		aspect-ratio: 4/1;
 		width: auto;
-		grid-template-columns: 1fr 1fr;	
+		grid-template-columns: 1fr 1fr;
 		align-items: center;
 	}
-
 
 	.leafletMap {
 		max-height: 100%;
 	}
 }
 
-
-
-
-.frontPage-posts{
+.frontPage-posts {
 	container-type: inline-size;
 	max-width: var(--length-site-max);
 	margin: auto;
 	padding: var(--length-spacer);
-
 }
 
 .frontPage-guides {
@@ -74,34 +68,24 @@ background-color: var(--color-surface);
 	padding: var(--length-spacer);
 	display: grid;
 	gap: var(--length-spacer);
-	@media(width > 30rem) {
-		grid-template-columns: repeat(2, 1fr);
-	}
 }
 
-.frontPage-guides-title{
-	grid-column: 1 / -1;
-
-	a{
+.frontPage-guides-title {
+	margin: 0;
+	a {
 		text-decoration: none;
 		color: inherit;
 	}
 }
 
-.frontPage-guides-list{
+.frontPage-guides-list {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	display: grid;
-	gap:.25em;
+	gap: var(--length-spacer);
 
-
-	a{
-		display: block;
-		background-color: var(--color-surface);;
-		border-left:solid .25em var(--color-green);
-		padding:.5em 1em;
-		text-decoration: none;
-		color: inherit;
+	@media (width > 50rem) {
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
