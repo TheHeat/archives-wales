@@ -24,7 +24,7 @@ if ($guides_page):
     <div class="frontPage-guides-wrapper">
 
     <div class="frontPage-guides">
-        <div>
+        <div class="frontPage-guides-header">
     <h2 class="frontPage-guides-title"><a href="<?php echo $permalink; ?>"><?php echo $title; ?></a></h2>
     <?php echo $content; ?>
 </div>

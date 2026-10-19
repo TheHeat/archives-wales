@@ -2321,6 +2321,11 @@ li:has(> .pageTeaser),
   gap: var(--length-spacer);
 }
 
+.frontPage-guides-header {
+  max-width: 80ch;
+  text-wrap: balance;
+}
+
 .frontPage-guides-title {
   margin: 0;
   a {
