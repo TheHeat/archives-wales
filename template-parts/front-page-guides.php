@@ -33,7 +33,7 @@ if ($guides_page):
         <ul class="frontPage-guides-list">
             <?php while ($guides->have_posts()) : $guides->the_post(); ?>
                 <li>
-                    <?php get_template_part('template-parts/page-teaser'); ?>
+                    <?php get_template_part('template-parts/page-teaser', null, ['sizes' => '(min-width: 50rem) 33vw, 100vw']); ?>
                 </li>
             <?php endwhile;
             wp_reset_postdata(); ?>
