@@ -12,7 +12,8 @@
 						$file = get_sub_field('file');
 						if (!$file) continue;
 						$href = $file['url'];
-						$label = sprintf('%s (%s)', strtoupper($file['subtype']), get_proper_filesize($file['filesize']));
+						$ext = pathinfo($file['filename'] ?: $file['url'], PATHINFO_EXTENSION) ?: $file['subtype'];
+						$label = sprintf('%s (%s)', esc_html(strtoupper($ext)), get_proper_filesize($file['filesize']));
 					}
 
 					$description = get_sub_field('description');
