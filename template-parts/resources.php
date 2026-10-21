@@ -1,4 +1,8 @@
-<?php if( function_exists('get_field') && get_field('downloads')): ?>
+<?php 
+// display uploaded files in a clickable list
+// NB: the field is called downloads, out of sync with 'resources' to preserve existing data on the live site
+
+if( function_exists('get_field') && get_field('downloads')): ?>
 	<div class="resources-wrapper">
 		<h2 class="resources-title"><?php _e('Resources', 'acaw'); ?></h2>
 		<ul class="resources">
